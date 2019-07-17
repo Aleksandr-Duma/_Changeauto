@@ -31,11 +31,18 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.main-page {
+/*..................HEADER.................*/
+.header {
   width: 100%;
   min-height: 864px;
   background: url(../img/main-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+.inner-header {
+  width: 100%;
+  background: transparent;
+  height: 110px;
+  border-bottom: 1px solid #f1f2f3;
 }
