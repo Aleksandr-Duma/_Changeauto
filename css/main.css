@@ -42,7 +42,61 @@ img {
 }
 .inner-header {
   width: 100%;
-  background: transparent;
   height: 110px;
+  background: transparent;
   border-bottom: 1px solid #f1f2f3;
+}
+.inner-header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.logo-block {
+  width: 10%;
+  padding-top: 24px;
+  padding-left: 30px;
+}
+.logo-block_svg {
+  width: 99px;
+}
+.link-block {
+  width: 55%;
+}
+.link-block_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 46px;
+  padding-right: 59px;
+  padding-bottom: 45px;
+}
+.link-block_item {
+  list-style-type: none;
+  margin-left: 26px;
+}
+.link-block_item-link {
+  text-decoration: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 16px;
+  color: #0f0f0f;
+}
+.link-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.search-svg {
+  width: 16px;
+  margin-right: 9px;
+}
+.contact-block {
+  width: 35%;
+  border: 1px solid red;
 }
