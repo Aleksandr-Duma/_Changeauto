@@ -38,8 +38,7 @@ img {
   min-height: 864px;
   background: url(../img/main-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center top;
   position: relative;
 }
 .navigation {
@@ -268,4 +267,48 @@ img {
   position: absolute;
   top: 280px;
   right: -258px;
+}
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 85px;
+}
+.title-wrap {
+  width: 580px;
+}
+.main-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 48px;
+  color: #0f0f0f;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.sub-title {
+  width: 580px;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 18px;
+  color: #6c6c6c;
+  text-align: center;
+}
+.block-form-header {
+  width: 810px;
+  height: 400px;
+  border: 1px solid red;
+  margin-bottom: 100px;
+}
+.block-video {
+  width: 810px;
+  height: 500px;
+  border: 1px solid red;
 }
