@@ -21,4 +21,11 @@ $(document).ready(function(){
 	}
 
 dropdown();
+
+//............JqueryFormStyler..............
+
+	$('select').styler({
+
+	});
+
 })
