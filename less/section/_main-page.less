@@ -285,13 +285,119 @@
 	margin-bottom:100px;
 }
 
-select{
-	width: 300px;
-	height: 65px;
-	outline: none;
-	font-size: 24px;
-	border: 1px solid red;
+//.................................................. w
+//.................................................. w
+//.................................................. w
+//.................................................. w
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
+
+.select {
+	display: inline-block;
+    vertical-align: top; 
+    // max-width: 245px;
+    width: 100%;
+}
+
+.select-wrap {
+	max-width: 700px;
+	width: 100%;
+	margin: 20px auto;
+}
+
+.select-wrap select {
+	margin: 20px;
+}
+
+.select__gap {
+	width: 303px;
+	background: #fff;
+	color: #467797;
+    border: 1px solid #467797;
+	// text-transform: uppercase;
+	font-size: 15px;
+	padding: 10px 15px;
+	cursor: pointer;
+	position: relative;
+	
+}
+
+.on.select__gap,
+.select__gap:hover {
+    color: #467797;
+} 
+
+.select__list {
+	width: 303px;
+	background: #fff;
+    border: 1px solid #467797;
+	margin: 0px 0;
+
+	border: none;
+	box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+	margin-top: 20px;
+	position: absolute;
+
+}
+
+.select__list.on {
+	display: block;
+}
+
+.select__item span {
+	display: block;
+	padding: 10px 15px;
+	cursor: pointer;
+    color: #333;
+}
+
+.select__item.selected,
+.select__item span:hover {
+	color: #467797;
+}
+
+.select__gap:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -7px;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 14px solid #000;
+
+	-webkit-transition: all .27s ease-in-out;
+	     -o-transition: all .27s ease-in-out;
+	        transition: all .27s ease-in-out;
+
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	     -o-transform: rotate(0deg);
+	        transform: rotate(0deg);
+}
+
+.on.select__gap:after {
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+
+//.............................................. w
+//.............................................. w
+//.............................................. w
+//.............................................. w
+
+
 
 .block-form-submit{
 	width: 200px;
@@ -299,6 +405,7 @@ select{
 	background-color: @main-green;
 	border: none;
 	outline: none;
+	// margin-left: -5px;
 }
 
 .block-form-input{
@@ -306,9 +413,7 @@ select{
 	height: 36px;
 }
 
-.jq-selectbox{
-	// border: 1px solid red;
-}
+
 
 
 
