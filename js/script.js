@@ -22,4 +22,28 @@ $(document).ready(function(){
 
 dropdown();
 
+
+var question = function(){
+		var data = $(".question-block-item").attr("data-question");
+
+		$(".question-block-item__head").on("click", function(){
+			if(data === "close"){
+				$(".question-block-item__body").slideUp();
+				if($(this).hasClass("active")){
+					$(this).toggleClass("active");
+				}
+				else{
+					$(".question-block-item__head").removeClass("active");
+					$(this).toggleClass("active");
+				}
+			}
+			else{
+				$(this).toggleClass("active");
+			}
+			$(this).next(".question-block-item__body").not(".animated").slideToggle();
+		});
+	}
+
+question();
+
 })
