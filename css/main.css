@@ -383,6 +383,28 @@ img {
   border: 1px solid red;
   margin-bottom: 60px;
 }
+/*....................NEW OFFER....................*/
+.new-offer {
+  border: 1px solid red;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 40px;
+}
+.new-offer-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 30px;
+  color: #0f0f0f;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.new-offer-slider {
+  width: 100%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*.......................OFFER......................*/
 .offer-wrap {
   padding-left: 29px;
