@@ -32,6 +32,72 @@ img {
 	flex-direction: column;
 }
 
+/*...................INNER-PAGE-WRAP..................*/
+
+.wrap-inner-page{
+  padding-top: 59px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 30px;
+}
+
+.inner-home-link-wrap{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1px;
+  margin-bottom: 12px;
+}
+
+.inner-home-link{
+  text-decoration: none;
+}
+
+.inner-home-icon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: @main-green;
+  text-align: center;
+  padding-top: 5px;
+  position: relative;
+  margin-right: 25px;
+
+  &:hover{
+    background-color: #7faa46;
+  }
+
+  &:after{
+    content: "⏷";
+    font-size: 16px;
+    color: @gray-text;
+    position: absolute;
+    top: 2px;
+    left: 27px;
+    transform: rotate(-90deg);
+  }
+}
+
+.home-icon-svg{
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+}
+
+.link-name-section{
+  text-decoration: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 14px;
+  color: @gray-text;
+
+  &:hover{
+    color: @main-green;
+    text-decoration: underline;
+  }
+}
+
+
 
 // font-family: 'Proxima_Nova';
 // font-weight: 700;
