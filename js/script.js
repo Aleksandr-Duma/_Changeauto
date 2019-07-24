@@ -51,4 +51,11 @@ question();
 		loop: true
 	});
 
+
+	$('.new-offer-slider').slick({
+    	dots: true,
+    	slidesToShow: 4
+  });
+
+
 })
