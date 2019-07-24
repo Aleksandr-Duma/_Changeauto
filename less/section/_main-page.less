@@ -2,7 +2,7 @@
 
 .main-page{
 	width: 100%;
-	min-height: 864px;
+	min-height: 100vh;
 	background: url(../img/main-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -391,8 +391,6 @@
 	outline: none;
 }
 
-
-
 /*.......................OFFER......................*/
 
 .offer-wrap{
@@ -480,7 +478,9 @@
 	justify-content: flex-start;
 }
 
-.other-ofers-item{
+/*.....................CARD-AUTO.....................*/
+
+.card-auto{
 	width: 313px;
 	height: 490px;
 	border-radius: 5px;
@@ -495,7 +495,7 @@
 	margin: 14px;
 }
 
-.other-ofers-img-wrap{
+.card-auto-img-wrap{
 	width: 265px;
   	height: 223px;
   	border-radius: 5px;
@@ -503,19 +503,19 @@
   	overflow: hidden;
 }
 
-.ofers-img{
+.card-img{
 	width: 100%;
 	height: 100%;
 }
 
-.other-ofers-car-model{
+.card-auto-model{
 	width: 265px;
 	border-bottom: 1px solid #efefef;
 	padding-bottom: 12px;
 	margin-bottom: 15px;
 }
 
-.other-ofers-car-title{
+.card-model-title{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
 	font-size: 18px;
@@ -529,43 +529,28 @@
 	}
 }
 
-.other-ofers-discr-year{
+.card-auto-discription{
 	width: 265px;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 8px;
 }
 
-.year-car-discription{
+.card-auto-discription-key{
 	font-family: 'Proxima_Nova';
 	font-weight: 600;
 	font-size: 14px;
 	color: #7C7C7C;
 }
 
-.year-car-number{
+.card-auto-discription-value{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
 	font-size: 14px;
 	color: @main-text;
 }
 
-.other-ofers-discr-condition{
-	width: 265px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 28px;
-}
-
-.condition-text-left{
-	font-family: 'Proxima_Nova';
-	font-weight: 600;
-	font-size: 14px;
-	color: #7C7C7C;
-}
-
-.condition-text-right{
+.card-auto-discription-value-gray{
 	background-color: #ededed;
 	text-transform: uppercase;
 	font-family: 'Proxima_Nova';
@@ -580,8 +565,7 @@
 	padding-bottom: 7px;
 }
 
-
-.other-ofers-button{
+.card-auto-button{
 	width: 265px;
   	height: 65px;
   	background-color: @main-green;
@@ -596,6 +580,7 @@
 	text-align: center;
   	color: #fff;
   	cursor: pointer;
+  	margin-top: 20px;
 }
 
 .other-ofers-watch-all{
