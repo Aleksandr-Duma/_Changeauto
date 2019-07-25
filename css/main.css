@@ -1324,3 +1324,87 @@ img {
   color: #6c6c6c;
   text-align: center;
 }
+/*...............HOW-TO PAGE..............*/
+.how-to-page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.how-to-title-wrap {
+  width: 52%;
+  border: 1px solid red;
+}
+.how-to-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 2;
+  color: #0f0f0f;
+  text-align: center;
+}
+.how-to-sub-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #6c6c6c;
+  text-align: center;
+}
+.how-to-step-list-block {
+  width: 100%;
+  height: 300px;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 150px;
+}
+.how-to-step-list-item {
+  width: 280px;
+  height: 150px;
+  border: 1px solid green;
+}
+.how-to-step-title {
+  text-transform: uppercase;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #D7DDE1;
+  text-align: left;
+}
+.how-to-step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 3px solid green;
+  position: relative;
+}
+.how-to-step-circle:after {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 1px;
+  border-top: 4px dashed green;
+  position: absolute;
+  top: 15px;
+  right: -240px;
+}
+.how-to-step-text {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #0f0f0f;
+  text-align: left;
+}
