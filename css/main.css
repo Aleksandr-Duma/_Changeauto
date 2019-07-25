@@ -1340,6 +1340,7 @@ img {
 .how-to-title-wrap {
   width: 52%;
   border: 1px solid red;
+  margin-bottom: 20px;
 }
 .how-to-title {
   font-family: 'Proxima_Nova';
@@ -1383,11 +1384,14 @@ img {
   color: #D7DDE1;
   text-align: left;
 }
+.how-to-step-title.active {
+  color: #90d339;
+}
 .how-to-step-circle {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  border: 3px solid green;
+  border: 3px solid #D7DDE1;
   position: relative;
 }
 .how-to-step-circle:after {
@@ -1395,10 +1399,16 @@ img {
   display: block;
   width: 240px;
   height: 1px;
-  border-top: 4px dashed green;
+  border-top: 4px dashed #D7DDE1;
   position: absolute;
   top: 15px;
   right: -240px;
+}
+.how-to-step-circle.active {
+  border: 3px solid #90d339;
+}
+.how-to-step-circle.active:after {
+  border-top: 4px dashed #90d339;
 }
 .how-to-step-text {
   font-family: 'Proxima_Nova';

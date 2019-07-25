@@ -9,6 +9,7 @@
 .how-to-title-wrap{
 	width: 52%;
 	border: 1px solid red;
+	margin-bottom: 20px;
 }
 
 .how-to-title{
@@ -53,26 +54,36 @@
 	line-height: 1.5;
 	color: #D7DDE1;
 	text-align: left;
+
+	&.active{
+		color: @main-green;
+	}
 }
 
 .how-to-step-circle{
 	width: 40px;
 	height: 40px;
 	border-radius: 50px;
-	border: 3px solid green;
+	border: 3px solid #D7DDE1;
 	position: relative;
-
 
 	&:after{
 		content: "";
 		display: block;
 		width: 240px;
 		height: 1px;
-		border-top: 4px dashed green;
+		border-top: 4px dashed #D7DDE1;
 		position: absolute;
 		top: 15px;
 		right: -240px;
+	}
+}
 
+.how-to-step-circle.active{
+	border: 3px solid @main-green;
+
+	&:after{
+		border-top: 4px dashed @main-green;
 	}
 }
 
