@@ -1543,3 +1543,180 @@ img {
   margin-bottom: 20px;
 }
 /*...............CONTACT PAGE..............*/
+.contact-page-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 2;
+  color: #0f0f0f;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.contact-page-block {
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+          box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 50px;
+}
+.contact-page-block-left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.contact-page-form {
+  width: 575px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+.contact-page-form-title-wrap {
+  width: 515px;
+}
+.contact-page-form-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2.1;
+  color: #0f0f0f;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.contact-page-input {
+  width: 515px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: 'Proxima_Nova';
+  font-weight: 400;
+  font-size: 15px;
+  color: #bfc6ce;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+.contact-page-input::-webkit-input-placeholder {
+  color: #bfc6ce;
+  font-size: 15px;
+}
+.contact-page-input::-moz-input-placeholder {
+  color: #bfc6ce;
+  font-size: 15px;
+}
+.contact-page-input:-moz-input-placeholder {
+  color: #bfc6ce;
+  font-size: 15px;
+}
+.contact-page-textarea {
+  width: 515px;
+  height: 140px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: 'Proxima_Nova';
+  font-weight: 400;
+  font-size: 15px;
+  color: #bfc6ce;
+  border: none;
+  outline: none;
+  resize: none;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.contact-page-textarea::-webkit-input-placeholder {
+  color: #bfc6ce;
+  font-size: 15px;
+}
+.contact-page-textarea::-moz-input-placeholder {
+  color: #bfc6ce;
+  font-size: 15px;
+}
+.contact-page-textarea:-moz-input-placeholder {
+  color: #bfc6ce;
+  font-size: 15px;
+}
+.contact-page-submit {
+  width: 515px;
+  height: 65px;
+  text-transform: uppercase;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #90d339;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+.contact-page-submit:hover {
+  background-color: #7faa46;
+}
+.contact-page-block-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 30px;
+  padding-left: 113px;
+}
+.contact-page-right-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2.1;
+  color: #0f0f0f;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.contact-page-link-wrap {
+  display: inline-block;
+  border-bottom: 1px solid #90d339;
+  margin-bottom: 45px;
+}
+.contact-page-mail-link {
+  text-decoration: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  color: #90d339;
+  text-align: left;
+}
