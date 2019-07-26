@@ -57,5 +57,10 @@ question();
     	slidesToShow: 4
   });
 
+	$('.how-to-slider').slick({
+    	dots: true,
+    	slidesToShow: 2
+  });
+
 
 })
