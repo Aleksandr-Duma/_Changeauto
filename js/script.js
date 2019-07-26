@@ -59,7 +59,7 @@ question();
 
 	$('.how-to-slider').slick({
     	dots: true,
-    	slidesToShow: 2
+    	slidesToShow: 1
   });
 
 

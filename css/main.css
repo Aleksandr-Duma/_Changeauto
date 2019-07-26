@@ -1421,18 +1421,31 @@ img {
   text-align: left;
 }
 .how-to-slider {
-  width: 100%;
-  border: 1px solid red;
+  width: 90%;
+  padding-left: 30px;
+  padding-bottom: 15px;
 }
-.how-to-slider-item {
-  width: 1180px;
-  border: 1px solid green;
+.how-to-slider-item-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.how-to-slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .how-to-slider-item-img {
   width: 545px;
@@ -1442,7 +1455,7 @@ img {
   -webkit-box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
           box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
   margin: 14px;
-  background-color: gray;
+  display: inline-block;
 }
 .how-to-slider-item-text {
   width: 545px;
@@ -1452,9 +1465,43 @@ img {
   padding-right: 15px;
   position: relative;
   z-index: 5;
+  display: inline-block;
 }
 .slider-text-after-1:after {
   content: "1";
+  position: absolute;
+  top: -25px;
+  right: -20px;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 260px;
+  color: #f5f5f5;
+  z-index: -1;
+}
+.slider-text-after-2:after {
+  content: "2";
+  position: absolute;
+  top: -25px;
+  right: -20px;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 260px;
+  color: #f5f5f5;
+  z-index: -1;
+}
+.slider-text-after-3:after {
+  content: "3";
+  position: absolute;
+  top: -25px;
+  right: -20px;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 260px;
+  color: #f5f5f5;
+  z-index: -1;
+}
+.slider-text-after-4:after {
+  content: "4";
   position: absolute;
   top: -25px;
   right: -20px;
@@ -1495,3 +1542,4 @@ img {
   text-align: left;
   margin-bottom: 20px;
 }
+/*...............CONTACT PAGE..............*/
