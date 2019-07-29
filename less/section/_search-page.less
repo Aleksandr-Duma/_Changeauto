@@ -32,9 +32,10 @@
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
 	font-size: 22px;
-	line-height: 2.4;
+	line-height: 1.4;
 	color: @main-text;
 	text-align: left;
+	padding-bottom: 10px;
 	border-bottom: 1px solid #efefef;
 }
 
@@ -56,7 +57,7 @@
 		font-size: 16px;
 		color: @main-green;
 		position: absolute;
-		top: 20px;
+		top: 10px;
 		right: 52px;
 	}
 }
@@ -74,7 +75,17 @@
 	display: none;
 }
 
-.radio input {
+.form-section-body.comfort-block{
+	// padding-top: 32px;
+	// padding-left: 30px;
+	// padding-right: 30px;
+	padding-bottom: 10px;
+	// display: none;
+}
+
+/*............CUSTOM-RADIO-BUTTON..............*/
+
+.radio input{
   	position: absolute;
   	z-index: -1;
   	opacity: 0;
@@ -89,12 +100,11 @@
 	color: @main-text;
   	position: relative;
   	padding: 0 0 0 25px;
-  	cursor: pointer;
-  	
+  	cursor: pointer;	
 }
 
 .radio-text.comfort{
-	margin-bottom: 25px;
+	margin-bottom: 33px;
 }
 
 .radio-text.other-parameters{
@@ -108,7 +118,7 @@
   	left: 0;
   	width: 18px;
   	height: 18px;
-  	box-shadow: 0px 5px 20px 0px rgba(87, 88, 87, 0.5);
+  	box-shadow: 0px 3px 15px 0px rgba(104, 105, 104, 0.5);
   	border-radius: 50%;
   	background: #FFF;
 }
@@ -129,10 +139,67 @@
 .radio input:checked + .radio-text:after {
   	opacity: 1;
 }
-// .radio input:focus + .radio__text:before {
-//   box-shadow: 0px 10px 27px 0px rgba(87, 88, 87, 0.7);
-// }
 
+/*............CUSTOM-CHECKBOX..............*/
+
+.checkbox-wrap input{
+	position: absolute;
+  	z-index: -1;
+  	opacity: 0;
+  	margin: 10px 0 0 7px;
+}
+
+.checkbox-text{
+	font-family: 'Proxima_Nova';
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 1;
+	color: @main-text;
+  	position: relative;
+  	padding: 0 0 0 25px;
+  	cursor: pointer;	
+}
+
+.checkbox-text.comfort{
+	margin-bottom: 33px;
+}
+
+.checkbox-text.other-parameters{
+	margin-right: 285px;
+}
+
+.checkbox-text.margin-bottom{
+	margin-bottom: 21px;
+}
+
+.checkbox-text:before {
+  	content: '';
+  	position: absolute;
+  	top: -3px;
+  	left: 0;
+  	width: 18px;
+  	height: 18px;
+  	box-shadow: 0px 3px 15px 0px rgba(104, 105, 104, 0.5);
+  	border-radius: 50%;
+  	background: #FFF;
+}
+
+.checkbox-text:after {
+  	content: '';
+  	position: absolute;
+  	top: 1px;
+  	left: 4px;
+  	width: 10px;
+  	height: 10px;
+  	border-radius: 50%;
+  	background: @main-green;
+  	opacity: 0;
+  	transition: .2s;
+}
+
+.checkbox-wrap input:checked + .checkbox-text:after {
+  	opacity: 1;
+}
 
 // .main-info-car-form{
 // 	height: 50px;
@@ -173,19 +240,23 @@
 // 	height: 50px;
 // 	border: 1px solid red;
 // }
-.wrap-radio-comfort{
+.wrap-checkbox-comfort{
 	display: flex;
 }
 
-.radio-comfort-items-block{
+.checkbox-comfort-items-block{
 	width: 33.3%;
-	border: 1px solid green;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	padding-bottom: 0;
 }
 
-.wrap-radio-other-parameters{
+:nth-last-child(1){
+		margin-bottom: 0;
+	}
+
+.wrap-checkbox-other-parameters{
 	display: flex;
 }
 

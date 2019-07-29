@@ -12,7 +12,12 @@
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Fonts -->
 	<link rel="stylesheet" href="font/ProximaNova/stylesheet.css">
+
+	<link rel="stylesheet" href="libs/Owl_carousel/owl.carousel.css">
+	<link rel="stylesheet" href="libs/Owl_carousel/owl.theme.default.css">
 	
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	
 </head>
 <body>
@@ -221,48 +226,57 @@
 							<div class="form-section-head">
 								<h3 class="section-title-form">Комфорт</h3>
 							</div>
-							<div class="section-body form-section-body">
-								<div class="wrap-radio-comfort">
-
-									<div class="radio-comfort-items-block">
-										<label class="radio">
-											<input type="radio" name = "comfort" checked="checked" />
-											<div class="radio-text comfort">С повреждениями</div>
+							<div class="section-body form-section-body comfort-block">
+								<div class="wrap-checkbox-comfort">
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox" checked="checked" />
+											<div class="checkbox-text comfort">Регулируемая по вылету рулевая колонка</div>
 										</label>
-										<label class="radio">
-											<input type="radio" name = "comfort"/>
-											<div class="radio-text comfort">Сохранить изменения в критериях поиска</div>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Электрорегулировка боковых зеркал</div>
 										</label>
-										<label class="radio">
-											<input type="radio" name = "comfort"/>
-											<div class="radio-text comfort">Сохранить изменения в критериях поиска</div>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Навигационная система/tvd/dvd система</div>
 										</label>
-										<label class="radio">
-											<input type="radio" name = "comfort"/>
-											<div class="radio-text comfort">Сохранить изменения в критериях поиска</div>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Климат-контроль</div>
 										</label>
 									</div>
-
-									<div class="radio-comfort-items-block">
-										<label class="radio">
-										<input type="radio" name = "comfort" checked="checked" />
-										<div class="radio-text comfort">С повреждениями</div>
-									</label>
-									<label class="radio">
-										<input type="radio" name = "comfort"/>
-										<div class="radio-text comfort">Сохранить изменения в критериях поиска</div>
-									</label>
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Электрорегулировка пассажирского сиденья</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Аудио-система</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Обивка салона ткань</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Кожаный салон</div>
+										</label>
 									</div>
-
-									<div class="radio-comfort-items-block">
-										<label class="radio">
-										<input type="radio" name = "comfort" checked="checked" />
-										<div class="radio-text comfort">С повреждениями</div>
-									</label>
-									<label class="radio">
-										<input type="radio" name = "comfort"/>
-										<div class="radio-text comfort">Сохранить изменения в критериях поиска</div>
-									</label>
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Электрорегулировка водительского сиденья</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Велюровый салон</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Усилитель руля</div>
+										</label>
 									</div>
 								</div>
 							</div>
@@ -273,19 +287,18 @@
 								<h3 class="section-title-form">Другие параметры</h3>
 							</div>
 							<div class="section-body form-section-body">
-								<div class="wrap-radio-other-parameters">
-									<label class="radio">
-										<input type="radio" name = "other-parameters" checked="checked" />
-										<div class="radio-text other-parameters">С повреждениями</div>
+								<div class="wrap-checkbox-other-parameters">
+									<label class="checkbox-wrap">
+										<input type="checkbox" checked="checked" />
+										<div class="checkbox-text other-parameters">С повреждениями</div>
 									</label>
-									<label class="radio">
-										<input type="radio" name = "other-parameters"/>
-										<div class="radio-text other-parameters">Сохранить изменения в критериях поиска</div>
+									<label class="checkbox-wrap">
+										<input type="checkbox"/>
+										<div class="checkbox-text other-parameters">Сохранить изменения в критериях поиска</div>
 									</label>
 								</div>
 							</div>
 						</div>
-
 						<div class="search-form-footer">
 							<a href="#!" class="search-form-footer-reset">сбросить параметры поиска</a>
 							<p class="search-form-footer-offer">98 предложений по вашим критериям</p>
@@ -597,6 +610,8 @@
 	</div>
 	<!-- Scipts -->
 	<script src = "libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src = "libs/Owl_carousel/owl.carousel.js"></script>
+	<script src = "libs/slick/slick.js"></script>
 	<script src = "js/script.js"></script>	
 </body>
 </html>
