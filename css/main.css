@@ -1720,3 +1720,197 @@ img {
   color: #90d339;
   text-align: left;
 }
+/*...............SEARCH-PAGE..............*/
+.search-page-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 2;
+  color: #0f0f0f;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.search-main-block {
+  width: 100%;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+          box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+}
+.head-search-form {
+  height: 150px;
+  border: 1px solid green;
+}
+.section-title-form {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 2.4;
+  color: #0f0f0f;
+  text-align: left;
+  border-bottom: 1px solid #efefef;
+}
+.form-section {
+  width: 100%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.form-section-head {
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+.form-section-head:after {
+  content: "⏷";
+  font-size: 16px;
+  color: #90d339;
+  position: absolute;
+  top: 20px;
+  right: 52px;
+}
+.form-section-head.active:after {
+  content: "⏶";
+  color: #90d339;
+}
+.form-section-body {
+  padding-top: 32px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  display: none;
+}
+.radio input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+.radio-text {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+  position: relative;
+  padding: 0 0 0 25px;
+  cursor: pointer;
+}
+.radio-text.comfort {
+  margin-bottom: 25px;
+}
+.radio-text.other-parameters {
+  margin-right: 285px;
+}
+.radio-text:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(87, 88, 87, 0.5);
+          box-shadow: 0px 5px 20px 0px rgba(87, 88, 87, 0.5);
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio-text:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #90d339;
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.radio input:checked + .radio-text:after {
+  opacity: 1;
+}
+.wrap-radio-comfort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.radio-comfort-items-block {
+  width: 33.3%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.wrap-radio-other-parameters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.search-form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  padding-right: 35px;
+}
+.search-form-footer-reset {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  color: #8B98A6;
+  position: relative;
+}
+.search-form-footer-reset:before {
+  content: "✖";
+  font-size: 14px;
+  position: absolute;
+  top: -2px;
+  left: -20px;
+  color: #8B98A6;
+}
+.search-form-footer-offer {
+  text-transform: uppercase;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  color: #8B98A6;
+}
+.search-form-button {
+  width: 280px;
+  height: 65px;
+  text-transform: uppercase;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #90d339;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}

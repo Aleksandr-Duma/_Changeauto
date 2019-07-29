@@ -46,6 +46,32 @@ var question = function(){
 
 question();
 
+
+var formSection = function(){
+		var data = $(".form-section").attr("data-form-section");
+
+		$(".form-section-head").on("click", function(){
+			if(data === "close"){
+				$(".form-section-body").slideUp();
+				if($(this).hasClass("active")){
+					$(this).toggleClass("active");
+				}
+				else{
+					$(".form-section-head").removeClass("active");
+					$(this).toggleClass("active");
+				}
+			}
+			else{
+				$(this).toggleClass("active");
+			}
+			$(this).next(".form-section-body").not(".animated").slideToggle();
+		});
+	}
+
+formSection();
+
+
+
 	$(".owl-carousel").owlCarousel({
 		items: 1,
 		loop: true
