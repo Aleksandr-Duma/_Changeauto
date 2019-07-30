@@ -172,7 +172,53 @@
 				<div class="search-main-block">
 					<form class="search-form">
 						<div class="head-search-form">
-							
+							<div class="head-search-form-wrap">
+								<div class="head-search-form-item">
+									<p class="form-select-text">Выберите страну</p>
+									<select class = "head-search-select">
+										<option value="">Любая страна</option>
+										<option value="">страна</option>
+										<option value="">страна</option>
+										<option value="">страна</option>
+									</select>	
+								</div>
+								<div class="head-search-form-item">
+									<p class="form-select-text">Выберите регион</p>
+									<select class = "head-search-select">
+										<option value="">Восточно-Казахстанская область</option>
+										<option value="">область</option>
+										<option value="">область</option>
+										<option value="">область</option>
+									</select>	
+								</div>
+								<div class="head-search-form-item">
+									<p class="form-select-text">Вид транспорта</p>
+									<select class = "head-search-select">
+										<option value="">Легковой</option>
+										<option value="">транспорт</option>
+										<option value="">транспорт</option>
+										<option value="">транспорт</option>
+									</select>
+								</div>
+								<div class="head-search-form-item">
+									<p class="form-select-text">Марка авто</p>
+									<select class = "head-search-select">
+										<option value="">Aston Martin</option>
+										<option value="">авто</option>
+										<option value="">авто</option>
+										<option value="">авто</option>
+									</select>
+								</div>
+								<div class="head-search-form-item">
+									<p class="form-select-text">Модель</p>
+									<select class = "head-search-select">
+										<option value="">Cygnet</option>
+										<option value="">Модель</option>
+										<option value="">Модель</option>
+										<option value="">Модель</option>
+									</select>
+								</div>
+							</div>
 						</div>
 
 						<div class="form-section"  data-form-section = "open">
@@ -181,7 +227,6 @@
 							</div>
 							<div class="section-body form-section-body info-car">
 								<div class="wrap-info-car-item">
-
 									<div class="info-car-item-block">
 										<p class="info-car-item-title">Год выпуска</p>
 										<div class="wrap-text-slider-ui">
@@ -190,22 +235,41 @@
 										</div>
 										<div class="slider-control-year"></div>
 									</div>
-
-									<div class="info-car-item-block">
-										<p class="info-car-item-title">Мощность автомобиля</p>
-
-										<div class="wrap-text-slider-ui">
-											<p class="start-position-slider">1</p>
-											<p class="result-slider-power"></p>
+									<div class="info-car-item-block slider-radio">
+										<div class="wrap-slider-before-radio">
+											<p class="info-car-item-title">Мощность автомобиля</p>
+											<div class="wrap-text-slider-ui">
+												<p class="start-position-slider">1</p>
+												<p class="result-slider-power"></p>
+											</div>
+											<div class="slider-control-power"></div>
 										</div>
-										<div class="slider-control-power"></div>
-
+										<div class="block-slider-radio">
+											<label class="radio">
+												<input type="radio" name = "info" checked="checked" />
+												<div class="radio-text">л.с</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "info"/>
+												<div class="radio-text">кВт</div>
+											</label>
+										</div>
 									</div>
 									<div class="info-car-item-block">
 										<p class="info-car-item-title">Пробег (км)</p>
+										<div class="wrap-text-slider-ui">
+											<p class="start-position-slider">0</p>
+											<p class="result-slider-distance"></p>
+										</div>
+										<div class="slider-control-distance"></div>
 									</div>
 									<div class="info-car-item-block">
 										<p class="info-car-item-title">Объем двигателя (cm<sup>3</sup>)</p>
+										<div class="wrap-text-slider-ui">
+											<p class="start-position-slider">200</p>
+											<p class="result-slider-engine"></p>
+										</div>
+										<div class="slider-control-engine"></div>
 									</div>
 								</div>
 							</div>

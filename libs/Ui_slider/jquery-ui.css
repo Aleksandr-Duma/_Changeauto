@@ -220,6 +220,7 @@ html .ui-button.ui-state-disabled:active {
 	font-weight: normal;
 	color: #454545;
 	outline: none;
+	cursor: pointer;
 }
 
 .ui-state-default a,

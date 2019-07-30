@@ -112,4 +112,28 @@ formSection();
 	});
 	$(".result-slider-power").text($(".slider-control-power").slider("value"));
 
+	$( ".slider-control-distance" ).slider({
+		min: 0,
+    	max: 500000,
+    	animate: "slow",
+    	range: "min",    
+    	value: 350000,
+    	slide : function(event, ui) {    
+    		$(".result-slider-distance").text(ui.value);        
+    	}
+	});
+	$(".result-slider-distance").text($(".slider-control-distance").slider("value"));
+
+	$( ".slider-control-engine" ).slider({
+		min: 200,
+    	max: 9000,
+    	animate: "slow",
+    	range: "min",    
+    	value: 6000,
+    	slide : function(event, ui) {    
+    		$(".result-slider-engine").text(ui.value);        
+    	}
+	});
+	$(".result-slider-engine").text($(".slider-control-engine").slider("value"));
+
 })

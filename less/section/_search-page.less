@@ -12,20 +12,37 @@
 
 .search-main-block{
 	width: 100%;
-	// border: 1px solid green;
 	border-radius: 5px;
 	background-color: #fff;
   	box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
 }
 
-.search-form{
-	// padding-left: 20px;
-	// padding-right: 20px;
+.head-search-form{
+	// height: 150px;
+	// border: 1px solid green;
+	padding-left: 25px;
+	padding-right: 30px;
 }
 
-.head-search-form{
-	height: 150px;
-	border: 1px solid green;
+.head-search-form-wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.head-search-form-item{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+.head-search-select{
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	outline: none;
 }
 
 .section-title-form{
@@ -238,6 +255,7 @@
 // form-section-body info-car
 .form-section-body.info-car{
 	padding-top: 11px;
+	padding-bottom: 17px;
 }
 
 .wrap-info-car-item{
@@ -250,8 +268,11 @@
 	padding-top: 8px;
 	padding-left: 5px;
 	padding-right: 20px;
-	// height: 90px;
-	// border: 1px solid green;
+	margin-bottom: 25px;
+}
+
+.wrap-slider-before-radio{
+	width: 78%;
 }
 
 .info-car-item-title{
@@ -260,13 +281,10 @@
 	font-size: 14px;
 	line-height: 2;
 	color: #8B98A6;
-	// margin-left: 5px;
-	// margin-right: 58px;
 	margin-bottom: 8px;
 }
 
 .wrap-text-slider-ui{
-	// border: 1px solid red;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 13px;
@@ -281,12 +299,28 @@
 }
 
 .result-slider-year,
-.result-slider-power{
+.result-slider-power,
+.result-slider-distance,
+.result-slider-engine{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
 	font-size: 15px;
 	line-height: 1;
 	color: @main-text;
+}
+
+.block-slider-radio{
+	width: 22%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	padding-top: 20px;
+	margin-right: -20px;
+}
+
+.info-car-item-block.slider-radio{
+	display: flex;
+	justify-content: space-between;
 }
 
 .checkbox-condition-items-block{
