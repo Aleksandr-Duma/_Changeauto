@@ -88,5 +88,28 @@ formSection();
     	slidesToShow: 1
   });
 
+	$( ".slider-control-year" ).slider({
+		min: 1900,
+    	max: 2019,
+    	animate: "slow",
+    	range: "min",    
+    	value: 1990,
+    	slide : function(event, ui) {    
+    		$(".result-slider-year").text(ui.value);        
+    	}
+	});
+	$(".result-slider-year").text($(".slider-control-year").slider("value"));
+
+	$( ".slider-control-power" ).slider({
+		min: 1,
+    	max: 1500,
+    	animate: "slow",
+    	range: "min",    
+    	value: 1223,
+    	slide : function(event, ui) {    
+    		$(".result-slider-power").text(ui.value);        
+    	}
+	});
+	$(".result-slider-power").text($(".slider-control-power").slider("value"));
 
 })

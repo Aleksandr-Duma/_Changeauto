@@ -1732,7 +1732,6 @@ img {
 }
 .search-main-block {
   width: 100%;
-  border: 1px solid green;
   border-radius: 5px;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
@@ -1854,6 +1853,29 @@ img {
   padding: 0 0 0 25px;
   cursor: pointer;
 }
+.radio-text.condition {
+  margin-right: 65px;
+}
+.form-select-text {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  color: #8B98A6;
+  margin-left: 5px;
+  margin-right: 58px;
+}
+.radio-text.type-car {
+  margin-right: 30px;
+  margin-bottom: 32px;
+}
+.radio-text.fuel {
+  margin-right: 30px;
+  margin-bottom: 32px;
+}
+.radio-text.transmition {
+  margin-right: 25px;
+}
 .checkbox-text.comfort {
   margin-bottom: 33px;
 }
@@ -1891,6 +1913,101 @@ img {
 .checkbox-wrap input:checked + .checkbox-text:after {
   opacity: 1;
 }
+.form-section-body.info-car {
+  padding-top: 11px;
+}
+.wrap-info-car-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.info-car-item-block {
+  width: 50%;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+.info-car-item-title {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  color: #8B98A6;
+  margin-bottom: 8px;
+}
+.wrap-text-slider-ui {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 13px;
+}
+.start-position-slider {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+}
+.result-slider-year,
+.result-slider-power {
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+}
+.checkbox-condition-items-block {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+.wrap-radio-condition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.wrap-radio-type-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.form-section-body.section-body-type-car {
+  padding-right: 140px;
+  padding-bottom: 10px;
+}
+.wrap-radio-fuel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.form-section-body.section-body-fuel {
+  padding-bottom: 0;
+}
+.wrap-radio-transmition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .wrap-checkbox-comfort {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1909,9 +2026,6 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-bottom: 0;
-}
-:nth-last-child(1) {
-  margin-bottom: 0;
 }
 .wrap-checkbox-other-parameters {
   display: -webkit-box;

@@ -12,7 +12,7 @@
 
 .search-main-block{
 	width: 100%;
-	border: 1px solid green;
+	// border: 1px solid green;
 	border-radius: 5px;
 	background-color: #fff;
   	box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
@@ -76,11 +76,7 @@
 }
 
 .form-section-body.comfort-block{
-	// padding-top: 32px;
-	// padding-left: 30px;
-	// padding-right: 30px;
 	padding-bottom: 10px;
-	// display: none;
 }
 
 /*............CUSTOM-RADIO-BUTTON..............*/
@@ -160,6 +156,34 @@
   	cursor: pointer;	
 }
 
+.radio-text.condition{
+	margin-right: 65px;
+}
+
+.form-select-text{
+	font-family: 'Proxima_Nova';
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 2;
+	color: #8B98A6;
+	margin-left: 5px;
+	margin-right: 58px;
+}
+
+.radio-text.type-car{
+	margin-right: 30px;
+	margin-bottom: 32px;
+}
+
+.radio-text.fuel{
+	margin-right: 30px;
+	margin-bottom: 32px;
+}
+
+.radio-text.transmition{
+	margin-right: 25px;
+}
+
 .checkbox-text.comfort{
 	margin-bottom: 33px;
 }
@@ -211,35 +235,97 @@
 // 	border: 1px solid red;
 // }
 
-// .type-car-form{
-// 	height: 50px;
-// 	border: 1px solid blue;
-// }
+// form-section-body info-car
+.form-section-body.info-car{
+	padding-top: 11px;
+}
 
-// .type-fuel-form{
-// 	height: 50px;
-// 	border: 1px solid green;
-// }
+.wrap-info-car-item{
+	display: flex;
+	flex-wrap: wrap;
+}
 
-// .type-transmition-form{
-// 	height: 50px;
-// 	border: 1px solid red;
-// }
+.info-car-item-block{
+	width: 50%;
+	padding-top: 8px;
+	padding-left: 5px;
+	padding-right: 20px;
+	// height: 90px;
+	// border: 1px solid green;
+}
 
-// .car-safety-form{
-// 	height: 50px;
-// 	border: 1px solid blue;
-// }
+.info-car-item-title{
+	font-family: 'Proxima_Nova';
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 2;
+	color: #8B98A6;
+	// margin-left: 5px;
+	// margin-right: 58px;
+	margin-bottom: 8px;
+}
 
-// .car-comfort-form{
-// 	height: 50px;
-// 	border: 1px solid green;
-// }
+.wrap-text-slider-ui{
+	// border: 1px solid red;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 13px;
+}
 
-// .other-parameters-car-form{
-// 	height: 50px;
-// 	border: 1px solid red;
-// }
+.start-position-slider{
+	font-family: 'Proxima_Nova';
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 1;
+	color: @main-text;
+}
+
+.result-slider-year,
+.result-slider-power{
+	font-family: 'Proxima_Nova';
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 1;
+	color: @main-text;
+}
+
+.checkbox-condition-items-block{
+	width: 33.3%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 8px;
+}
+
+.wrap-radio-condition{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrap-radio-type-car{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-section-body.section-body-type-car{
+	padding-right: 140px;
+	padding-bottom: 10px;
+}
+
+.wrap-radio-fuel{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-section-body.section-body-fuel{
+	padding-bottom: 0;
+}
+
+.wrap-radio-transmition{
+	display: flex;
+}
+
 .wrap-checkbox-comfort{
 	display: flex;
 }
@@ -251,10 +337,6 @@
 	align-items: flex-start;
 	padding-bottom: 0;
 }
-
-:nth-last-child(1){
-		margin-bottom: 0;
-	}
 
 .wrap-checkbox-other-parameters{
 	display: flex;

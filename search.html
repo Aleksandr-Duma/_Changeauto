@@ -18,6 +18,8 @@
 	
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="libs/Ui_slider/jquery-ui.css">
 	
 </head>
 <body>
@@ -177,50 +179,296 @@
 							<div class="form-section-head">
 								<h3 class="section-title-form">Основные сведения об автомобиле</h3>
 							</div>
-							<div class="section-body form-section-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet magni minima neque quod blanditiis. Natus aspernatur blanditiis veritatis, maiores nobis debitis rem porro quisquam.
+							<div class="section-body form-section-body info-car">
+								<div class="wrap-info-car-item">
+
+									<div class="info-car-item-block">
+										<p class="info-car-item-title">Год выпуска</p>
+										<div class="wrap-text-slider-ui">
+											<p class="start-position-slider">1900</p>
+											<p class="result-slider-year"></p>
+										</div>
+										<div class="slider-control-year"></div>
+									</div>
+
+									<div class="info-car-item-block">
+										<p class="info-car-item-title">Мощность автомобиля</p>
+
+										<div class="wrap-text-slider-ui">
+											<p class="start-position-slider">1</p>
+											<p class="result-slider-power"></p>
+										</div>
+										<div class="slider-control-power"></div>
+
+									</div>
+									<div class="info-car-item-block">
+										<p class="info-car-item-title">Пробег (км)</p>
+									</div>
+									<div class="info-car-item-block">
+										<p class="info-car-item-title">Объем двигателя (cm<sup>3</sup>)</p>
+									</div>
+								</div>
 							</div>
 						</div>
+
+
 						<div class="form-section"  data-form-section = "open">
 							<div class="form-section-head">
 								<h3 class="section-title-form">Состояние, собственник и цвет</h3>
 							</div>
 							<div class="section-body form-section-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet magni minima neque quod blanditiis. Natus aspernatur blanditiis veritatis, maiores nobis debitis rem porro quisquam.
+								<div class="wrap-radio-condition">
+									<div class="checkbox-condition-items-block">
+										<label class="radio">
+											<input type="radio" name = "condition" checked="checked" />
+											<div class="radio-text condition">Новые</div>
+										</label>
+										<label class="radio">
+											<input type="radio" name = "condition"/>
+											<div class="radio-text condition">Подержанные</div>
+										</label>
+									</div>
+									<div class="checkbox-condition-items-block">
+										<p class="form-select-text">Собственник</p>
+										<select name="" id="">
+											<option value="">Частный собственник</option>
+											<option value="">Частный собственник</option>
+											<option value="">Частный собственник</option>
+											<option value="">Частный собственник</option>
+										</select>	
+									</div>
+									<div class="checkbox-condition-items-block">
+										<p class="form-select-text">Цвет</p>
+										<select name="" id="">
+											<option value="">Частный собственник</option>
+											<option value="">Частный собственник</option>
+											<option value="">Частный собственник</option>
+											<option value="">Частный собственник</option>
+										</select>
+									</div>
+								</div>
 							</div>
 						</div>
+
 						<div class="form-section"  data-form-section = "open">
 							<div class="form-section-head">
 								<h3 class="section-title-form">Типы транспортных средств</h3>
 							</div>
-							<div class="section-body form-section-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet magni minima neque quod blanditiis. Natus aspernatur blanditiis veritatis, maiores nobis debitis rem porro quisquam.
+							<div class="section-body form-section-body section-body-type-car">
+								<div class="wrap-radio-type-car">
+									<label class="radio">
+										<input type="radio" name = "type-car" checked="checked" />
+										<div class="radio-text type-car">Спортивный автомобиль/Купе</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Малолитражный автомобиль</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Минивэн/Микроавтобус</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Седан</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Универсал</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Внедорожник/Пикап</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Хэтчбек</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Кабриолет/Родстер</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Другое</div>
+									</label>
+								</div>
 							</div>
 						</div>
+
+
 						<div class="form-section"  data-form-section = "open">
 							<div class="form-section-head">
 								<h3 class="section-title-form">Вид топлива</h3>
 							</div>
-							<div class="section-body form-section-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet magni minima neque quod blanditiis. Natus aspernatur blanditiis veritatis, maiores nobis debitis rem porro quisquam.
+							<div class="section-body form-section-body section-body-fuel">
+								<div class="wrap-radio-fuel">
+									<label class="radio">
+										<input type="radio" name = "fuel" checked="checked" />
+										<div class="radio-text fuel">Бензин</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Дизель</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Электрический</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Гибрид (бензин/электро)</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Гибрид (дизель/электро)</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Сжиженный нефтяной газ</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Сжатый природный газ</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Другое</div>
+									</label>
+								</div>
 							</div>
 						</div>
+
+
 						<div class="form-section"  data-form-section = "open">
 							<div class="form-section-head">
 								<h3 class="section-title-form">Коробка передач</h3>
 							</div>
 							<div class="section-body form-section-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet magni minima neque quod blanditiis. Natus aspernatur blanditiis veritatis, maiores nobis debitis rem porro quisquam.
+								<div class="wrap-radio-transmition">
+									<label class="radio">
+										<input type="radio" name = "transmition" checked="checked" />
+										<div class="radio-text transmition">Механическая КП</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "transmition"/>
+										<div class="radio-text transmition">Полуавтоматическая КП</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "transmition"/>
+										<div class="radio-text transmition">Автоматическая КП</div>
+									</label>
+								</div>
 							</div>
 						</div>
+
+
 						<div class="form-section"  data-form-section = "open">
 							<div class="form-section-head">
 								<h3 class="section-title-form">Безопасность</h3>
 							</div>
-							<div class="section-body form-section-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet magni minima neque quod blanditiis. Natus aspernatur blanditiis veritatis, maiores nobis debitis rem porro quisquam.
+							<div class="section-body form-section-body comfort-block">
+								<div class="wrap-checkbox-comfort">
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox" checked="checked" />
+											<div class="checkbox-text comfort">Антиблокировочная тормозная система (ABS)</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Антипробуксовочная система (TCS, ASR, TRC)</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Боковые подушки безопасности</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Всесезонные шины</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Датчик дождя</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Датчик парковки</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Датчик света</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Шторки безопасности</div>
+										</label>
+									</div>
+
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Зимние шины</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Ксеноновые фары</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Легкосплавные колесные диски</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Летние шины</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Многофункциональный рул</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Омыватель фар</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Подушка безопасности водителя</div>
+										</label>
+									</div>
+
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Подушка безопасности пассажира</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Противотуманные фары</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Усилитель руля</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Противоугонная сигнализация</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Противоугонное устройство</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Система стабилизации (ESP, DSC, VDC, ESC)</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Стальные колесные диски</div>
+										</label>
+									</div>
+								</div>
 							</div>
 						</div>
+
 
 						<div class="form-section"  data-form-section = "open">
 							<div class="form-section-head">
@@ -299,6 +547,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="search-form-footer">
 							<a href="#!" class="search-form-footer-reset">сбросить параметры поиска</a>
 							<p class="search-form-footer-offer">98 предложений по вашим критериям</p>
@@ -612,6 +861,8 @@
 	<script src = "libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src = "libs/Owl_carousel/owl.carousel.js"></script>
 	<script src = "libs/slick/slick.js"></script>
+	<script src = "libs/Ui_slider/jquery-ui.min.js"></script>
+	<script src = "libs/Ui_slider/jquery.ui.touch-punch.min.js"></script>
 	<script src = "js/script.js"></script>	
 </body>
 </html>
