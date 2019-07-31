@@ -136,4 +136,10 @@ formSection();
 	});
 	$(".result-slider-engine").text($(".slider-control-engine").slider("value"));
 
+
+
+	// $('select.select-country').styler();
+
+	$('.select-country').niceSelect();
+
 })
