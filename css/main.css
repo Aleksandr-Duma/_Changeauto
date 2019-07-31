@@ -1738,8 +1738,10 @@ img {
           box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
 }
 .head-search-form {
-  padding-left: 25px;
+  padding-top: 28px;
   padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 25px;
 }
 .head-search-form-wrap {
   display: -webkit-box;
@@ -1759,8 +1761,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 10px;
-  padding-right: 20px;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 .form-select-text.text-country {
   font-family: 'Proxima_Nova';
@@ -1782,6 +1784,69 @@ img {
   line-height: 1;
   color: #0f0f0f;
   padding-top: 15px;
+  margin-right: 22px;
+}
+.form-select-text.text-local {
+  margin-right: 31px;
+}
+.head-search-select.select-local {
+  width: 485px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+  padding-top: 15px;
+}
+.head-search-select.select-transport {
+  width: 265px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+  padding-top: 15px;
+  margin-right: 23px;
+}
+.form-select-text.text-transport {
+  margin-right: 45px;
+}
+.head-search-select.select-brand-auto {
+  width: 265px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+  padding-top: 15px;
+  margin-right: 23px;
+}
+.form-select-text.text-brand-auto {
+  margin-right: 70px;
+}
+.head-search-select.select-model {
+  width: 265px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+  padding-top: 15px;
+}
+.form-select-text.text-model {
+  margin-right: 95px;
 }
 .section-title-form {
   font-family: 'Proxima_Nova';
@@ -2051,6 +2116,22 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.condition-select.select-owner {
+  width: 265px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+  padding-top: 15px;
+  margin-right: 22px;
+}
+.form-select-text.text-owner {
+  margin-right: 35px;
 }
 .wrap-radio-type-car {
   display: -webkit-box;

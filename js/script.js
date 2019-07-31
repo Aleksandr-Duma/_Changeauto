@@ -137,9 +137,11 @@ formSection();
 	$(".result-slider-engine").text($(".slider-control-engine").slider("value"));
 
 
-
-	// $('select.select-country').styler();
-
 	$('.select-country').niceSelect();
+	$('.select-local').niceSelect();
+	$('.select-transport').niceSelect();
+	$('.select-brand-auto').niceSelect();
+	$('.select-model').niceSelect();
+	$('.select-owner').niceSelect();
 
 })
