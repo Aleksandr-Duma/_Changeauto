@@ -57,6 +57,10 @@
   font-size: 16px;
 }
 
+.phone-number-select.nice-select:after{
+  top: 19px;
+}
+
 .nice-select.open:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -164,6 +168,10 @@
   text-align: left;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; 
+}
+
+.phone-number-select.nice-select .option{
+  text-align: center;
 }
 
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {

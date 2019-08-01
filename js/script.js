@@ -148,5 +148,6 @@ formSection();
 	$('.select-color-auto').niceSelect();
 	$('.brand-select-car').niceSelect();
 	$('.model-select-car').niceSelect();
+	$('.phone-number-select').niceSelect();
 
 })

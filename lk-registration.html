@@ -42,7 +42,7 @@
 						<ul class = "link-block_list">
 							<li class = link-block_item><a class = "link-block_item-link" href="transport.html">Транспортные средства</a></li>
 							<li class = link-block_item><a class = "link-block_item-link" href="package.html">Пакеты</a></li>
-							<li class = link-block_item><a class = "link-block_item-link link-block_item-link--active" href="#">Как это работает?</a></li>
+							<li class = link-block_item><a class = "link-block_item-link" href="how-to.html">Как это работает?</a></li>
 							<li class = link-block_item><a class = "link-block_item-link" href="contact.html">Контакты</a></li>
 							<li class = link-block_item>
 								<a class = "link-block_item-link link-search" href="search.html">
@@ -112,9 +112,9 @@
 							</div>
 						</div>
 						<div class="user-block">
-							<a href="lk-user-auth.html" class="user-link">
+							<a href="lk-user.html" class="user-link user-link--active">
 								<svg 
-									class = "user-svg" version="1.1" x="0px" y="0px"
+									class = "user-svg user-svg--active" version="1.1" x="0px" y="0px"
 	 								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148
 									C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962
@@ -147,6 +147,8 @@
 					</div>
 				</div>
 			</div>
+			<img class = "car-bg-left" src="img/vw.png" alt="car-left">
+			<img class = "car-bg-rigth" src="img/mersedes.png" alt="car-rigth">
 			<!-- INNER-PAGE-WRAP -->
 			<div class="wrap-inner-page container">
 				<div class="inner-home-link-wrap">
@@ -167,81 +169,43 @@
 							</svg>
 						</div>
 					</a>
-					<a href="#!" class="link-name-section">Как это работает</a>
+					<a href="#!" class="link-name-section">Регистрация в личном кабинете</a>
 				</div>
-				<div class="how-to-page-content">
-					<div class="how-to-title-wrap">
-						<h2 class="how-to-title">Как работает наша система?</h2>
-						<p class="how-to-sub-title">Наша система работает очень просто. Посмотрите шаг за шагом, что вам необходимо сделать, чтобы уже сегодня обменять свой автомобиль на другой.</p>
-					</div>
-					<div class="how-to-step-list-block">
-						<div class="how-to-step-list-item">
-							<h5 class="how-to-step-title active">Шаг 1</h5>
-							<div class="how-to-step-circle active"></div>
-							<p class="how-to-step-text">Регистрация<br> на сайте</p>	
-						</div>
-						<div class="how-to-step-list-item">
-							<h5 class="how-to-step-title">Шаг 2</h5>
-							<div class="how-to-step-circle"></div>
-							<p class="how-to-step-text">Добавление вашего<br> транспортного средства<br> в ситстему для обмена</p>
-						</div>
-						<div class="how-to-step-list-item">
-							<h5 class="how-to-step-title">Шаг 3</h5>
-							<div class="how-to-step-circle"></div>
-							<p class="how-to-step-text">Настраиваете<br> критерии для поиска</p>
-						</div>
-						<div class="how-to-step-list-item">
-							<h5 class="how-to-step-title">Шаг 4</h5>
-							<div class="how-to-step-circle last-circle"></div>
-							<p class="how-to-step-text">Находите подходящий<br> автомобиль и совершаете<br> обмен</p>
-						</div>
-					</div>
-					<div class="how-to-slider">
-						<div class="how-to-slider-item">
-							<div class="how-to-slider-item-wrap">
-								<div class="how-to-slider-item-img"></div>
-								<div class="how-to-slider-item-text slider-text-after-1">
-									<h5 class="how-to-slider-small-title active">Шаг 1</h5>
-									<h2 class="how-to-slider-item-title">Зарегистрируйтесь<br> в личном кабинете</h2>
-									<p class="how-to-slider-text">Для того, чтобы стать активным пользователем сайта ExchangeAUTO, Вам необходимо создать свой профиль. Для этого Вам нужно нажать на «Личный кабинет», затем нажать на поле «Зарегистрироваться». 
-									На открывшейся странице заполните все необходимые поля.</p>
-									<p class="how-to-slider-text">Затем подтвердите свою регистрацию с помощью письмо, которое мы отправляем на вашу электронную почту.</p>
+				<div class="registration-block-content">
+					<h2 class="registration-block-title">Создание нового личного кабинета</h2>
+					<div class="registration-form-block">
+						<form class="registration-form-block-form">
+							<p class="registration-form-text">Для регистрации заполните следующие поля:</p>
+							<input class = "registration-form-block-input" type="text" placeholder="Ваше имя" required="required">
+							<input class = "registration-form-block-input" type="text" placeholder="Ваша фамилия" required="required">
+							<input class = "registration-form-block-input" type="email" placeholder="Введите вашу почту" required="required">
+							<p class="registration-form-text phone-number">Введите номер телефона:</p>
+							<div class="wrap-phone-number-input">
+								<select class = "wrap-phone-number phone-number-select">
+									<option value="">Код страны</option>
+									<option value="">00000</option>
+									<option value="">00000</option>
+								</select>
+								<input class = "phone-number-input-short" type="text">
+								<input class = "phone-number-input-long" type="text">
+							</div>
+							<input class = "registration-form-block-input" type="password" placeholder="Введите пароль">
+							<input class = "registration-form-block-input" type="password" placeholder="Повторите пароль">
+							<div class="wrap-radio-rules-system">
+								<div class="checkbox-wrap checkbox-rules">
+									<label class="checkbox">
+										<input type="checkbox" name = "rules" checked="checked" />
+										<div class="checkbox-text">
+											<p class="rules-system-text">Подтверждаю согласие с <a href="#" class = "rules-system-link">правилами системы</p></a>
+										</div>
+									</label>
 								</div>
 							</div>
-						</div>
-						<div class="how-to-slider-item">
-							<div class="how-to-slider-item-wrap">
-							<div class="how-to-slider-item-img"></div>
-								<div class="how-to-slider-item-text slider-text-after-2">
-									<h5 class="how-to-slider-small-title active">Шаг 2</h5>
-									<h2 class="how-to-slider-item-title">Lorem ipsum dolor sit amet.</h2>
-									<p class="how-to-slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt omnis, unde dolores, nobis inventore mollitia cupiditate. Quibusdam autem magni corporis?</p>
-									<p class="how-to-slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi et autem error soluta, reiciendis voluptatum.</p>
-								</div>
-							</div>
-						</div>
-						<div class="how-to-slider-item">
-							<div class="how-to-slider-item-wrap">
-								<div class="how-to-slider-item-img"></div>
-								<div class="how-to-slider-item-text slider-text-after-3">
-									<h5 class="how-to-slider-small-title active">Шаг 3</h5>
-									<h2 class="how-to-slider-item-title">Lorem ipsum dolor sit.</h2>
-									<p class="how-to-slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veniam enim aspernatur maxime, alias quod, id delectus saepe odio animi. Culpa debitis nemo assumenda in earum facere rem, impedit incidunt.</p>
-									<p class="how-to-slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								</div>
-							</div>
-						</div>
-						<div class="how-to-slider-item">
-							<div class="how-to-slider-item-wrap">
-								<div class="how-to-slider-item-img"></div>
-								<div class="how-to-slider-item-text slider-text-after-4">
-									<h5 class="how-to-slider-small-title active">Шаг 4</h5>
-									<h2 class="how-to-slider-item-title">Lorem ipsum dolor sit amet.</h2>
-									<p class="how-to-slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae repellat perspiciatis officiis laborum, accusantium illum. Perferendis quidem cum excepturi quo quod ea at officiis, ducimus, nulla consequatur rem blanditiis dolor molestiae explicabo dolorem doloribus quibusdam.</p>
-									<p class="how-to-slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, molestias.</p>
-								</div>
-							</div>
-						</div>
+							<!-- !!!! После сборки удалить, рабочяя кнопка ниже -->
+							<a href="lk-user.html" class="registration-block-bottom-button">создание личного кабинета</a>
+							<!-- <button class = "registration-block-bottom-button" type = "submit">создание личного кабинета</button> -->
+							<p class="registration-form-bottom-text">На ваш адрес будет отправлено письмо для его подтверждения. В случае отсутствия письма – проверьте папку Спам (нежелательная почта) или свяжитесь с нами.</p>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -264,7 +228,7 @@
 						<ul class = "footer-link-block_list">
 							<li class = link-block_item><a class = "link-block_item-link" href="transport.html">Транспортные средства</a></li>
 							<li class = link-block_item><a class = "link-block_item-link" href="package.html">Пакеты</a></li>
-							<li class = link-block_item><a class = "link-block_item-link link-block_item-link--active" href="#">Как это работает?</a></li>
+							<li class = link-block_item><a class = "link-block_item-link" href="how-to.html">Как это работает?</a></li>
 							<li class = link-block_item><a class = "link-block_item-link" href="contact.html">Контакты</a></li>
 						</ul>
 						<div class="footer-dropdown" data-dropdown = "open">
@@ -326,9 +290,9 @@
 					</div>
 					<div class="footer-contact-block">
 						<div class="user-block">
-							<a href="lk-user-auth.html" class="user-link">
+							<a href="lk-user.html" class="user-link user-link--active">
 								<svg 
-									class = "user-svg" version="1.1" x="0px" y="0px"
+									class = "user-svg user-svg--active" version="1.1" x="0px" y="0px"
 	 								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148
 									C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962
@@ -550,6 +514,6 @@
 	<script src = "libs/Ui_slider/jquery-ui.min.js"></script>
 	<script src = "libs/Ui_slider/jquery.ui.touch-punch.min.js"></script>
 	<script src = "libs/NiceSelect/js/jquery.nice-select.js"></script>
-	<script src = "js/script.js"></script>	
+	<script src = "js/script.js"></script>
 </body>
 </html>
