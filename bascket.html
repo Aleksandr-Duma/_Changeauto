@@ -12,6 +12,16 @@
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Fonts -->
 	<link rel="stylesheet" href="font/ProximaNova/stylesheet.css">
+	<!-- Owl Caroucel -->
+	<link rel="stylesheet" href="libs/Owl_carousel/owl.carousel.css">
+	<link rel="stylesheet" href="libs/Owl_carousel/owl.theme.default.css">
+	<!-- Slick Slider -->
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<!-- Ui-slider-control -->	
+	<link rel="stylesheet" href="libs/Ui_slider/jquery-ui.css">
+	<!-- Nice Select -->
+	<link rel="stylesheet" href="libs/NiceSelect/css/nice-select.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -102,7 +112,7 @@
 							</div>
 						</div>
 						<div class="user-block">
-							<a href="lk-user.html" class="user-link">
+							<a href="lk-user-auth.html" class="user-link">
 								<svg 
 									class = "user-svg" version="1.1" x="0px" y="0px"
 	 								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -139,7 +149,7 @@
 			</div>
 			<!-- INNER-PAGE-WRAP -->
 			<div class="wrap-inner-page container">
-				<div class="inner-home-link-wrap">
+				<div class="inner-home-link-wrap bascet-page">
 					<a class = "inner-home-link" href="index.html">
 						<div class="inner-home-icon">
 							<svg 
@@ -157,7 +167,66 @@
 							</svg>
 						</div>
 					</a>
-					<a href="#!" class="link-name-section">Контакты</a>
+					<a href="#!" class="link-name-section">Корзина</a>
+				</div>
+				<div class="bascket-block-content">
+					<div class="bascket-block-content-wrap">
+						<div class="bascket-block-content-header">
+							<h2 class="bascket-block-title">Корзина</h2>
+							<div class="block-delete-link checkbox-wrap">
+								<a href="#!" class="delete-link">
+									<svg 
+										class = "bin-svg-icon" version="1.1" x="0px" y="0px" viewBox="0 0 408.483 408.483" style="enable-background:new 0 0 408.483 408.483;" xml:space="preserve">
+										<path d="M87.748,388.784c0.461,11.01,9.521,19.699,20.539,19.699h191.911c11.018,0,20.078-8.689,20.539-19.699l13.705-289.316    H74.043L87.748,388.784z M247.655,171.329c0-4.61,3.738-8.349,8.35-8.349h13.355c4.609,0,8.35,3.738,8.35,8.349v165.293    c0,4.611-3.738,8.349-8.35,8.349h-13.355c-4.61,0-8.35-3.736-8.35-8.349V171.329z M189.216,171.329    c0-4.61,3.738-8.349,8.349-8.349h13.355c4.609,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.737,8.349-8.349,8.349h-13.355    c-4.61,0-8.349-3.736-8.349-8.349V171.329L189.216,171.329z M130.775,171.329c0-4.61,3.738-8.349,8.349-8.349h13.356    c4.61,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.738,8.349-8.349,8.349h-13.356c-4.61,0-8.349-3.736-8.349-8.349V171.329z" class="active-path" fill="#8B98A6"/>
+										<path d="M343.567,21.043h-88.535V4.305c0-2.377-1.927-4.305-4.305-4.305h-92.971c-2.377,0-4.304,1.928-4.304,4.305v16.737H64.916    c-7.125,0-12.9,5.776-12.9,12.901V74.47h304.451V33.944C356.467,26.819,350.692,21.043,343.567,21.043z"  class="active-path" fill="#8B98A6"/>
+									</svg>
+									Удалить все неотмеченные</a>
+								<label class="checkbox link-delete">
+									<input type="checkbox" name = "bascket"/>
+									<div class="checkbox-text"></div>
+								</label>
+							</div>
+						</div>
+						<div class="bascket-content-item">
+							<div class="bascket-content-item-left">
+								<div class="bascket-content-block-img">
+									<img class = "img-car-block" src="img/car-bascket-1.jpeg" alt="car-bascket-1">
+								</div>
+								<div class="bascket-content-block-discription">
+									<p class="car-discription-title-offer">готов доплатить</p>
+									<p class="car-discription-title-main">Opel Astra J Рестайлинг GTC</p>
+									<p class="car-discription-list">Год выпуска: <span class="bold-discription">2014 год</span></p>
+									<p class="car-discription-list">Вид топлива: <span class="bold-discription">Бензин</span></p>
+									<p class="car-discription-list">Объем двигателя <span class="bold-discription">200 см3</span></p>
+									<p class="car-discription-list">Коробка передач: <span class="bold-discription">Автоматическая</span></p>
+									<p class="car-discription-list">Цвет: <span class="bold-discription">Светло-фиолетовый</span></p>
+								</div>
+							</div>
+							<div class="bascket-content-item-right">
+								
+							</div>
+						</div>
+
+						<div class="bascket-content-item">
+							<div class="bascket-content-item-left">
+								<div class="bascket-content-block-img">
+									<img class = "img-car-block" src="img/car-bascet-2.jpeg" alt="car-bascket-2">
+								</div>
+								<div class="bascket-content-block-discription">
+									<p class="car-discription-title-offer">хочу доплату</p>
+									<p class="car-discription-title-main">Toyota Avensis III</p>
+									<p class="car-discription-list">Год выпуска: <span class="bold-discription">2014 год</span></p>
+									<p class="car-discription-list">Вид топлива: <span class="bold-discription">Бензин</span></p>
+									<p class="car-discription-list">Объем двигателя <span class="bold-discription">200 см3</span></p>
+									<p class="car-discription-list">Коробка передач: <span class="bold-discription">Автоматическая</span></p>
+									<p class="car-discription-list">Цвет: <span class="bold-discription">Светло-фиолетовый</span></p>
+								</div>
+							</div>
+							<div class="bascket-content-item-right">
+								
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -242,7 +311,7 @@
 					</div>
 					<div class="footer-contact-block">
 						<div class="user-block">
-							<a href="lk-user.html" class="user-link">
+							<a href="lk-user-auth.html" class="user-link">
 								<svg 
 									class = "user-svg" version="1.1" x="0px" y="0px"
 	 								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -461,6 +530,11 @@
 	</div>
 	<!-- Scipts -->
 	<script src = "libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src = "libs/Owl_carousel/owl.carousel.js"></script>
+	<script src = "libs/slick/slick.js"></script>
+	<script src = "libs/Ui_slider/jquery-ui.min.js"></script>
+	<script src = "libs/Ui_slider/jquery.ui.touch-punch.min.js"></script>
+	<script src = "libs/NiceSelect/js/jquery.nice-select.js"></script>
 	<script src = "js/script.js"></script>	
 </body>
 </html>
