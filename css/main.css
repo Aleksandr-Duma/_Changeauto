@@ -414,30 +414,104 @@ img {
   font-size: 18px;
   color: #6c6c6c;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 .block-form-header {
   width: 810px;
   height: 130px;
-  border: 1px solid green;
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.block-form-submit {
+.wrap-header-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+          box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+  margin-bottom: 20px;
+}
+.header-select.brand-select-car {
+  width: 302px;
+  height: 65px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  border-right: 1px solid #ececec;
+  background-color: #fff;
+  outline: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  color: #bebebe;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+.header-select.model-select-car {
+  width: 302px;
+  height: 65px;
+  border-radius: 0px 0px 0px 0px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  color: #bebebe;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+.header-choose-car-button {
   width: 200px;
   height: 65px;
   background-color: #90d339;
+  border-radius: 0px 5px 5px 0px;
   border: none;
   outline: none;
+  text-transform: uppercase;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
 }
-.block-form-input {
+.search-area-header {
+  text-decoration: none;
   width: 100%;
-  height: 36px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+          box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+}
+.search-area-header-text {
+  text-transform: uppercase;
+  font-family: 'Proxima_Nova';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  color: #0f0f0f;
+  text-align: center;
 }
 .block-video {
   width: 810px;
@@ -1909,12 +1983,6 @@ img {
   padding: 0 0 0 25px;
   cursor: pointer;
 }
-.radio-text.comfort {
-  margin-bottom: 33px;
-}
-.radio-text.other-parameters {
-  margin-right: 285px;
-}
 .radio-text:before {
   content: '';
   position: absolute;
@@ -1960,9 +2028,6 @@ img {
   padding: 0 0 0 25px;
   cursor: pointer;
 }
-.radio-text.condition {
-  margin-right: 65px;
-}
 .form-select-text {
   font-family: 'Proxima_Nova';
   font-weight: 700;
@@ -1971,26 +2036,6 @@ img {
   color: #8B98A6;
   margin-left: 5px;
   margin-right: 58px;
-}
-.radio-text.type-car {
-  margin-right: 30px;
-  margin-bottom: 32px;
-}
-.radio-text.fuel {
-  margin-right: 30px;
-  margin-bottom: 32px;
-}
-.radio-text.transmition {
-  margin-right: 25px;
-}
-.checkbox-text.comfort {
-  margin-bottom: 33px;
-}
-.checkbox-text.other-parameters {
-  margin-right: 285px;
-}
-.checkbox-text.margin-bottom {
-  margin-bottom: 21px;
 }
 .checkbox-text:before {
   content: '';
@@ -2019,6 +2064,9 @@ img {
 }
 .checkbox-wrap input:checked + .checkbox-text:after {
   opacity: 1;
+}
+.checkbox-text.margin-bottom {
+  margin-bottom: 21px;
 }
 .form-section-body.info-car {
   padding-top: 11px;
@@ -2107,8 +2155,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10px;
-  padding-bottom: 8px;
 }
 .wrap-radio-condition {
   display: -webkit-box;
@@ -2116,6 +2162,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.radio-text.condition {
+  margin-right: 65px;
 }
 .condition-select.select-owner {
   width: 265px;
@@ -2128,10 +2177,25 @@ img {
   line-height: 1;
   color: #0f0f0f;
   padding-top: 15px;
-  margin-right: 22px;
 }
 .form-select-text.text-owner {
-  margin-right: 35px;
+  margin-right: 65px;
+}
+.condition-select.select-color-auto {
+  width: 265px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Proxima_Nova';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  color: #0f0f0f;
+  padding-top: 15px;
+}
+.form-select-text.text-color-auto {
+  margin-left: 15px;
+  margin-right: 115px;
 }
 .wrap-radio-type-car {
   display: -webkit-box;
@@ -2144,12 +2208,20 @@ img {
   padding-right: 140px;
   padding-bottom: 10px;
 }
+.radio-text.type-car {
+  margin-right: 30px;
+  margin-bottom: 32px;
+}
 .wrap-radio-fuel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.radio-text.fuel {
+  margin-right: 30px;
+  margin-bottom: 32px;
 }
 .form-section-body.section-body-fuel {
   padding-bottom: 0;
@@ -2158,6 +2230,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.radio-text.transmition {
+  margin-right: 25px;
 }
 .wrap-checkbox-comfort {
   display: -webkit-box;
@@ -2178,10 +2253,22 @@ img {
           align-items: flex-start;
   padding-bottom: 0;
 }
+.checkbox-text.comfort {
+  margin-bottom: 33px;
+}
+.radio-text.comfort {
+  margin-bottom: 33px;
+}
 .wrap-checkbox-other-parameters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.checkbox-text.other-parameters {
+  margin-right: 285px;
+}
+.radio-text.other-parameters {
+  margin-right: 285px;
 }
 .search-form-footer {
   display: -webkit-box;

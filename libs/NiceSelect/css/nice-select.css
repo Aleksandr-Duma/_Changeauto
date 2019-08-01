@@ -12,7 +12,7 @@
   font-family: inherit;
   font-size: 15px;
   font-weight: normal;
-  height: 42px;
+  min-height: 42px;
   line-height: 40px;
   outline: none;
   padding-left: 18px;
@@ -48,6 +48,13 @@
   pointer-events: none;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
+}
+
+.brand-select-car.nice-select:after,
+.model-select-car.nice-select:after{
+  right: 15px;
+  top: 22px;
+  font-size: 16px;
 }
 
 .nice-select.open:after {
@@ -140,7 +147,7 @@
 }
 
 .nice-select .option {
-   font-family: 'Proxima_Nova', sans-serif;
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 600;
   font-size: 15px;
   color: #0F0F0F;
@@ -173,8 +180,6 @@
   background-color: transparent;
   color: #999;
   cursor: default; 
-
-
 }
 
 .no-csspointerevents .nice-select .list {
