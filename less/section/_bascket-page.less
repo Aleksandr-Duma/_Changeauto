@@ -8,18 +8,17 @@
 	width: 100%;
 	background-color: #fff;
 	border-radius: 5px;
-	// border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+	box-shadow: @main-shadow;
+	padding-bottom: 40px;
 	margin-bottom: 50px;
 }
 
 .bascket-block-content-wrap{
 	width: 83%;
 	height: 100%;
-	// border: 1px solid green;
 }
 
 .bascket-block-content-header{
@@ -27,7 +26,6 @@
 	justify-content: space-between;
 	border-bottom: 1px solid #eef1f4;
 	padding-top: 45px;
-	padding-bottom: 3px;
 	margin-bottom: 30px;
 }
 
@@ -42,7 +40,6 @@
 }
 
 .block-delete-link{
-	// border: 1px solid blue;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -88,7 +85,6 @@
 	width: 285px;
 	height: 180px;
 	border-radius: 5px;
-	// border: 1px solid green;
 	margin-right: 30px;
 	overflow: hidden;
 }
@@ -101,8 +97,6 @@
 .bascket-content-block-discription{
 	width: 300px;
 	height: 180px;
-	// border-radius: 5px;
-	// border: 1px solid blue;
 }
 
 .car-discription-title-offer{
@@ -140,20 +134,157 @@
 	color: @main-text;
 }
 
-
-
-
-
-
-
-
-
-
-
 .bascket-content-item-right{
 	width: 40%;
-	height: 100px;
-	border: 1px solid red;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 130px;	
 }
 
+.bascket-content-item-right-cost{
+	width: 160px;
+	height: 120px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding-top: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 70px;
+}
 
+.bascket-content-cost-text{
+	font-family: 'Proxima_Nova';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	color: #8B98A6;
+}
+
+.bascket-content-cost-text.active{
+ 	color: @main-green;
+}
+
+.cost-big-digit{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1;
+}
+
+.sup-text{
+	font-size: 18px;
+}
+
+/*.............CHECKBOX-CUSTOM-2..........*/
+
+.block-checkbox{
+	position: relative;
+	padding-top: 25px;
+	padding-left: 25px;
+}
+
+.checkbox-input{
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+}
+
+.checkbox-label:before{
+	content: "";
+	display: block;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	box-shadow: @main-shadow;
+}
+
+.checkbox-label:after{
+	content: " ";
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: @main-green;
+	opacity: 0;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 2
+}
+
+.checkbox-input:checked + .checkbox-label:after{
+	opacity: 1;
+}
+
+.bascket-block-content-footer{
+	width: 100%;
+	height: 100px;
+	display: flex;
+}
+
+.bascket-content-footer-item-left{
+	width: 50%;
+	height: 100px;
+	padding-top: 23px;
+}
+
+.bascket-footer-text-contact{
+	font-family: 'Proxima_Nova';
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.3;
+	text-align: left;
+	color: #8B98A6;
+}
+
+.bascket-content-footer-item-middle{
+	width: 25%;
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.bascket-footer-text-finish-cost{
+	font-family: 'Proxima_Nova';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: right;
+	color: #8B98A6;
+}
+
+.sup-text-2{
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.bascket-content-footer-item-right{
+	width: 25%;
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.bascket-content-footer-button{
+	width: 200px;
+	height: 50px;
+	text-transform: uppercase;
+	font-family: 'Proxima_Nova';
+	font-weight: 700;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	background-color: @main-green;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

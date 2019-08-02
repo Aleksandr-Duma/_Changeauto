@@ -3,7 +3,7 @@
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
   border-radius: 5px;
-  border: solid 1px #eef1f4;
+  border: solid 1px #D5D5D6;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
@@ -124,8 +124,7 @@
   width: 100%;
   background-color: #fff;
   border-radius: 5px;
-  /*box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);*/
-  box-shadow: 0px 5px 27px 0px rgba(236, 239, 245, 0.6);
+  box-shadow: 0px 5px 27px 0px rgba(190, 192, 197, 0.6);
   box-sizing: border-box;
   margin-top: 4px;
   opacity: 0;

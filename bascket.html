@@ -126,7 +126,7 @@
 							</a>
 						</div>
 						<div class="backet-block">
-							<div class="bascket-count">15</div>
+							<!-- <div class="bascket-count">15</div> -->
 							<a href="#" class="bascket-link bascket-link--active">
 								<svg 
 									class = "bascket-svg bascket-svg--active" version="1.1" x="0px" y="0px"
@@ -181,10 +181,10 @@
 										<path d="M343.567,21.043h-88.535V4.305c0-2.377-1.927-4.305-4.305-4.305h-92.971c-2.377,0-4.304,1.928-4.304,4.305v16.737H64.916    c-7.125,0-12.9,5.776-12.9,12.901V74.47h304.451V33.944C356.467,26.819,350.692,21.043,343.567,21.043z"  class="active-path" fill="#8B98A6"/>
 									</svg>
 									Удалить все неотмеченные</a>
-								<label class="checkbox link-delete">
-									<input type="checkbox" name = "bascket"/>
-									<div class="checkbox-text"></div>
-								</label>
+								<div class="block-checkbox">
+									<input class = "checkbox-input" type="checkbox" id = "checkbox-0">
+									<label class = "checkbox-label" for = "checkbox-0"></label>
+								</div>
 							</div>
 						</div>
 						<div class="bascket-content-item">
@@ -203,10 +203,15 @@
 								</div>
 							</div>
 							<div class="bascket-content-item-right">
-								
+								<div class="bascket-content-item-right-cost">
+									<p class="bascket-content-cost-text">Будет списано из пакета</p>
+								</div>
+								<div class="block-checkbox">
+									<input class = "checkbox-input" type="checkbox" id = "checkbox-1">
+									<label class = "checkbox-label" for = "checkbox-1"></label>
+								</div>	
 							</div>
 						</div>
-
 						<div class="bascket-content-item">
 							<div class="bascket-content-item-left">
 								<div class="bascket-content-block-img">
@@ -223,7 +228,26 @@
 								</div>
 							</div>
 							<div class="bascket-content-item-right">
-								
+								<div class="bascket-content-item-right-cost">
+									<p class="bascket-content-cost-text active"><span class = "cost-big-digit">55<sup class = "sup-text">99</sup></span><br> Рублей</p>
+								</div>
+								<div class="block-checkbox">
+									<input class = "checkbox-input" type="checkbox" id = "checkbox-2">
+									<label class = "checkbox-label" for = "checkbox-2"></label>
+								</div>	
+							</div>
+						</div>
+						<div class="bascket-block-content-footer">
+							<div class="bascket-content-footer-item-left">
+								<p class="bascket-footer-text-contact">Вы выбрали 1 контакт</p>
+								<p class="bascket-footer-text-contact">Доступно 0 контактов</p>
+								<p class="bascket-footer-text-contact">Из ваших контактов спишется 0 контактов</p>
+							</div>
+							<div class="bascket-content-footer-item-middle">
+								<p class="bascket-footer-text-finish-cost">Итого: 59<sup class = "sup-text-2">99</sup> руб.</p>
+							</div>
+							<div class="bascket-content-footer-item-right">
+								<button class="bascket-content-footer-button">оформить заказ</button>
 							</div>
 						</div>
 					</div>
@@ -325,7 +349,7 @@
 							</a>
 						</div>
 						<div class="footer-backet-block">
-							<div class="footer-bascket-count">15</div>
+							<!-- <div class="footer-bascket-count">15</div> -->
 							<a href="#" class="bascket-link  bascket-link--active">
 								<svg 
 									class = "bascket-svg bascket-svg--active" version="1.1" x="0px" y="0px"
