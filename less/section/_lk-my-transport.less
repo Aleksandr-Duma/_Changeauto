@@ -1,14 +1,14 @@
 /*.............LK-MY-TRANSPORT-PAGE............*/
 
-.lk-my-transport-block{
-	border: 1px solid blue;
+.lk-user-content.my-transport{
+	padding-bottom: 40px;
 }
 
 .lk-my-transport-inner-head{
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .lk-my-transport-inner-head-item-title{
@@ -29,9 +29,11 @@
 	padding-left: 5px;
 }
 
-.lk-my-transport-add-car{
+.lk-my-transport-add-car-button{
 	width: 155px;
 	height: 35px;
+	display: inline-block;
+	text-decoration: none;
 	background-color: @main-green;
 	border-radius: 5px;
 	border: none;
@@ -40,7 +42,7 @@
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
 	font-size: 12px;
-	line-height: 2.2;
+	line-height: 2.8;
 	color: #fff;
 	text-align: center;
 	cursor: pointer;
@@ -69,6 +71,14 @@
 	line-height: 1;
 	color: #8B98A6;
 	margin-right: 10px;
+
+	&:hover{
+		color: @main-green;
+	}
+}
+
+.lk-my-transport-advert-link:hover .advert-link-svg{
+	fill: @main-green;
 }
 
 /*.............CHECKBOX-CUSTOM................*/
@@ -137,7 +147,6 @@
 	padding-top: 30px;
 	padding-left: 30px;
 	padding-bottom: 30px;
-	border: 1px solid red;
 }
 
 .lk-my-transport-item-block-img{
@@ -154,9 +163,8 @@
 }
 
 .lk-my-transport-item-discription{
-	width: 400px;
-	// height: 180px;
-	border: 1px solid blue;
+	width: 450px;
+	padding-top: 40px;
 }
 
 .lk-my-transport-title-offer{
@@ -175,32 +183,91 @@
 	font-size: 20px;
 	line-height: 1.6;
 	color: @main-text;
-	margin-bottom: 8px;
+	margin-bottom: 20px;
 }
 
 .wrap-lk-my-transport-change-item{
-	border: 1px solid blue;
 	width: 100%;
-	height: 40px;
 	display: flex;
 }
 
-.lk-my-transport-change-item{
-	height: 30px;
-	width: 33.3%;
-	border: 1px solid green;
+.advert-link-svg-up{
+	width: 18px;
+	height: 18px;
+	fill: #8B98A6;
+	margin-right: 0;
 }
 
+.lk-my-transport-up-change-link{
+	text-decoration: none;
+	font-family: 'Proxima_Nova';
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	color: #8B98A6;
+	margin-right: 30px;
 
+	&:hover{
+		color: @main-green;
+	}
+}
 
+.lk-my-transport-up-change-link:hover .advert-link-svg-up{
+	fill: @main-green;
+}
 
+.pencil-icon-svg{
+	width: 18px;
+	height: 18px;
+	fill: #8B98A6;
+}
 
+.lk-my-transport-correct-link{
+	text-decoration: none;
+	font-family: 'Proxima_Nova';
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	color: #8B98A6;
+	margin-right: 30px;
+
+	&:hover{
+		color: @main-green;
+	}
+}
+
+.lk-my-transport-correct-link:hover .pencil-icon-svg{
+	fill: @main-green;
+}
+
+.svg-icon-delete{
+	width: 18px;
+	height: 18px;
+	fill: #8B98A6;
+	margin-right: 8px;
+}
+
+.lk-my-transport-delete-link{
+	text-decoration: none;
+	font-family: 'Proxima_Nova';
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1;
+	color: #8B98A6;
+
+	&:hover{
+		color: @main-green;
+	}
+}
+
+.lk-my-transport-delete-link:hover .svg-icon-delete{
+	fill: @main-green;
+}
 
 .lk-my-transport-block-item-right{
 	width: 30%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	align-items: center;
-	padding-left: 130px;
-	border: 1px solid red;
+	padding-right: 50px;
 }

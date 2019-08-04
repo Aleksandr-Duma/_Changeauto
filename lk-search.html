@@ -229,15 +229,456 @@
 							</div>
 						</div>
 
-						<div class="lk-my-transport-no-car-block">
-							<p class="lk-my-transport-no-car-title">Мои транспортные средства</p>
-							<div class="lk-my-transport-no-car-content">
-								<p class="lk-my-transport-no-car-disription">Вы еще не добавили ни одно транспортное средство. Сделайте это прямо сейчас.</p>
-								<!-- !!! После сборки удалить, рабочяя кнопка ниже -->
-								<a href="#!" class="lk-my-transport-no-car-button">добавить авто</a>
-								<!-- <button class="lk-my-transport-no-car-button">добавить авто</button> -->
+
+
+						<div class="lk-search-content-block">
+							<form class="lk-search-form">
+								<div class="lk-search-form-main-title-wrap">
+									<h3 class="lk-search-form-main-title">Что я ищу (критерии поиска)</h3>
+								</div>
+
+								<div class="lk-head-search-form">
+									<div class="lk-head-search-form-wrap">
+										<div class="lk-head-search-form-item">
+											<p class="form-select-text lk-search">Выберите страну</p>
+											<select class = "head-lk-search-select select-country">
+												<option value="">Любая страна</option>
+												<option value="">страна</option>
+												<option value="">страна</option>
+												<option value="">страна</option>
+											</select>	
+										</div>
+										<div class="lk-head-search-form-item">
+											<p class="form-select-text lk-search-local">Выберите регион</p>
+											<select class = "head-lk-search-select select-local">
+												<option value="">Восточно-Казахстанская область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+											</select>	
+										</div>
+										<div class="head-search-form-item">
+											<p class="form-select-text text-transport">Вид транспорта</p>
+											<select class = "head-search-select select-transport">
+												<option value="">Легковой</option>
+												<option value="">транспорт</option>
+												<option value="">транспорт</option>
+												<option value="">транспорт</option>
+											</select>
+										</div>
+										<div class="head-search-form-item">
+											<p class="form-select-text text-brand-auto">Марка авто</p>
+											<select class = "head-search-select select-brand-auto">
+												<option value="">Aston Martin</option>
+												<option value="">авто</option>
+												<option value="">авто</option>
+												<option value="">авто</option>
+											</select>
+										</div>
+										<div class="head-search-form-item">
+											<p class="form-select-text text-model">Модель</p>
+											<select class = "head-search-select select-model">
+												<option value="">Cygnet</option>
+												<option value="">Модель</option>
+												<option value="">Модель</option>
+												<option value="">Модель</option>
+											</select>
+										</div>
+									</div>
+								</div>
+						<div class="form-section"  data-form-section = "open">
+							<div class="form-section-head">
+								<h3 class="section-title-form">Основные сведения об автомобиле</h3>
+							</div>
+							<div class="section-body form-section-body info-car">
+								<div class="wrap-info-car-item">
+									<div class="info-car-item-block">
+										<p class="info-car-item-title">Год выпуска</p>
+										<div class="wrap-text-slider-ui">
+											<p class="start-position-slider">1900</p>
+											<p class="result-slider-year"></p>
+										</div>
+										<div class="slider-control-year"></div>
+									</div>
+									<div class="info-car-item-block slider-radio">
+										<div class="wrap-slider-before-radio">
+											<p class="info-car-item-title">Мощность автомобиля</p>
+											<div class="wrap-text-slider-ui">
+												<p class="start-position-slider">1</p>
+												<p class="result-slider-power"></p>
+											</div>
+											<div class="slider-control-power"></div>
+										</div>
+										<div class="block-slider-radio">
+											<label class="radio">
+												<input type="radio" name = "info" checked="checked" />
+												<div class="radio-text">л.с</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "info"/>
+												<div class="radio-text">кВт</div>
+											</label>
+										</div>
+									</div>
+									<div class="info-car-item-block">
+										<p class="info-car-item-title">Пробег (км)</p>
+										<div class="wrap-text-slider-ui">
+											<p class="start-position-slider">0</p>
+											<p class="result-slider-distance"></p>
+										</div>
+										<div class="slider-control-distance"></div>
+									</div>
+									<div class="info-car-item-block">
+										<p class="info-car-item-title">Объем двигателя (cm<sup>3</sup>)</p>
+										<div class="wrap-text-slider-ui">
+											<p class="start-position-slider">200</p>
+											<p class="result-slider-engine"></p>
+										</div>
+										<div class="slider-control-engine"></div>
+									</div>
+								</div>
 							</div>
 						</div>
+						<div class="form-section"  data-form-section = "open">
+							<div class="form-section-head">
+								<h3 class="section-title-form">Состояние, собственник и цвет</h3>
+							</div>
+							<div class="section-body form-section-body">
+								<div class="wrap-radio-condition">
+									<div class="checkbox-condition-items-block">
+										<label class="radio">
+											<input type="radio" name = "condition" checked="checked" />
+											<div class="radio-text condition">Новые</div>
+										</label>
+										<label class="radio">
+											<input type="radio" name = "condition"/>
+											<div class="radio-text condition">Подержанные</div>
+										</label>
+									</div>
+									<div class="checkbox-condition-items-block">
+										<p class="form-select-text text-owner">Собственник</p>
+										<select class = "condition-select select-owner">
+											<option value="">Частный собственник</option>
+											<option value="">Другой собственник</option>
+											<option value="">Другой собственник</option>
+											<option value="">Другой собственник</option>
+										</select>	
+									</div>
+									<div class="checkbox-condition-items-block">
+										<p class="form-select-text text-color-auto">Цвет</p>
+										<select class = "condition-select select-color-auto">
+											<option value="">Серебристый</option>
+											<option value="">Черный</option>
+											<option value="">Синий</option>
+											<option value="">Белый</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-section"  data-form-section = "open">
+							<div class="form-section-head">
+								<h3 class="section-title-form">Типы транспортных средств</h3>
+							</div>
+							<div class="section-body form-section-body section-body-type-car">
+								<div class="wrap-radio-type-car">
+									<label class="radio">
+										<input type="radio" name = "type-car" checked="checked" />
+										<div class="radio-text type-car">Спортивный автомобиль/Купе</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Малолитражный автомобиль</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Минивэн/Микроавтобус</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Седан</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Универсал</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Внедорожник/Пикап</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Хэтчбек</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Кабриолет/Родстер</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "type-car"/>
+										<div class="radio-text type-car">Другое</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-section"  data-form-section = "open">
+							<div class="form-section-head">
+								<h3 class="section-title-form">Вид топлива</h3>
+							</div>
+							<div class="section-body form-section-body section-body-fuel">
+								<div class="wrap-radio-fuel">
+									<label class="radio">
+										<input type="radio" name = "fuel" checked="checked" />
+										<div class="radio-text fuel">Бензин</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Дизель</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Электрический</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Гибрид (бензин/электро)</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Гибрид (дизель/электро)</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Сжиженный нефтяной газ</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Сжатый природный газ</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "fuel"/>
+										<div class="radio-text fuel">Другое</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-section"  data-form-section = "open">
+							<div class="form-section-head">
+								<h3 class="section-title-form">Коробка передач</h3>
+							</div>
+							<div class="section-body form-section-body">
+								<div class="wrap-radio-transmition">
+									<label class="radio">
+										<input type="radio" name = "transmition" checked="checked" />
+										<div class="radio-text transmition">Механическая КП</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "transmition"/>
+										<div class="radio-text transmition">Полуавтоматическая КП</div>
+									</label>
+									<label class="radio">
+										<input type="radio" name = "transmition"/>
+										<div class="radio-text transmition">Автоматическая КП</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-section"  data-form-section = "open">
+							<div class="form-section-head">
+								<h3 class="section-title-form">Безопасность</h3>
+							</div>
+							<div class="section-body form-section-body comfort-block">
+								<div class="wrap-checkbox-comfort">
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox" checked="checked" />
+											<div class="checkbox-text comfort">Антиблокировочная тормозная система (ABS)</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Антипробуксовочная система (TCS, ASR, TRC)</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Боковые подушки безопасности</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Всесезонные шины</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Датчик дождя</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Датчик парковки</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Датчик света</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Шторки безопасности</div>
+										</label>
+									</div>
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Зимние шины</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Ксеноновые фары</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Легкосплавные колесные диски</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Летние шины</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Многофункциональный рул</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Омыватель фар</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Подушка безопасности водителя</div>
+										</label>
+									</div>
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Подушка безопасности пассажира</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Противотуманные фары</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Усилитель руля</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Противоугонная сигнализация</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Противоугонное устройство</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Система стабилизации (ESP, DSC, VDC, ESC)</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Стальные колесные диски</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-section"  data-form-section = "open">
+							<div class="form-section-head">
+								<h3 class="section-title-form">Комфорт</h3>
+							</div>
+							<div class="section-body form-section-body comfort-block">
+								<div class="wrap-checkbox-comfort">
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox" checked="checked" />
+											<div class="checkbox-text comfort">Регулируемая по вылету рулевая колонка</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Электрорегулировка боковых зеркал</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Навигационная система/tvd/dvd система</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Климат-контроль</div>
+										</label>
+									</div>
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Электрорегулировка пассажирского сиденья</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Аудио-система</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Обивка салона ткань</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort margin-bottom">Кожаный салон</div>
+										</label>
+									</div>
+									<div class="checkbox-comfort-items-block">
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Электрорегулировка водительского сиденья</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Велюровый салон</div>
+										</label>
+										<label class="checkbox-wrap">
+											<input type="checkbox"/>
+											<div class="checkbox-text comfort">Усилитель руля</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-section"  data-form-section = "open">
+							<div class="form-section-head">
+								<h3 class="section-title-form">Другие параметры</h3>
+							</div>
+							<div class="section-body form-section-body">
+								<div class="wrap-checkbox-other-parameters">
+									<label class="checkbox-wrap">
+										<input type="checkbox" checked="checked" />
+										<div class="checkbox-text other-parameters">С повреждениями</div>
+									</label>
+									<label class="checkbox-wrap">
+										<input type="checkbox"/>
+										<div class="checkbox-text other-parameters">Сохранить изменения в критериях поиска</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="search-form-footer">
+							<a href="#!" class="search-form-footer-reset">сбросить параметры поиска</a>
+							<p class="search-form-footer-offer">98 предложений по вашим критериям</p>
+							<button class = "search-form-button" type = "submit">показать все предложения</button>
+						</div>
+					</form>
+							
+
+
+						</div>
+
+
+
+
 
 						
 					</div>
