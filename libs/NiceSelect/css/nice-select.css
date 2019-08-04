@@ -61,6 +61,10 @@
   top: 19px;
 }
 
+.lk-user-phone-select.nice-select:after{
+  top: 19px;
+}
+
 .nice-select.open:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
