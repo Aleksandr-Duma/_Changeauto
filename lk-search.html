@@ -112,9 +112,9 @@
 							</div>
 						</div>
 						<div class="user-block">
-							<a href="lk-user-auth.html" class="user-link">
+							<a href="#" class="user-link user-link--active">
 								<svg 
-									class = "user-svg" version="1.1" x="0px" y="0px"
+									class = "user-svg user-svg--active" version="1.1" x="0px" y="0px"
 	 								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148
 									C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962
@@ -126,10 +126,10 @@
 							</a>
 						</div>
 						<div class="backet-block">
-							<!-- <div class="bascket-count">15</div> -->
-							<a href="#" class="bascket-link bascket-link--active">
+							<div class="bascket-count">15</div>
+							<a href="bascket.html" class="bascket-link">
 								<svg 
-									class = "bascket-svg bascket-svg--active" version="1.1" x="0px" y="0px"
+									class = "bascket-svg" version="1.1" x="0px" y="0px"
 									viewBox="0 0 459.529 459.529" style="enable-background:new 0 0 459.529 459.529;" xml:space="preserve">
 									<path d="M17,55.231h48.733l69.417,251.033c1.983,7.367,8.783,12.467,16.433,12.467h213.35c6.8,0,12.75-3.967,15.583-10.2
 									l77.633-178.5c2.267-5.383,1.7-11.333-1.417-16.15c-3.117-4.817-8.5-7.65-14.167-7.65H206.833c-9.35,0-17,7.65-17,17
@@ -149,7 +149,7 @@
 			</div>
 			<!-- INNER-PAGE-WRAP -->
 			<div class="wrap-inner-page container">
-				<div class="inner-home-link-wrap bascet-page">
+				<div class="inner-home-link-wrap lk-user">
 					<a class = "inner-home-link" href="index.html">
 						<div class="inner-home-icon">
 							<svg 
@@ -167,92 +167,81 @@
 							</svg>
 						</div>
 					</a>
-					<a href="#!" class="link-name-section">Корзина</a>
+					<a href="#!" class="link-name-section">Личный кабинет</a>
 				</div>
-				<div class="bascket-block-content">
-					<div class="bascket-block-content-wrap">
-						<div class="bascket-block-content-header">
-							<h2 class="bascket-block-title">Корзина</h2>
-							<div class="block-delete-link checkbox-wrap">
-								<a href="#!" class="delete-link">
-									<svg 
-										class = "bin-svg-icon" version="1.1" x="0px" y="0px" viewBox="0 0 408.483 408.483" style="enable-background:new 0 0 408.483 408.483;" xml:space="preserve">
-										<path d="M87.748,388.784c0.461,11.01,9.521,19.699,20.539,19.699h191.911c11.018,0,20.078-8.689,20.539-19.699l13.705-289.316    H74.043L87.748,388.784z M247.655,171.329c0-4.61,3.738-8.349,8.35-8.349h13.355c4.609,0,8.35,3.738,8.35,8.349v165.293    c0,4.611-3.738,8.349-8.35,8.349h-13.355c-4.61,0-8.35-3.736-8.35-8.349V171.329z M189.216,171.329    c0-4.61,3.738-8.349,8.349-8.349h13.355c4.609,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.737,8.349-8.349,8.349h-13.355    c-4.61,0-8.349-3.736-8.349-8.349V171.329L189.216,171.329z M130.775,171.329c0-4.61,3.738-8.349,8.349-8.349h13.356    c4.61,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.738,8.349-8.349,8.349h-13.356c-4.61,0-8.349-3.736-8.349-8.349V171.329z" class="active-path" fill="#8B98A6"/>
-										<path d="M343.567,21.043h-88.535V4.305c0-2.377-1.927-4.305-4.305-4.305h-92.971c-2.377,0-4.304,1.928-4.304,4.305v16.737H64.916    c-7.125,0-12.9,5.776-12.9,12.901V74.47h304.451V33.944C356.467,26.819,350.692,21.043,343.567,21.043z"  class="active-path" fill="#8B98A6"/>
-									</svg>
-									Удалить все неотмеченные</a>
-								<div class="block-checkbox">
-									<input class = "checkbox-input" type="checkbox" id = "checkbox-0">
-									<label class = "checkbox-label" for = "checkbox-0"></label>
-								</div>
-							</div>
+				<div class="lk-user-content">
+					<div class="lk-user-content-wrap">
+						<div class="lk-user-content-top-header">
+							<a href="lk-user.html" class="lk-user-content-nav">персональные данные</a>
+							<a href="lk-password.html" class="lk-user-content-nav">смена пароля</a>
+							<a href="lk-my-transport-no-car.html" class="lk-user-content-nav">мои транспортные средства</a>
+							<a href="#!" class="lk-user-content-nav active">критерии поиска</a>
+							<a href="lk-history.html" class="lk-user-content-nav">история покупок</a>
+							<a href="index.html" class="lk-user-exit-link">
+								<svg 
+									class = "logout-icon-svg" version="1.1" x="0px" y="0px"
+									viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<path d="M510.371,226.513c-1.088-2.603-2.645-4.971-4.629-6.955l-63.979-63.979c-8.341-8.32-21.824-8.32-30.165,0
+									c-8.341,8.341-8.341,21.845,0,30.165l27.584,27.584H320.013c-11.797,0-21.333,9.557-21.333,21.333s9.536,21.333,21.333,21.333
+									h119.168l-27.584,27.584c-8.341,8.341-8.341,21.845,0,30.165c4.16,4.181,9.621,6.251,15.083,6.251s10.923-2.069,15.083-6.251
+									l63.979-63.979c1.984-1.963,3.541-4.331,4.629-6.955C512.525,237.606,512.525,231.718,510.371,226.513z"/>
+									<path d="M362.68,298.667c-11.797,0-21.333,9.557-21.333,21.333v106.667h-85.333V85.333c0-9.408-6.187-17.728-15.211-20.437
+									l-74.091-22.229h174.635v106.667c0,11.776,9.536,21.333,21.333,21.333s21.333-9.557,21.333-21.333v-128
+									C384.013,9.557,374.477,0,362.68,0H21.347c-0.768,0-1.451,0.32-2.197,0.405c-1.003,0.107-1.92,0.277-2.88,0.512
+									c-2.24,0.576-4.267,1.451-6.165,2.645c-0.469,0.299-1.045,0.32-1.493,0.661C8.44,4.352,8.376,4.587,8.205,4.715
+									C5.88,6.549,3.939,8.789,2.531,11.456c-0.299,0.576-0.363,1.195-0.597,1.792c-0.683,1.621-1.429,3.2-1.685,4.992
+									c-0.107,0.64,0.085,1.237,0.064,1.856c-0.021,0.427-0.299,0.811-0.299,1.237V448c0,10.176,7.189,18.923,17.152,20.907
+									l213.333,42.667c1.387,0.299,2.795,0.427,4.181,0.427c4.885,0,9.685-1.685,13.525-4.843c4.928-4.053,7.808-10.091,7.808-16.491
+									v-21.333H362.68c11.797,0,21.333-9.557,21.333-21.333V320C384.013,308.224,374.477,298.667,362.68,298.667z"/>
+								</svg>
+								Выйти из кабинета
+							</a>
 						</div>
-						<div class="bascket-content-item">
-							<div class="bascket-content-item-left">
-								<div class="bascket-content-block-img">
-									<img class = "img-car-block" src="img/car-bascket-1.jpeg" alt="car-bascket-1">
+
+						<div class="lk-user-content-bottom-header">
+							<div class="lk-user-bottom-header-item-user">
+								<div class="lk-user-bottom-header-user-left">
+									<div class="lk-user-bottom-header-user-photo">
+										<svg 
+											class = "user-icon-svg" version="1.1" x="0px" y="0px"
+											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+											<path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148
+											C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962
+											c-36.21,12.495-69.398,33.136-97.281,61.018C26.629,379.333,0,443.62,0,512h40c0-119.103,96.897-216,216-216s216,96.897,216,216
+											h40C512,443.62,485.371,379.333,437.02,330.98z M256,256c-59.551,0-108-48.448-108-108S196.449,40,256,40
+											c59.551,0,108,48.448,108,108S315.551,256,256,256z"/>
+										</svg>
+									</div>
 								</div>
-								<div class="bascket-content-block-discription">
-									<p class="car-discription-title-offer">готов доплатить</p>
-									<p class="car-discription-title-main">Opel Astra J Рестайлинг GTC</p>
-									<p class="car-discription-list">Год выпуска: <span class="bold-discription">2014 год</span></p>
-									<p class="car-discription-list">Вид топлива: <span class="bold-discription">Бензин</span></p>
-									<p class="car-discription-list">Объем двигателя <span class="bold-discription">200 см3</span></p>
-									<p class="car-discription-list">Коробка передач: <span class="bold-discription">Автоматическая</span></p>
-									<p class="car-discription-list">Цвет: <span class="bold-discription">Светло-фиолетовый</span></p>
+								<div class="lk-user-bottom-header-user-right">
+									<p class="lk-user-bottom-header-user-name">Константин Константинопольский</p>
+									<p class="lk-user-bottom-header-user-email">hummens88@gmail.com</p>
 								</div>
 							</div>
-							<div class="bascket-content-item-right">
-								<div class="bascket-content-item-right-cost">
-									<p class="bascket-content-cost-text">Будет списано из пакета</p>
+							<div class="lk-user-bottom-header-item-info">
+								<p class="lk-user-bottom-header-info-text">Вы приобрели  <span class = "text-green-bg">0 контактов</span></p>
+								<p class="lk-user-bottom-header-info-text">Вам доступно  <span class = "text-green-bg"> 3 из 3</span></p>
+							</div>
+							<div class="lk-user-bottom-header-item-accaunt">
+								<div class="lk-user-bottom-header-your-accaunt">
+									<p class="bottom-header-your-accaunt-text">Ваш аккаунт надёжно защищён</p>
 								</div>
-								<div class="block-checkbox">
-									<input class = "checkbox-input" type="checkbox" id = "checkbox-1">
-									<label class = "checkbox-label" for = "checkbox-1"></label>
-								</div>	
 							</div>
 						</div>
 
-						<div class="bascket-content-item">
-							<div class="bascket-content-item-left">
-								<div class="bascket-content-block-img">
-									<img class = "img-car-block" src="img/car-bascet-2.jpeg" alt="car-bascket-2">
-								</div>
-								<div class="bascket-content-block-discription">
-									<p class="car-discription-title-offer">хочу доплату</p>
-									<p class="car-discription-title-main">Toyota Avensis III</p>
-									<p class="car-discription-list">Год выпуска: <span class="bold-discription">2014 год</span></p>
-									<p class="car-discription-list">Вид топлива: <span class="bold-discription">Бензин</span></p>
-									<p class="car-discription-list">Объем двигателя <span class="bold-discription">200 см3</span></p>
-									<p class="car-discription-list">Коробка передач: <span class="bold-discription">Автоматическая</span></p>
-									<p class="car-discription-list">Цвет: <span class="bold-discription">Светло-фиолетовый</span></p>
-								</div>
-							</div>
-							<div class="bascket-content-item-right">
-								<div class="bascket-content-item-right-cost">
-									<p class="bascket-content-cost-text active"><span class = "cost-big-digit">55<sup class = "sup-text">99</sup></span><br> Рублей</p>
-								</div>
-								<div class="block-checkbox">
-									<input class = "checkbox-input" type="checkbox" id = "checkbox-2">
-									<label class = "checkbox-label" for = "checkbox-2"></label>
-								</div>	
+						<div class="lk-my-transport-no-car-block">
+							<p class="lk-my-transport-no-car-title">Мои транспортные средства</p>
+							<div class="lk-my-transport-no-car-content">
+								<p class="lk-my-transport-no-car-disription">Вы еще не добавили ни одно транспортное средство. Сделайте это прямо сейчас.</p>
+								<!-- !!! После сборки удалить, рабочяя кнопка ниже -->
+								<a href="#!" class="lk-my-transport-no-car-button">добавить авто</a>
+								<!-- <button class="lk-my-transport-no-car-button">добавить авто</button> -->
 							</div>
 						</div>
-						<div class="bascket-block-content-footer">
-							<div class="bascket-content-footer-item-left">
-								<p class="bascket-footer-text-contact">Вы выбрали 1 контакт</p>
-								<p class="bascket-footer-text-contact">Доступно 0 контактов</p>
-								<p class="bascket-footer-text-contact">Из ваших контактов спишется 0 контактов</p>
-							</div>
-							<div class="bascket-content-footer-item-middle">
-								<p class="bascket-footer-text-finish-cost">Итого: 59<sup class = "sup-text-2">99</sup> руб.</p>
-							</div>
-							<div class="bascket-content-footer-item-right">
-								<button class="bascket-content-footer-button">оформить заказ</button>
-							</div>
-						</div>
+
+						
 					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
 
@@ -336,9 +325,9 @@
 					</div>
 					<div class="footer-contact-block">
 						<div class="user-block">
-							<a href="lk-user-auth.html" class="user-link">
+							<a href="#" class="user-link user-link--active">
 								<svg 
-									class = "user-svg" version="1.1" x="0px" y="0px"
+									class = "user-svg user-svg--active" version="1.1" x="0px" y="0px"
 	 								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148
 									C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962
@@ -351,9 +340,9 @@
 						</div>
 						<div class="footer-backet-block">
 							<!-- <div class="footer-bascket-count">15</div> -->
-							<a href="#" class="bascket-link  bascket-link--active">
+							<a href="bascket.html" class="bascket-link">
 								<svg 
-									class = "bascket-svg bascket-svg--active" version="1.1" x="0px" y="0px"
+									class = "bascket-svg" version="1.1" x="0px" y="0px"
 									viewBox="0 0 459.529 459.529" style="enable-background:new 0 0 459.529 459.529;" xml:space="preserve">
 									<path d="M17,55.231h48.733l69.417,251.033c1.983,7.367,8.783,12.467,16.433,12.467h213.35c6.8,0,12.75-3.967,15.583-10.2
 									l77.633-178.5c2.267-5.383,1.7-11.333-1.417-16.15c-3.117-4.817-8.5-7.65-14.167-7.65H206.833c-9.35,0-17,7.65-17,17
