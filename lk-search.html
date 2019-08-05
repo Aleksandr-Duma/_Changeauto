@@ -198,7 +198,7 @@
 							</a>
 						</div>
 
-						<div class="lk-user-content-bottom-header">
+						<div class="lk-user-content-bottom-header lk-search">
 							<div class="lk-user-bottom-header-item-user">
 								<div class="lk-user-bottom-header-user-left">
 									<div class="lk-user-bottom-header-user-photo">
@@ -229,14 +229,11 @@
 							</div>
 						</div>
 
-
-
 						<div class="lk-search-content-block">
 							<form class="lk-search-form">
 								<div class="lk-search-form-main-title-wrap">
 									<h3 class="lk-search-form-main-title">Что я ищу (критерии поиска)</h3>
 								</div>
-
 								<div class="lk-head-search-form">
 									<div class="lk-head-search-form-wrap">
 										<div class="lk-head-search-form-item">
@@ -260,9 +257,9 @@
 												<option value="">область</option>
 											</select>	
 										</div>
-										<div class="head-search-form-item">
-											<p class="form-select-text text-transport">Вид транспорта</p>
-											<select class = "head-search-select select-transport">
+										<div class="lk-head-search-form-item">
+											<p class="form-select-text lk-search-transport">Вид транспорта</p>
+											<select class = "head-lk-search-select select-transport">
 												<option value="">Легковой</option>
 												<option value="">транспорт</option>
 												<option value="">транспорт</option>
@@ -270,8 +267,8 @@
 											</select>
 										</div>
 										<div class="head-search-form-item">
-											<p class="form-select-text text-brand-auto">Марка авто</p>
-											<select class = "head-search-select select-brand-auto">
+											<p class="form-select-text lk-search-brand">Марка авто</p>
+											<select class = "head-lk-search-select select-brand-auto">
 												<option value="">Aston Martin</option>
 												<option value="">авто</option>
 												<option value="">авто</option>
@@ -279,8 +276,8 @@
 											</select>
 										</div>
 										<div class="head-search-form-item">
-											<p class="form-select-text text-model">Модель</p>
-											<select class = "head-search-select select-model">
+											<p class="form-select-text lk-search-model">Модель</p>
+											<select class = "head-lk-search-select select-model">
 												<option value="">Cygnet</option>
 												<option value="">Модель</option>
 												<option value="">Модель</option>
@@ -289,59 +286,62 @@
 										</div>
 									</div>
 								</div>
-						<div class="form-section"  data-form-section = "open">
-							<div class="form-section-head">
-								<h3 class="section-title-form">Основные сведения об автомобиле</h3>
-							</div>
-							<div class="section-body form-section-body info-car">
-								<div class="wrap-info-car-item">
-									<div class="info-car-item-block">
-										<p class="info-car-item-title">Год выпуска</p>
-										<div class="wrap-text-slider-ui">
-											<p class="start-position-slider">1900</p>
-											<p class="result-slider-year"></p>
-										</div>
-										<div class="slider-control-year"></div>
+
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="lk-search-section-title-form">Основные сведения об автомобиле</h3>
 									</div>
-									<div class="info-car-item-block slider-radio">
-										<div class="wrap-slider-before-radio">
-											<p class="info-car-item-title">Мощность автомобиля</p>
-											<div class="wrap-text-slider-ui">
-												<p class="start-position-slider">1</p>
-												<p class="result-slider-power"></p>
+									<div class="section-body form-section-body info-car lk-search">
+										<div class="wrap-info-car-item">
+											<div class="info-car-item-block">
+												<p class="info-car-item-title">Год выпуска</p>
+												<div class="wrap-text-slider-ui">
+													<p class="start-position-slider">1900</p>
+													<p class="result-slider-year"></p>
+												</div>
+												<div class="slider-control-year"></div>
 											</div>
-											<div class="slider-control-power"></div>
+											<div class="info-car-item-block slider-radio">
+												<div class="wrap-slider-before-radio">
+													<p class="info-car-item-title">Мощность автомобиля</p>
+													<div class="wrap-text-slider-ui">
+														<p class="start-position-slider">1</p>
+														<p class="result-slider-power"></p>
+													</div>
+													<div class="slider-control-power"></div>
+												</div>
+												<div class="block-slider-radio">
+													<label class="radio">
+														<input type="radio" name = "info" checked="checked" />
+														<div class="radio-text">л.с</div>
+													</label>
+													<label class="radio">
+														<input type="radio" name = "info"/>
+														<div class="radio-text">кВт</div>
+													</label>
+												</div>
+											</div>
+											<div class="info-car-item-block">
+												<p class="info-car-item-title">Пробег (км)</p>
+												<div class="wrap-text-slider-ui">
+													<p class="start-position-slider">0</p>
+													<p class="result-slider-distance"></p>
+												</div>
+												<div class="slider-control-distance"></div>
+											</div>
+											<div class="info-car-item-block">
+												<p class="info-car-item-title">Объем двигателя (cm<sup>3</sup>)</p>
+												<div class="wrap-text-slider-ui">
+													<p class="start-position-slider">200</p>
+													<p class="result-slider-engine"></p>
+												</div>
+												<div class="slider-control-engine"></div>
+											</div>
 										</div>
-										<div class="block-slider-radio">
-											<label class="radio">
-												<input type="radio" name = "info" checked="checked" />
-												<div class="radio-text">л.с</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "info"/>
-												<div class="radio-text">кВт</div>
-											</label>
-										</div>
-									</div>
-									<div class="info-car-item-block">
-										<p class="info-car-item-title">Пробег (км)</p>
-										<div class="wrap-text-slider-ui">
-											<p class="start-position-slider">0</p>
-											<p class="result-slider-distance"></p>
-										</div>
-										<div class="slider-control-distance"></div>
-									</div>
-									<div class="info-car-item-block">
-										<p class="info-car-item-title">Объем двигателя (cm<sup>3</sup>)</p>
-										<div class="wrap-text-slider-ui">
-											<p class="start-position-slider">200</p>
-											<p class="result-slider-engine"></p>
-										</div>
-										<div class="slider-control-engine"></div>
 									</div>
 								</div>
-							</div>
-						</div>
+
+
 						<div class="form-section"  data-form-section = "open">
 							<div class="form-section-head">
 								<h3 class="section-title-form">Состояние, собственник и цвет</h3>
