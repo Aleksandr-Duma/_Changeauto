@@ -42,6 +42,7 @@
 .slick-next:hover{
     outline: none;
     background: #7faa46;
+    box-shadow: 0px 5px 27px 0px rgba(144, 211, 57, 0.6);
 }
 
 .slick-prev:hover:before,

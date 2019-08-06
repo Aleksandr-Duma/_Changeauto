@@ -27,7 +27,7 @@
       text-decoration: none; 
 }
 
-  .owl-theme .owl-nav .disabled {
+.owl-theme .owl-nav .disabled {
     opacity: 0.5;
     cursor: default; 
 }
@@ -53,17 +53,19 @@
 }
 
 .owl-theme .owl-dots .owl-dot span {
-  width: 75px;
-  height: 3px;
-  margin: 5px 5px;
-  background: #d0d0d0;
+  /*width: 75px;*/
+  width: 18px;
+  height: 18px;
+  margin: 5px 8px;
+  background: transparent;
+  border: 2px solid #d0d0d0;
   display: block;
   -webkit-backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 30px;
-
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #90d339; 
+  background: #90d339;
+  border: 2px solid #90d339;
 }

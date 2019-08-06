@@ -1,4 +1,24 @@
 $(document).ready(function(){
+
+/*................MOBILE-MENU..................*/
+	var pull = $(".burger-menu-button");
+	var nav = $(".link-block");
+
+	$(pull).on("click", function(e){
+		e.preventDefault();
+		$(nav).slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var w = $(window).width();
+		if (w > 720 && nav.is(":hidden")){
+			nav.removeAttr("style");
+		}
+	});
+
+/*................MOBILE-MENU-END..................*/
+
+
 	var dropdown = function(){
 		var data = $(".dropdown").attr("data-dropdown");
 
@@ -80,7 +100,30 @@ formSection();
 
 	$('.new-offer-slider').slick({
     	dots: true,
-    	slidesToShow: 4
+    	slidesToShow: 4,
+    	responsive: [
+    		{
+      		breakpoint: 1024,
+      		settings: {
+		    slidesToShow: 3,
+		    slidesToScroll: 3
+		    }
+    		},
+		    {
+		    breakpoint: 680,
+		    settings: {
+		    slidesToShow: 2,
+		    slidesToScroll: 2
+		    }
+		    },
+		    {
+		    breakpoint: 480,
+		    settings: {
+		    slidesToShow: 1,
+		    slidesToScroll: 1
+		   	}
+    	}
+  	]
   });
 
 	$('.how-to-slider').slick({
@@ -137,8 +180,6 @@ formSection();
 	$(".result-slider-engine").text($(".slider-control-engine").slider("value"));
 
 
-
-	
 	$('.select-country').niceSelect();
 	$('.select-local').niceSelect();
 	$('.select-transport').niceSelect();
@@ -149,6 +190,6 @@ formSection();
 	$('.brand-select-car').niceSelect();
 	$('.model-select-car').niceSelect();
 	$('.phone-number-select').niceSelect();
-	$('.lk-user-phone-select').niceSelect();
+	$('.lk-search-select').niceSelect();
 
 })
