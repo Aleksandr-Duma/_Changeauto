@@ -91,40 +91,55 @@ var formSection = function(){
 formSection();
 
 
-
 	$(".owl-carousel").owlCarousel({
-		items: 1,
-		loop: true
+		items: 4,
+		loop: true,
+		margin: 5,
+		nav: true,
+		responsive:{
+        0:{
+            items: 1,
+            touchDrag: false
+        },
+
+        991:{
+            items: 4
+
+        }
+    }
 	});
 
 
-	$('.new-offer-slider').slick({
-    	dots: true,
-    	slidesToShow: 4,
+
+/*...................Main SlickSlider................*/
+
+	$('.slick-slider').slick({
+		infinite: true,
+    	// dots: true,
+    	slidesToShow: 1,
+    	draggable: false,
+    	responsiveClass: true,
+    	arrows: true,
     	responsive: [
-    		{
-      		breakpoint: 1024,
-      		settings: {
-		    slidesToShow: 3,
-		    slidesToScroll: 3
-		    }
-    		},
 		    {
 		    breakpoint: 680,
 		    settings: {
-		    slidesToShow: 2,
-		    slidesToScroll: 2
-		    }
+		    slidesToShow: 1,
+		    slidesToScroll: 1
+		    	}
 		    },
 		    {
 		    breakpoint: 480,
 		    settings: {
 		    slidesToShow: 1,
-		    slidesToScroll: 1
-		   	}
-    	}
-  	]
+		    slidesToScroll: 1,
+		    // dots: true,
+		    draggable: false
+		   		}
+    		}
+  		]
   });
+
 
 	$('.how-to-slider').slick({
     	dots: true,

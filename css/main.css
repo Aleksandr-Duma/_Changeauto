@@ -874,9 +874,17 @@ img {
 }
 /*....................NEW OFFER....................*/
 .new-offer {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 92px;
+  border: 1px solid red;
+}
+@media (min-width: 1410px) {
+  .new-offer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 92px;
+  }
 }
 .new-offer-title {
   font-family: 'Proxima_Nova', sans-serif;
@@ -893,18 +901,206 @@ img {
     margin-bottom: 15px;
   }
 }
-.new-offer-slider {
+.slider-container {
   width: 100%;
+  border: 1px solid black;
+  padding-left: 0;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(190, 192, 197, 0.6);
+          box-shadow: 0px 5px 15px 0px rgba(190, 192, 197, 0.6);
 }
-.slick-slide {
-  margin-right: 32px;
+@media (min-width: 1410px) {
+  .slider-container {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+.slider-container-slide {
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*.....................CARD-AUTO.....................*/
+.card-auto {
+  width: 295px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(190, 192, 197, 0.6);
+          box-shadow: 0px 5px 15px 0px rgba(190, 192, 197, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+@media (min-width: 1410px) {
+  .card-auto {
+    width: 315px;
+    margin: 13px;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(190, 192, 197, 0.6);
+            box-shadow: 0px 5px 15px 0px rgba(190, 192, 197, 0.6);
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+}
+.card-auto-img-wrap {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+@media (min-width: 1410px) {
+  .card-auto-img-wrap {
+    width: 265px;
+    height: 225px;
+    margin-bottom: 20px;
+  }
+}
+.card-img {
+  width: 100%;
+  height: auto;
+}
+.card-auto-model {
+  width: 100%;
+  margin-bottom: 15px;
+}
+@media (min-width: 1410px) {
+  .card-auto-model {
+    width: 265px;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+  }
+}
+.card-model-title {
+  font-family: 'Proxima_Nova', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0f0f0f;
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+.card-model-title:hover {
+  color: #90d339;
+}
+@media (min-width: 1410px) {
+  .card-model-title {
+    font-size: 18px;
+  }
+}
+.card-auto-discription {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+@media (min-width: 1410px) {
+  .card-auto-discription {
+    width: 265px;
+    margin-bottom: 5px;
+  }
+}
+.card-auto-discription-key {
+  font-family: 'Proxima_Nova', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #7C7C7C;
+}
+.card-auto-discription-value {
+  font-family: 'Proxima_Nova', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #0f0f0f;
+}
+.card-auto-discription-value-gray {
+  background-color: #ededed;
+  text-transform: uppercase;
+  font-family: 'Proxima_Nova', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: #0f0f0f;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 7px;
+}
+.card-auto-button {
+  width: 100%;
+  height: 45px;
+  background-color: #90d339;
+  border-radius: 5px;
+  border: none;
   outline: none;
+  font-family: 'Proxima_Nova', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: #0f0f0f;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+}
+@media (min-width: 1410px) {
+  .card-auto-button {
+    width: 265px;
+    height: 65px;
+    margin-top: 20px;
+  }
+}
+.other-ofers-watch-all {
+  width: 100%;
+  background-color: #e5e6e7;
+  font-family: 'Proxima_Nova', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: #0f0f0f;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+  cursor: pointer;
 }
 /*.......................OFFER......................*/
 .offer-wrap {
   padding-left: 29px;
   padding-right: 29px;
   margin-bottom: 53px;
+}
+@media (min-width: 1410px) {
+  .offer-wrap {
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-bottom: 53px;
+  }
 }
 .offer-block {
   background-color: #e5e6e7;
@@ -996,132 +1192,6 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-/*.....................CARD-AUTO.....................*/
-.card-auto {
-  width: 313px;
-  border-radius: 5px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(190, 192, 197, 0.6);
-          box-shadow: 0px 5px 15px 0px rgba(190, 192, 197, 0.6);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  margin: 14px;
-}
-.card-auto-img-wrap {
-  width: 265px;
-  height: 223px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.card-img {
-  width: 100%;
-  height: 100%;
-}
-.card-auto-model {
-  width: 265px;
-  border-bottom: 1px solid #efefef;
-  padding-bottom: 12px;
-  margin-bottom: 15px;
-}
-.card-model-title {
-  font-family: 'Proxima_Nova', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #0f0f0f;
-  text-align: left;
-  cursor: pointer;
-  -webkit-transition: all .1s ease;
-  transition: all .1s ease;
-}
-.card-model-title:hover {
-  color: #90d339;
-}
-.card-auto-discription {
-  width: 265px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 8px;
-}
-.card-auto-discription-key {
-  font-family: 'Proxima_Nova', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #7C7C7C;
-}
-.card-auto-discription-value {
-  font-family: 'Proxima_Nova', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #0f0f0f;
-}
-.card-auto-discription-value-gray {
-  background-color: #ededed;
-  text-transform: uppercase;
-  font-family: 'Proxima_Nova', sans-serif;
-  font-weight: 700;
-  font-size: 10px;
-  color: #0f0f0f;
-  text-align: center;
-  border-radius: 5px;
-  padding-top: 7px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 7px;
-}
-.card-auto-button {
-  width: 265px;
-  height: 65px;
-  background-color: #90d339;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  font-family: 'Proxima_Nova', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px;
-  color: #0f0f0f;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 20px;
-}
-.other-ofers-watch-all {
-  width: 100%;
-  background-color: #e5e6e7;
-  font-family: 'Proxima_Nova', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px;
-  color: #0f0f0f;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-radius: 5px;
-  margin-top: 15px;
-  margin-left: 14px;
-  margin-right: 14px;
-  cursor: pointer;
 }
 /*......................QUESTIONS....................*/
 .question-block {
