@@ -90,32 +90,33 @@ var formSection = function(){
 
 formSection();
 
+/*...................Owl-Carousel................*/
 
 	$(".owl-carousel").owlCarousel({
 		items: 4,
+		dots: true,
 		loop: true,
 		margin: 5,
 		nav: true,
 		responsive:{
         0:{
             items: 1,
+            nav: false,
             touchDrag: false
         },
 
         991:{
-            items: 4
-
+            items: 4,
+            dots: true
         }
     }
 	});
 
 
-
-/*...................Main SlickSlider................*/
+/*...................SlickSlider................*/
 
 	$('.slick-slider').slick({
 		infinite: true,
-    	// dots: true,
     	slidesToShow: 1,
     	draggable: false,
     	responsiveClass: true,
@@ -123,18 +124,18 @@ formSection();
     	responsive: [
 		    {
 		    breakpoint: 680,
-		    settings: {
-		    slidesToShow: 1,
-		    slidesToScroll: 1
+		    	settings: {
+		   	 	slidesToShow: 1,
+		    	slidesToScroll: 1
 		    	}
 		    },
 		    {
 		    breakpoint: 480,
-		    settings: {
-		    slidesToShow: 1,
-		    slidesToScroll: 1,
-		    // dots: true,
-		    draggable: false
+		    	settings: {
+		    	slidesToShow: 1,
+		    	slidesToScroll: 1,
+		    	// dots: true,
+		    	draggable: false
 		   		}
     		}
   		]

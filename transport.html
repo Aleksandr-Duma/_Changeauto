@@ -47,13 +47,15 @@
 						</ul>
 					</div>
 					<div class="contact-block">
-						<a class = "link-block_item-link link-search" href="search.html">
-							<svg 
-								class = "search-svg" enable-background="new 0 0 56.966 56.966" 
-								viewBox="0 0 56.966 56.966"><path d="m55.146 51.887-13.558-14.101c3.486-4.144 5.396-9.358 5.396-14.786 0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837 1.192-1.147 1.23-3.049.083-4.242zm-31.162-45.887c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"/>
-							</svg>
-							<p class="text-none">Поиск</p>
-						</a>
+						<div class="contact-search-block">
+							<a class = "link-block_item-link link-search" href="search.html">
+								<svg 
+									class = "search-svg" enable-background="new 0 0 56.966 56.966" 
+									viewBox="0 0 56.966 56.966"><path d="m55.146 51.887-13.558-14.101c3.486-4.144 5.396-9.358 5.396-14.786 0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837 1.192-1.147 1.23-3.049.083-4.242zm-31.162-45.887c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"/>
+								</svg>
+								<p class="text-none">Поиск</p>
+							</a>
+						</div>
 						<div class="dropdown-wrap">
 							<div class="dropdown" data-dropdown = "open">
 								<div class="dropdown-head">
@@ -145,6 +147,16 @@
 								<p class="text-none">Корзина</p>
 							</a>
 						</div>
+						<div class="burger-menu-button">
+							<svg 
+								class = "burger-svg" version="1.1" x="0px" y="0px"
+								viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+								<rect y="2" width="50" height="4"/>
+								<rect y="16" width="50" height="4"/>
+								<rect y="30" width="50" height="4"/>
+								<rect y="44" width="50" height="4"/>
+							</svg>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -176,7 +188,7 @@
 			<div class="transport-page-wrap-content">
 			<div class="transport-page-cars">
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-5.jpeg" alt="car-5">
 						<img class = "card-img" src="img/img-car-5.jpeg" alt="car-5">
 						<img class = "card-img" src="img/img-car-5.jpeg" alt="car-5">
@@ -212,23 +224,23 @@
 						<button class="button-card-auto-small-button">купить контакт</button>
 						<div class="card-auto-bascket-block">
 							<svg 
-									class = "card-auto-bascket-svg" version="1.1" x="0px" y="0px"
-									viewBox="0 0 459.529 459.529" style="enable-background:new 0 0 459.529 459.529;" xml:space="preserve">
-									<path d="M17,55.231h48.733l69.417,251.033c1.983,7.367,8.783,12.467,16.433,12.467h213.35c6.8,0,12.75-3.967,15.583-10.2
-									l77.633-178.5c2.267-5.383,1.7-11.333-1.417-16.15c-3.117-4.817-8.5-7.65-14.167-7.65H206.833c-9.35,0-17,7.65-17,17
-									s7.65,17,17,17H416.5l-62.9,144.5H164.333L94.917,33.698c-1.983-7.367-8.783-12.467-16.433-12.467H17c-9.35,0-17,7.65-17,17
-									S7.65,55.231,17,55.231z"/>
-									<path d="M135.433,438.298c21.25,0,38.533-17.283,38.533-38.533s-17.283-38.533-38.533-38.533S96.9,378.514,96.9,399.764
-									S114.183,438.298,135.433,438.298z"/>
-									<path d="M376.267,438.298c0.85,0,1.983,0,2.833,0c10.2-0.85,19.55-5.383,26.35-13.317c6.8-7.65,9.917-17.567,9.35-28.05
-									c-1.417-20.967-19.833-37.117-41.083-35.7c-21.25,1.417-37.117,20.117-35.7,41.083
-									C339.433,422.431,356.15,438.298,376.267,438.298z"/>
+								class = "card-auto-bascket-svg" version="1.1" x="0px" y="0px"
+								viewBox="0 0 459.529 459.529" style="enable-background:new 0 0 459.529 459.529;" xml:space="preserve">
+								<path d="M17,55.231h48.733l69.417,251.033c1.983,7.367,8.783,12.467,16.433,12.467h213.35c6.8,0,12.75-3.967,15.583-10.2
+								l77.633-178.5c2.267-5.383,1.7-11.333-1.417-16.15c-3.117-4.817-8.5-7.65-14.167-7.65H206.833c-9.35,0-17,7.65-17,17
+								s7.65,17,17,17H416.5l-62.9,144.5H164.333L94.917,33.698c-1.983-7.367-8.783-12.467-16.433-12.467H17c-9.35,0-17,7.65-17,17
+								S7.65,55.231,17,55.231z"/>
+								<path d="M135.433,438.298c21.25,0,38.533-17.283,38.533-38.533s-17.283-38.533-38.533-38.533S96.9,378.514,96.9,399.764
+								S114.183,438.298,135.433,438.298z"/>
+								<path d="M376.267,438.298c0.85,0,1.983,0,2.833,0c10.2-0.85,19.55-5.383,26.35-13.317c6.8-7.65,9.917-17.567,9.35-28.05
+								c-1.417-20.967-19.833-37.117-41.083-35.7c-21.25,1.417-37.117,20.117-35.7,41.083
+								C339.433,422.431,356.15,438.298,376.267,438.298z"/>
 							</svg>
 						</div>	
 					</div>
 				</div>
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-6.jpeg" alt="car-6">
 						<img class = "card-img" src="img/img-car-6.jpeg" alt="car-6">
 						<img class = "card-img" src="img/img-car-6.jpeg" alt="car-6">
@@ -264,23 +276,23 @@
 						<button class="button-card-auto-small-button">купить контакт</button>
 						<div class="card-auto-bascket-block">
 							<svg 
-									class = "card-auto-bascket-svg" version="1.1" x="0px" y="0px"
-									viewBox="0 0 459.529 459.529" style="enable-background:new 0 0 459.529 459.529;" xml:space="preserve">
-									<path d="M17,55.231h48.733l69.417,251.033c1.983,7.367,8.783,12.467,16.433,12.467h213.35c6.8,0,12.75-3.967,15.583-10.2
-									l77.633-178.5c2.267-5.383,1.7-11.333-1.417-16.15c-3.117-4.817-8.5-7.65-14.167-7.65H206.833c-9.35,0-17,7.65-17,17
-									s7.65,17,17,17H416.5l-62.9,144.5H164.333L94.917,33.698c-1.983-7.367-8.783-12.467-16.433-12.467H17c-9.35,0-17,7.65-17,17
-									S7.65,55.231,17,55.231z"/>
-									<path d="M135.433,438.298c21.25,0,38.533-17.283,38.533-38.533s-17.283-38.533-38.533-38.533S96.9,378.514,96.9,399.764
-									S114.183,438.298,135.433,438.298z"/>
-									<path d="M376.267,438.298c0.85,0,1.983,0,2.833,0c10.2-0.85,19.55-5.383,26.35-13.317c6.8-7.65,9.917-17.567,9.35-28.05
-									c-1.417-20.967-19.833-37.117-41.083-35.7c-21.25,1.417-37.117,20.117-35.7,41.083
-									C339.433,422.431,356.15,438.298,376.267,438.298z"/>
+								class = "card-auto-bascket-svg" version="1.1" x="0px" y="0px"
+								viewBox="0 0 459.529 459.529" style="enable-background:new 0 0 459.529 459.529;" xml:space="preserve">
+								<path d="M17,55.231h48.733l69.417,251.033c1.983,7.367,8.783,12.467,16.433,12.467h213.35c6.8,0,12.75-3.967,15.583-10.2
+								l77.633-178.5c2.267-5.383,1.7-11.333-1.417-16.15c-3.117-4.817-8.5-7.65-14.167-7.65H206.833c-9.35,0-17,7.65-17,17
+								s7.65,17,17,17H416.5l-62.9,144.5H164.333L94.917,33.698c-1.983-7.367-8.783-12.467-16.433-12.467H17c-9.35,0-17,7.65-17,17
+								S7.65,55.231,17,55.231z"/>
+								<path d="M135.433,438.298c21.25,0,38.533-17.283,38.533-38.533s-17.283-38.533-38.533-38.533S96.9,378.514,96.9,399.764
+								S114.183,438.298,135.433,438.298z"/>
+								<path d="M376.267,438.298c0.85,0,1.983,0,2.833,0c10.2-0.85,19.55-5.383,26.35-13.317c6.8-7.65,9.917-17.567,9.35-28.05
+								c-1.417-20.967-19.833-37.117-41.083-35.7c-21.25,1.417-37.117,20.117-35.7,41.083
+								C339.433,422.431,356.15,438.298,376.267,438.298z"/>
 							</svg>
 						</div>	
 					</div>
 				</div>
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-7.jpeg" alt="car-7">
 						<img class = "card-img" src="img/img-car-7.jpeg" alt="car-7">
 						<img class = "card-img" src="img/img-car-7.jpeg" alt="car-7">
@@ -332,7 +344,7 @@
 					</div>
 				</div>
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-2.jpeg" alt="car-2">
 						<img class = "card-img" src="img/img-car-2.jpeg" alt="car-2">
 						<img class = "card-img" src="img/img-car-2.jpeg" alt="car-2">
@@ -384,7 +396,7 @@
 					</div>
 				</div>
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-1.jpeg" alt="car-1">
 						<img class = "card-img" src="img/img-car-1.jpeg" alt="car-1">
 						<img class = "card-img" src="img/img-car-1.jpeg" alt="car-1">
@@ -436,7 +448,7 @@
 					</div>
 				</div>
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-7.jpeg" alt="car-7">
 						<img class = "card-img" src="img/img-car-7.jpeg" alt="car-7">
 						<img class = "card-img" src="img/img-car-7.jpeg" alt="car-7">
@@ -488,7 +500,7 @@
 					</div>
 				</div>
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-3.jpeg" alt="car-3">
 						<img class = "card-img" src="img/img-car-3.jpeg" alt="car-3">
 						<img class = "card-img" src="img/img-car-3.jpeg" alt="car-3">
@@ -540,7 +552,7 @@
 					</div>
 				</div>
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-6.jpeg" alt="car-6">
 						<img class = "card-img" src="img/img-car-6.jpeg" alt="car-6">
 						<img class = "card-img" src="img/img-car-6.jpeg" alt="car-6">
@@ -592,7 +604,7 @@
 					</div>
 				</div>
 				<div class="card-auto">
-					<div class="owl-carousel owl-theme card-auto-img-wrap">
+					<div class="slick-slider card-auto-img-wrap">
 						<img class = "card-img" src="img/img-car-4.jpeg" alt="car-4">
 						<img class = "card-img" src="img/img-car-4.jpeg" alt="car-4">
 						<img class = "card-img" src="img/img-car-4.jpeg" alt="car-4">
