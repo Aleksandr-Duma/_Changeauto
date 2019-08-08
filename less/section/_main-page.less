@@ -340,10 +340,13 @@
 	font-size: 16px;
 	color: @main-text;
 
-	&:hover{
-		color: @main-green;
-		padding-bottom: 41px;
-		border-bottom: 3px solid @main-green;
+	@media (min-width: 1410px){
+		
+		&:hover{
+			color: @main-green;
+			padding-bottom: 41px;
+			border-bottom: 3px solid @main-green;
+		}
 	}
 }
 
@@ -353,8 +356,13 @@
 
 .user-link--active{
 	color: @main-green;
-	padding-bottom: 41px;
-	border-bottom: 3px solid @main-green;
+	padding-bottom: 0;
+	border-bottom: none;
+
+	@media (min-width: 1410px){
+		padding-bottom: 41px;
+		border-bottom: 3px solid @main-green;
+	}
 }
 
 .backet-block{
@@ -410,17 +418,25 @@
 	font-size: 16px;
 	color: @main-text;
 
-	&:hover{
-		color: @main-green;
-		padding-bottom: 41px;
-		border-bottom: 3px solid @main-green;
+	@media (min-width: 1410px){
+		
+		&:hover{
+			color: @main-green;
+			padding-bottom: 41px;
+			border-bottom: 3px solid @main-green;
+		}
 	}
 }
 
 .bascket-link--active{
 	color: @main-green;
-	padding-bottom: 41px;
-	border-bottom: 3px solid @main-green;
+	padding-bottom: 0;
+	border-bottom: none;
+	
+	@media (min-width: 1410px){
+		padding-bottom: 41px;
+		border-bottom: 3px solid @main-green;
+	}
 }
 
 .bascket-link:hover .bascket-svg{
