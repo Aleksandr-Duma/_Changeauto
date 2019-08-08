@@ -90,6 +90,29 @@ var formSection = function(){
 
 formSection();
 
+var SidebarSection = function(){
+		var data = $(".transport-sidebar-dropdown").attr("data-sidebar-dropdown");
+
+		$(".sidebar-dropdown-head").on("click", function(){
+			if(data === "close"){
+				$(".sidebar-dropdown-body").slideUp();
+				if($(this).hasClass("active")){
+					$(this).toggleClass("active");
+				}
+				else{
+					$(".sidebar-dropdown-head").removeClass("active");
+					$(this).toggleClass("active");
+				}
+			}
+			else{
+				$(this).toggleClass("active");
+			}
+			$(this).next(".sidebar-dropdown-body").not(".animated").slideToggle();
+		});
+	}
+
+SidebarSection();
+
 /*...................Owl-Carousel................*/
 
 	$(".owl-carousel").owlCarousel({

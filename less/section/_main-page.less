@@ -8,7 +8,7 @@
 	background-position: center top;
 	position: relative;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 410px) {
     	background: url(../img/main-bg.jpg);
   	}
 }
@@ -136,9 +136,16 @@
 }
 
 .link-block_item-link--active{
-	color: @main-green;
-	padding-bottom: 41px;
-	border-bottom: 3px solid @main-green;
+	color: @gray-text;
+	text-decoration: underline;
+	padding-bottom: 25px;
+
+	@media (min-width: 1410px) {
+		text-decoration: none;
+    	color: @main-green;
+		padding-bottom: 41px;
+		border-bottom: 3px solid @main-green;
+	}
 }
 
 .link-search:hover .search-svg{

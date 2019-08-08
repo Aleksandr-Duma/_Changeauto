@@ -37,6 +37,10 @@
     border-color: #eef1f4; 
 }
 
+select{
+  overflow: hidden;
+}
+
 .nice-select:after {
   content: "⏷";
   display: block;
@@ -73,6 +77,11 @@
 .lk-user-phone-select.nice-select:after{
   top: 19px;
 }
+
+.transport-sidebar-select.nice-select:after{
+  right: 12px;
+}
+
 
 .nice-select.open:after {
   -webkit-transform: rotate(180deg);
