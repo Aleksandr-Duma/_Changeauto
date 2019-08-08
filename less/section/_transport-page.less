@@ -4,13 +4,16 @@
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
 	font-size: 24px;
-	line-height: 2;
+	line-height: 1.4;
 	color: @main-text;
-	text-align: left;
+	text-align: center;
+	margin-bottom: 10px;
 
 	@media (min-width: 1410px) {
     	font-size: 30px;
 		line-height: 2;
+		text-align: left;
+		margin-bottom: 0;
   	}
 }
 
@@ -27,56 +30,66 @@
 }
 
 .transport-page-cars{
-	width: 76%;
+	width: 100%;
 	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+
+	@media (min-width: 1410px) {
+		width: 76%;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+  	}
 }
 
 .transport-page-sidebar{
-	width: 315px;
+	width: 280px;
 	background-color: @gray-bg;
 	border-radius: 5px;
+	padding: 10px 10px 20px 10px;
 	margin-top: 0px;
-	// padding-top: 35px;
-	// padding-left: 25px;
-	// padding-right: 25px;
-	// padding-bottom: 35px;
+	margin-bottom: 20px;
 
 	@media (min-width: 1410px) {
-		// width: 315px;
-		// background-color: @gray-bg;
-		// border-radius: 5px;
+		width: 315px;
 		margin-top: -102px;
-		padding-top: 35px;
-		padding-left: 25px;
-		padding-right: 25px;
-		padding-bottom: 35px;
-	  	}
+		padding: 35px 25px 35px 25px;
+	}
 }
 
 .transport-page-sidebar-title{
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 2;
 	color: @main-text;
 	text-align: left;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
+
+	@media (min-width: 1410px) {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
 }
 
 .form-transport-sidebar-text-gray{
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.4;
 	color: #8B98A6;
 	text-align: left;
-	margin-bottom: 8px;
+	margin-bottom: 5px;
+
+	@media (min-width: 1410px) {
+		font-size: 14px;
+		margin-bottom: 8px;
+	}
 }
 
 .transport-sidebar-select.select-country{
-	width: 265px;
+	width: 100%;
 	height: 50px;
 	border-radius: 5px;
 	outline: none;
@@ -87,11 +100,16 @@
 	color: @main-text;
 	padding-top: 15px;
 	padding-left: 13px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+
+	@media (min-width: 1410px) {
+		width: 265px;
+		margin-bottom: 20px;
+	}
 }
 
 .transport-sidebar-select.select-local{
-	width: 265px;
+	width: 100%;
 	height: 50px;
 	border-radius: 5px;
 	outline: none;
@@ -100,14 +118,16 @@
 	font-size: 15px;
 	line-height: 1;
 	color: @main-text;
-	padding-top: 15px;
-	padding-left: 13px;
-	padding-right: 30px;
-	margin-bottom: 20px;
+	padding: 15px 30px 10px 13px;
+
+	@media (min-width: 1410px) {
+		width: 265px;
+		margin-bottom: 20px;
+	}
 }
 
 .transport-sidebar-select.select-brand-auto{
-	width: 265px;
+	width: 100%;
 	height: 50px;
 	border-radius: 5px;
 	outline: none;
@@ -116,10 +136,12 @@
 	font-size: 15px;
 	line-height: 1;
 	color: @main-text;
-	padding-top: 15px;
-	padding-left: 13px;
-	padding-right: 30px;
-	margin-bottom: 20px;
+	padding: 15px 30px 10px 13px;
+
+	@media (min-width: 1410px) {
+		width: 265px;
+		margin-bottom: 20px;
+	}
 }
 
 .form-transport-control-block{
@@ -158,10 +180,7 @@
 }
 
 .sidebar-dropdown-body{
-	padding-top: 5px;
-	padding-left: 0;
-	padding-right: 30px;
-	padding-bottom: 0;
+	padding: 5px 30px 0px 0px;
 	display: none;
 }
 
@@ -176,17 +195,21 @@
 /*...................FOR CARD-AUTO..................*/
 
 .card-auto-block-button{
-	width: 265px;
-	// border: 1px solid red;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 5px;
+
+	@media (min-width: 1410px) {
+		width: 265px;
+		margin-top: 20px;
+	}
 }
 
 .button-card-auto-small-button{
-	width: 190px;
-  	height: 65px;
+	width: 180px;
+  	height: 45px;
   	background-color: @main-green;
   	border-radius: 5px;
   	border: none;
@@ -198,17 +221,27 @@
 	color: @main-text;
 	text-align: center;
   	color: #fff;
-  	cursor: pointer;	
+  	cursor: pointer;
+
+  	@media (min-width: 1410px) {
+		width: 190px;
+  		height: 65px;
+	}	
 }
 
 .card-auto-bascket-block{
-	width: 63px;
-	height: 65px;
+	width: 55px;
+	height: 45px;
 	background-color: @gray-bg;
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media (min-width: 1410px) {
+		width: 63px;
+		height: 65px;
+	}	
 }
 
 .card-auto-bascket-svg{
@@ -226,8 +259,8 @@
 }
 
 .form-transport-button{
-	width: 265px;
-  	height: 65px;
+	width: 100%;
+  	height: 45px;
   	background-color: @main-green;
   	border-radius: 5px;
   	border: none;
@@ -241,7 +274,13 @@
   	color: #fff;
   	cursor: pointer;
   	margin-top: 25px;
-  	margin-bottom: 20px;
+  	margin-bottom: 15px;
+
+  	@media (min-width: 1410px) {
+		width: 265px;
+		height: 65px;
+		margin-bottom: 20px;
+	}
 }
 
 .sidebar-link-wrap{
@@ -264,20 +303,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 8px;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+
+	@media (min-width: 1410px){
+		padding-top: 8px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
 }
 
-.transport-pagination-link-prev{
-	text-decoration: none;
-	font-family: 'Proxima_Nova', sans-serif;
-	font-weight: 700;
-	font-size: 14px;
-	color: #8b98a6;
-	margin: 15px;
-}
-
+.transport-pagination-link-prev,
 .transport-pagination-link-next{
 	text-decoration: none;
 	font-family: 'Proxima_Nova', sans-serif;
@@ -285,21 +322,32 @@
 	font-size: 14px;
 	color: #8b98a6;
 	margin: 15px;
+	display: none;
+
+	@media (min-width: 1410px) {
+		display: block;
+	}
 }
 
 .button-pagination-item{
-	width: 50px;
-	height: 50px;
+	width: 20px;
+	height: 20px;
 	border-radius: 5px;
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 10px;
 	color: @main-text;
 	border: none;
 	outline: none;
 	margin: 8px;
 	background-color: @gray-bg;
 	cursor: pointer;
+
+	@media (min-width: 1410px) {
+		width: 50px;
+		height: 50px;
+		font-size: 14px;
+	}
 }
 
 .button-pagination-item.active{
