@@ -4,29 +4,60 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	@media (min-width: 1200px) {
+    	padding-left: 0;
+		padding-right: 0;
+  	}
 }
 
 .package-page-title-wrap{
-	width: 57%;
+	width: 100%;
 	margin-bottom: 30px;
+
+	@media (min-width: 600px) {
+    	width: 80%;
+  	}
+
+	@media (min-width: 1200px) {
+    	width: 65%;
+  	}
+
+  	@media (min-width: 1410px) {
+    	width: 57%;
+  	}
 }
 
 .package-page-title{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 30px;
-	line-height: 2;
+	font-size: 24px;
+	line-height: 1.4;
 	color: @main-text;
 	text-align: center;
+
+	@media (min-width: 1200px) {
+    	font-size: 30px;
+		line-height: 2;
+		margin-bottom: 0;
+  	}
 }
 
 .package-page-sub-title{
 	font-family: 'Proxima_Nova';
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 1.5;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.4;
 	color: @gray-text;
 	text-align: center;
+
+	@media (min-width: 1200px) {
+		font-weight: 700;
+    	font-size: 18px;
+		line-height: 1.5;
+  	}
 }
 
 .span-green-mark{
@@ -39,83 +70,127 @@
 
 .package-page-block-card{
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	padding-bottom: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+
+	@media (min-width: 1200px) {
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 15px;
+  	}
 }
 
 .package-page-card{
-	width: 295px;
-	height: 510px;
+	width: 210px;
 	border-radius: 5px;
 	background-color: #fff;
 	box-shadow: @main-shadow;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	margin-top: 75px;
-	margin-left: 20px;
-	margin-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-top: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+
+	@media (min-width: 1200px) {
+		width: 295px;
+		height: 510px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		margin-top: 30px;
+		margin-left: 20px;
+		margin-right: 20px;
+  	}
 }
 
 .package-page-card-vip{
-	width: 310px;
+	width: 260px;
 	border-radius: 5px;
 	background-color: #fff;
 	box-shadow: @main-shadow;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 20px;
-	padding-bottom: 60px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 	margin: 15px;
+
+	@media (min-width: 1200px) {
+		width: 310px;
+		padding-top: 20px;
+		padding-bottom: 60px;
+  	}
 }
 
 .package-page-card-title{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 2.5;
+	font-size: 20px;
+	line-height: 1.8;
 	color: @main-green;
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+
+	@media (min-width: 1200px) {
+		font-size: 24px;
+		line-height: 2.5;
+		margin-bottom: 15px;
+  	}
 }
 
 .package-page-card-circle{
-	width: 200px;
-	height: 200px;
+	width: 130px;
+	height: 130px;
 	border-radius: 50%;
 	background-color: @main-green;
 	box-shadow: 0px 15px 27px 0px rgba(144, 211, 57, 0.6);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 32px;
+	padding-top: 20px;
 	margin-bottom: 27px;
+
+	@media (min-width: 1200px) {
+		width: 200px;
+		height: 200px;
+		padding-top: 32px;
+  	}
 }
 
 .package-page-card-circle-vip{
-	width: 250px;
-	height: 250px;
+	width: 180px;
+	height: 180px;
 	border-radius: 50%;
 	background-color: @main-green;
 	box-shadow: 0px 15px 27px 0px rgba(144, 211, 57, 0.6);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 58px;
+	padding-top: 50px;
 	margin-bottom: 27px;
+
+	@media (min-width: 1200px) {
+		width: 250px;
+		height: 250px;
+		padding-top: 58px;
+  	}
 }
 
 .package-page-card-circle-digit{
 	font-family: 'Proxima_Nova';
 	font-weight: 600;
-	font-size: 100px;
+	font-size: 65px;
 	line-height: 1;
 	color: #fff;
 	text-align: center;
+
+	@media (min-width: 1200px) {
+		font-size: 100px;
+  	}
 }
 
 .package-page-card-circle-contact{
@@ -130,10 +205,15 @@
 .package-page-card-cost{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 1.4;
+	font-size: 20px;
+	line-height: 1.2;
 	color: @main-text;
 	text-align: center;
+
+	@media (min-width: 1200px) {
+		font-size: 24px;
+		line-height: 1.4;
+  	}
 }
 
 .small-digit{
@@ -143,26 +223,36 @@
 .package-page-card-rub{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.4;
 	color: @main-text;
 	text-align: center;
-	margin-bottom: 38px;
+	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		font-size: 16px;
+		margin-bottom: 38px;
+  	}
 }
 
 .package-page-card-rub-vip{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.4;
 	color: @main-text;
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		font-size: 16px;
+		margin-bottom: 40px;
+  	}
 }
 
 .package-page-card-button{
-	width: 215px;
-  	height: 65px;
+	width: 180px;
+  	height: 45px;
   	background-color: @gray-bg;
   	border-radius: 5px;
   	border: none;
@@ -180,11 +270,16 @@
   		background-color: @main-green;
   		color: #fff;
   	}
+
+  	@media (min-width: 1200px) {
+		width: 215px;
+  		height: 65px;
+  	}
 }
 
 .package-page-card-button-vip{
-	width: 215px;
-  	height: 65px;
+	width: 180px;
+  	height: 45px;
   	background-color: @main-green;
   	border-radius: 5px;
   	border: none;
@@ -202,20 +297,35 @@
   		background-color: @gray-bg;
   		color: @main-text;
   	}
+
+  	@media (min-width: 1200px) {
+		width: 215px;
+  		height: 65px;
+  	}
 }
 
 .package-page-bottom-text-wrap{
-	width: 50%;
-	margin-bottom: 45px;
+	width: 100%;
+	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		width: 50%;
+		margin-bottom: 45px;
+  	}
 }
 
 .package-page-bottom-text{
 	font-family: 'Proxima_Nova';
-	font-weight: 700;
-	font-size: 18px;
+	font-weight: 600;
+	font-size: 16px;
 	line-height: 1.44;
 	color: @gray-text;
 	text-align: center;
+
+	@media (min-width: 1200px) {
+		font-weight: 700;
+		font-size: 18px;
+  	}
 }
 
 

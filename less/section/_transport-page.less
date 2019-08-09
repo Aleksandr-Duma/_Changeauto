@@ -9,7 +9,7 @@
 	text-align: center;
 	margin-bottom: 10px;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
     	font-size: 30px;
 		line-height: 2;
 		text-align: left;
@@ -22,7 +22,7 @@
 	flex-direction: column-reverse;
 	align-items: center;
 	
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		flex-direction: row;
     	justify-content: space-between;
 		align-items: flex-start;
@@ -35,11 +35,15 @@
 	flex-direction: column;
 	align-items: center;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		width: 76%;
 		flex-direction: row;
-		justify-content: flex-start;
+		justify-content: center;
 		flex-wrap: wrap;
+  	}
+
+  	@media (min-width: 1410px) {
+		justify-content: flex-start;
   	}
 }
 
@@ -51,7 +55,7 @@
 	margin-top: 0px;
 	margin-bottom: 20px;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		width: 315px;
 		margin-top: -102px;
 		padding: 35px 25px 35px 25px;
@@ -67,7 +71,7 @@
 	text-align: left;
 	margin-bottom: 5px;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		font-size: 18px;
 		margin-bottom: 15px;
 	}
@@ -82,7 +86,7 @@
 	text-align: left;
 	margin-bottom: 5px;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		font-size: 14px;
 		margin-bottom: 8px;
 	}
@@ -102,7 +106,7 @@
 	padding-left: 13px;
 	margin-bottom: 10px;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		width: 265px;
 		margin-bottom: 20px;
 	}
@@ -120,7 +124,7 @@
 	color: @main-text;
 	padding: 15px 30px 10px 13px;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		width: 265px;
 		margin-bottom: 20px;
 	}
@@ -138,7 +142,7 @@
 	color: @main-text;
 	padding: 15px 30px 10px 13px;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		width: 265px;
 		margin-bottom: 20px;
 	}
@@ -165,18 +169,21 @@
 	position: relative;
 
 	&:after{
-		content: "⏷";
-		font-size: 16px;
-		color: #8d9aa8;
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 6px solid #8b98a6;
 		position: absolute;
-		top: 2px;
-		right: 0;
+		top: 12px;
+		right: 5px;
 	}
 }
 
 .sidebar-dropdown-head.active:after{
-	content: "⏶";
-	color: #8d9aa8;
+	transform: rotate(-180deg);
 }
 
 .sidebar-dropdown-body{
@@ -201,7 +208,7 @@
 	align-items: center;
 	margin-top: 5px;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		width: 265px;
 		margin-top: 20px;
 	}
@@ -223,7 +230,7 @@
   	color: #fff;
   	cursor: pointer;
 
-  	@media (min-width: 1410px) {
+  	@media (min-width: 1200px) {
 		width: 190px;
   		height: 65px;
 	}	
@@ -238,7 +245,7 @@
 	justify-content: center;
 	align-items: center;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		width: 63px;
 		height: 65px;
 	}	
@@ -276,7 +283,7 @@
   	margin-top: 25px;
   	margin-bottom: 15px;
 
-  	@media (min-width: 1410px) {
+  	@media (min-width: 1200px) {
 		width: 265px;
 		height: 65px;
 		margin-bottom: 20px;
@@ -307,7 +314,7 @@
 	padding-bottom: 5px;
 	margin-bottom: 0;
 
-	@media (min-width: 1410px){
+	@media (min-width: 1200px){
 		padding-top: 8px;
 		padding-bottom: 20px;
 		margin-bottom: 20px;
@@ -324,7 +331,7 @@
 	margin: 15px;
 	display: none;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		display: block;
 	}
 }
@@ -343,7 +350,7 @@
 	background-color: @gray-bg;
 	cursor: pointer;
 
-	@media (min-width: 1410px) {
+	@media (min-width: 1200px) {
 		width: 50px;
 		height: 50px;
 		font-size: 14px;

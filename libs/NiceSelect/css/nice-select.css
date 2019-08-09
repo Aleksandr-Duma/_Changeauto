@@ -37,18 +37,17 @@
     border-color: #eef1f4; 
 }
 
-select{
-  overflow: hidden;
-}
-
 .nice-select:after {
-  content: "⏷";
+  content: "";
   display: block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #90d339;
   position: absolute;
+  top: 20px;
   right: 15px;
-  top: 15px;
-  color: #90d339;
-  font-size: 16px;
   pointer-events: none;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -57,16 +56,14 @@ select{
 .brand-select-car.nice-select:after,
 .model-select-car.nice-select:after{
   right: 15px;
-  top: 22px;
-  font-size: 16px;
+  top: 30px;
 }
 
 @media (max-width: 1410px){
   .brand-select-car.nice-select:after,
   .model-select-car.nice-select:after{
     right: 15px;
-    top: 15px;
-    font-size: 16px;
+    top: 20px;
 }
   }
 
@@ -81,7 +78,6 @@ select{
 .transport-sidebar-select.nice-select:after{
   right: 12px;
 }
-
 
 .nice-select.open:after {
   -webkit-transform: rotate(180deg);

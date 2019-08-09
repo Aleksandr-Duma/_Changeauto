@@ -3,11 +3,18 @@
 .contact-page-title{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 30px;
-	line-height: 2;
+	font-size: 24px;
+	line-height: 1.4;
 	color: @main-text;
 	text-align: left;
 	margin-bottom: 10px;
+
+	@media (min-width: 700px) {
+    	font-size: 30px;
+		line-height: 2;
+		text-align: left;
+		margin-bottom: 10px;
+  	}
 }
 
 .contact-page-block{
@@ -15,21 +22,38 @@
 	background-color: #fff;
   	box-shadow: @main-shadow;
   	display: flex;
-  	justify-content: space-between;
-  	align-items: flex-start;
-  	padding-top: 60px;
-  	padding-bottom: 60px;
-  	margin-bottom: 50px;
+  	flex-direction: column;
+  	align-items: center;
+  	padding-top: 30px;
+  	// padding-bottom: 60px;
+  	// margin-bottom: 50px;
+
+  	border: 1px solid green;
+
+  	@media (min-width: 700px) {
+  		flex-direction: row;
+    	justify-content: space-between;
+  		align-items: flex-start;
+  		padding-top: 60px;
+	  	padding-bottom: 60px;
+	  	margin-bottom: 50px;
+  	}
 }
 
 .contact-page-block-left{
-	width: 50%;
+	width: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+	border: 1px solid red;
+
+	@media (min-width: 700px) {
+  		width: 50%;
+  		justify-content: flex-end;
+  	}
 }
 
 .contact-page-form{
-	width: 575px;
+	width: 95%;
 	border-radius: 5px;
   	background-color: @gray-bg;
 	display: flex;
@@ -37,25 +61,40 @@
 	align-items: center;
 	padding-top: 30px;
 	padding-bottom: 45px;
+
+	border: 1px solid blue;
+
+	@media (min-width: 700px) {
+  		width: 575px;
+  	}
 }
 
 .contact-page-form-title-wrap{
-	width: 515px;
+	width: 100%;
+
+	@media (min-width: 700px) {
+  		width: 515px;
+  	}
 }
 
 .contact-page-form-title{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 2.1;
+	font-size: 18px;
+	line-height: 1.6;
 	color: @main-text;
 	text-align: left;
 	margin-bottom: 10px;
+
+	@media (min-width: 700px) {
+  		font-size: 24px;
+		line-height: 2.1;
+  	}
 }
 
 .contact-page-input{
-	width: 515px;
-	height: 60px;
+	width: 95%;
+	height: 40px;
 	border-radius: 5px;
 	background-color: #fff;
 	font-family: 'Proxima_Nova';
@@ -66,6 +105,11 @@
 	outline: none;
 	padding-left: 20px;
 	margin-bottom: 15px;
+
+	@media (min-width: 700px) {
+  		width: 515px;
+		height: 60px;
+  	}
 }
 
 .contact-page-input::-webkit-input-placeholder{
@@ -84,8 +128,8 @@
 }
 
 .contact-page-textarea{
-	width: 515px;
-	height: 140px;
+	width: 95%;
+	height: 100px;
 	border-radius: 5px;
 	background-color: #fff;
 	font-family: 'Proxima_Nova';
@@ -95,9 +139,15 @@
 	border: none;
 	outline: none;
 	resize: none;
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-left: 20px;
 	margin-bottom: 30px;
+
+	@media (min-width: 700px) {
+  		width: 515px;
+		height: 140px;
+		padding-top: 20px;
+  	}
 }
 
 .contact-page-textarea::-webkit-input-placeholder{

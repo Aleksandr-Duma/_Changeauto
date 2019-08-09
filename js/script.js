@@ -128,47 +128,48 @@ SidebarSection();
             touchDrag: false
         },
 
-        991:{
+        620:{
+            items: 2,
+            dots: true,
+            nav: false,
+        },
+
+        925:{
+            items: 3,
+            dots: true
+        },
+
+        1295:{
             items: 4,
             dots: true
         }
     }
 	});
 
-
 /*...................SlickSlider................*/
 
 	$('.slick-slider').slick({
 		infinite: true,
     	slidesToShow: 1,
-    	draggable: false,
+    	// draggable: false,
     	responsiveClass: true,
     	arrows: true,
-    	responsive: [
-		    {
-		    breakpoint: 680,
-		    	settings: {
-		   	 	slidesToShow: 1,
-		    	slidesToScroll: 1
-		    	}
-		    },
-		    {
-		    breakpoint: 480,
-		    	settings: {
-		    	slidesToShow: 1,
-		    	slidesToScroll: 1,
-		    	// dots: true,
-		    	draggable: false
-		   		}
-    		}
-  		]
   });
-
 
 	$('.how-to-slider').slick({
-    	dots: true,
-    	slidesToShow: 1
+		dots: true,
+    	slidesToShow: 1,
+    	arrows: true,
+    	responsive: [
+    	    {
+          	breakpoint: 700,
+          	settings: {
+          	arrows: false,
+          		}
+        	}
+   		]
   });
+
 
 	$( ".slider-control-year" ).slider({
 		min: 1900,

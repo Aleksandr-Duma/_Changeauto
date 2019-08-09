@@ -26,6 +26,10 @@ img {
   margin-left: auto;
   margin-right: auto;
 
+  @media (min-width: 1300px) {
+    width: 95%;
+  }
+
   @media (min-width: 1410px) {
     width: 1410px;
   }
@@ -45,7 +49,7 @@ img {
   padding-right: 15px;
   padding-bottom: 10px;
 
-  @media (min-width: 1410px) {
+  @media (min-width: 1200px) {
       padding-top: 59px;
       padding-left: 26px;
       padding-right: 26px;
@@ -75,17 +79,21 @@ img {
   position: relative;
   margin-right: 25px;
 
-  &:hover{
-    background-color: #7faa46;
-  }
+    &:hover{
+      background-color: #7faa46;
+    }
 
   &:after{
-    content: "⏷";
-    font-size: 16px;
-    color: @gray-text;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid @gray-text;
     position: absolute;
-    top: 2px;
-    left: 27px;
+    top: 10px;
+    left: 30px;
     transform: rotate(-90deg);
   }
 }
