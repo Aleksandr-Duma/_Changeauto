@@ -2264,12 +2264,13 @@ img {
   }
 }
 .package-page-title {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.4;
   color: #0f0f0f;
   text-align: center;
+  margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
   .package-page-title {
@@ -2279,7 +2280,7 @@ img {
   }
 }
 .package-page-sub-title {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.4;
@@ -2387,7 +2388,7 @@ img {
   }
 }
 .package-page-card-title {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.8;
@@ -2457,7 +2458,7 @@ img {
   }
 }
 .package-page-card-circle-digit {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 600;
   font-size: 65px;
   line-height: 1;
@@ -2471,14 +2472,14 @@ img {
 }
 .package-page-card-circle-contact {
   text-transform: uppercase;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
   text-align: center;
 }
 .package-page-card-cost {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -2495,7 +2496,7 @@ img {
   font-size: 14px;
 }
 .package-page-card-rub {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
@@ -2510,7 +2511,7 @@ img {
   }
 }
 .package-page-card-rub-vip {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
@@ -2531,7 +2532,7 @@ img {
   border-radius: 5px;
   border: none;
   outline: none;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
@@ -2558,7 +2559,7 @@ img {
   border-radius: 5px;
   border: none;
   outline: none;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
@@ -2589,7 +2590,7 @@ img {
   }
 }
 .package-page-bottom-text {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.44;
@@ -2968,7 +2969,7 @@ img {
 }
 /*...............CONTACT PAGE..............*/
 .contact-page-title {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.4;
@@ -3000,7 +3001,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
-  border: 1px solid green;
+  margin-bottom: 20px;
 }
 @media (min-width: 700px) {
   .contact-page-block {
@@ -3014,8 +3015,17 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-page-block {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 30px;
     margin-bottom: 50px;
   }
 }
@@ -3027,11 +3037,17 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid red;
 }
 @media (min-width: 700px) {
   .contact-page-block-left {
     width: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-page-block-left {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -3051,53 +3067,66 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
-  padding-bottom: 45px;
-  border: 1px solid blue;
+  padding: 20px 10px 25px 10px;
 }
 @media (min-width: 700px) {
   .contact-page-form {
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-page-form {
     width: 575px;
+    padding-top: 30px;
+    padding-bottom: 45px;
   }
 }
 .contact-page-form-title-wrap {
   width: 100%;
 }
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
   .contact-page-form-title-wrap {
     width: 515px;
   }
 }
 .contact-page-form-title {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.6;
   color: #0f0f0f;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
 }
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
   .contact-page-form-title {
     font-size: 24px;
     line-height: 2.1;
+    text-align: left;
   }
 }
 .contact-page-input {
-  width: 95%;
+  width: 100%;
   height: 40px;
   border-radius: 5px;
   background-color: #fff;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #bfc6ce;
   border: none;
   outline: none;
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 @media (min-width: 700px) {
+  .contact-page-input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1200px) {
   .contact-page-input {
     width: 515px;
     height: 60px;
@@ -3116,11 +3145,11 @@ img {
   font-size: 15px;
 }
 .contact-page-textarea {
-  width: 95%;
+  width: 100%;
   height: 100px;
   border-radius: 5px;
   background-color: #fff;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #bfc6ce;
@@ -3129,13 +3158,14 @@ img {
   resize: none;
   padding-top: 10px;
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
   .contact-page-textarea {
     width: 515px;
     height: 140px;
     padding-top: 20px;
+    margin-bottom: 30px;
   }
 }
 .contact-page-textarea::-webkit-input-placeholder {
@@ -3151,10 +3181,10 @@ img {
   font-size: 15px;
 }
 .contact-page-submit {
-  width: 515px;
-  height: 65px;
+  width: 100%;
+  height: 45px;
   text-transform: uppercase;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 12px;
   color: #fff;
@@ -3170,8 +3200,14 @@ img {
 .contact-page-submit:hover {
   background-color: #7faa46;
 }
+@media (min-width: 1200px) {
+  .contact-page-submit {
+    width: 515px;
+    height: 65px;
+  }
+}
 .contact-page-block-right {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3179,34 +3215,80 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-top: 30px;
-  padding-left: 113px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px 15px 10px;
+}
+@media (min-width: 700px) {
+  .contact-page-block-right {
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-page-block-right {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 113px;
+  }
 }
 .contact-page-right-title {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 2.1;
+  font-size: 18px;
+  line-height: 1.4;
   color: #0f0f0f;
-  text-align: left;
-  margin-bottom: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (min-width: 700px) {
+  .contact-page-right-title {
+    font-size: 24px;
+    line-height: 2.1;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-page-right-title {
+    text-align: left;
+    margin-bottom: 25px;
+  }
 }
 .contact-page-link-wrap {
   display: inline-block;
   border-bottom: 1px solid #90d339;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
+}
+@media (min-width: 700px) {
+  .contact-page-link-wrap {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-page-link-wrap {
+    margin-bottom: 45px;
+  }
 }
 .contact-page-mail-link {
   text-decoration: none;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 22px;
   line-height: 1;
   color: #90d339;
-  text-align: left;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .contact-page-mail-link {
+    font-size: 30px;
+    line-height: 1;
+    text-align: left;
+  }
 }
 /*...............SEARCH-PAGE..............*/
 .search-page-title {
@@ -4470,7 +4552,7 @@ img {
   padding-bottom: 55px;
 }
 .registration-block-title {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 2.1;
@@ -4512,7 +4594,7 @@ img {
   padding-bottom: 30px;
 }
 .registration-form-text {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 2.1;
@@ -4559,7 +4641,7 @@ img {
   height: 60px;
   border-radius: 5px;
   outline: none;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.2;
@@ -4594,7 +4676,7 @@ img {
   margin-bottom: 31px;
 }
 .rules-system-text {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.2;
@@ -4613,7 +4695,7 @@ img {
   border: none;
   outline: none;
   text-transform: uppercase;
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 5;
@@ -4623,7 +4705,7 @@ img {
   margin-bottom: 20px;
 }
 .registration-form-bottom-text {
-  font-family: 'Proxima_Nova';
+  font-family: 'Proxima_Nova', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 1.33;
