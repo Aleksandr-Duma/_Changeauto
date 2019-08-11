@@ -149,6 +149,7 @@
 				</div>
 			</div>
 			<!-- INNER-PAGE-WRAP -->
+
 			<div class="wrap-inner-page container">
 				<div class="inner-home-link-wrap lk-user">
 					<a class = "inner-home-link" href="index.html">
@@ -170,12 +171,13 @@
 					</a>
 					<a href="#!" class="link-name-section">Личный кабинет</a>
 				</div>
+
 				<div class="lk-user-content my-transport">
 					<div class="lk-user-content-wrap">
 						<div class="lk-user-content-top-header">
 							<a href="lk-user.html" class="lk-user-content-nav">персональные данные</a>
 							<a href="lk-password.html" class="lk-user-content-nav">смена пароля</a>
-							<a href="#!" class="lk-user-content-nav  active">мои транспортные средства</a>
+							<a href="lk-my-transport.html" class="lk-user-content-nav  active">мои транспортные средства</a>
 							<a href="lk-search.html" class="lk-user-content-nav">критерии поиска</a>
 							<a href="lk-history.html" class="lk-user-content-nav">история покупок</a>
 							<a href="index.html" class="lk-user-exit-link">
@@ -228,180 +230,483 @@
 								</div>
 							</div>
 						</div>
-						<div class="lk-my-transport-block">
-							<div class="lk-my-transport-inner-head">
-								<div class="lk-my-transport-inner-head-item-title">
-									<p class="lk-my-transport-title">Мои транспортные средства</p>
+
+						<!-- ADD-TRANSPORT -->
+						<div class="lk-search-content-block">
+							<form class="lk-search-form">
+								<div class="lk-search-form-main-title-wrap">
+									<h3 class="lk-search-form-main-title">Новое транспортное средство</h3>
 								</div>
-								<div class="lk-my-transport-inner-head-item-button">
-									<!-- После сборки удалить, рабочяя кнопка ниже -->
-									<a href="lk-add-transport.html" class="lk-my-transport-add-car-button">добавить авто</a>
-									<!-- <button class="lk-my-transport-add-car-button">добавить авто</button> -->
-								</div>
-								<div class="lk-my-transport-inner-head-item-link">
-									<a href="#!" class="lk-my-transport-advert-link">
-										<svg 
-											class = advert-link-svg version="1.1" x="0px" y="0px"
-											width="40px" height="40px" viewBox="0 0 485.221 485.221" style="enable-background:new 0 0 485.221 485.221;"
-											xml:space="preserve">
-											<path d="M35.725,242.139c-1.836,0.325-3.643,0.471-5.418,0.471c-14.394,0-27.158-10.307-29.823-24.934
-											c-2.964-16.493,7.997-32.28,24.493-35.241c74.244-13.39,153.995-51.237,237.246-112.033l-35.005-42.47L394.245,0.004
-											l-59.318,158.62l-34.084-41.343C208.143,185.574,121.195,226.74,35.725,242.139z M90.988,333.589H60.661
-											c-16.731,0-30.327,13.562-30.327,30.321v90.98c0,16.764,13.595,30.326,30.327,30.326h30.327c16.762,0,30.324-13.562,30.324-30.326
-											v-90.98C121.312,347.151,107.75,333.589,90.988,333.589z M333.592,212.286h-30.327c-16.759,0-30.321,13.562-30.321,30.324v212.28
-											c0,16.764,13.562,30.326,30.321,30.326h30.327c16.765,0,30.327-13.562,30.327-30.326V242.61
-											C363.919,225.849,350.356,212.286,333.592,212.286z M454.898,151.633h-30.331c-16.76,0-30.322,13.565-30.322,30.327v272.931
-											c0,16.764,13.562,30.326,30.322,30.326h30.331c16.76,0,30.322-13.562,30.322-30.326V181.959
-											C485.221,165.198,471.658,151.633,454.898,151.633z M212.29,272.935h-30.325c-16.731,0-30.327,13.567-30.327,30.327v151.629
-											c0,16.764,13.595,30.326,30.327,30.326h30.325c16.764,0,30.326-13.562,30.326-30.326V303.262
-											C242.616,286.502,229.054,272.935,212.29,272.935z"/>
-										</svg>
-									Поднять выбранные объявления</a>
-									<div class="block-checkbox-lk-my-transport">
-										<input class = "checkbox-input-lk-my-transport" type="checkbox" id = "checkbox-5">
-										<label class = "checkbox-label-lk-my-transport" for = "checkbox-5"></label>
-									</div>
-								</div>
-							</div>
-							<div class="lk-my-transport-block-item">
-								<div class="lk-my-transport-block-item-left">
-									<div class="lk-my-transport-item-block-img">
-										<img class = "lk-my-transport-img-car-block" src="img/car-bascket-1.jpeg" alt="car-bascket-1">
-									</div>
-									<div class="lk-my-transport-item-discription">
-										<p class="lk-my-transport-title-offer">готов доплатить</p>
-										<p class="lk-my-transport-discription-title">Opel Astra J Рестайлинг GTC</p>
-										<div class="wrap-lk-my-transport-change-item">
-											<a href="#!" class = "lk-my-transport-up-change-link">
-												<svg 
-														class = advert-link-svg-up version="1.1" x="0px" y="0px"
-														viewBox="0 0 485.221 485.221" style="enable-background:new 0 0 485.221 485.221;"
-														xml:space="preserve">
-														<path d="M35.725,242.139c-1.836,0.325-3.643,0.471-5.418,0.471c-14.394,0-27.158-10.307-29.823-24.934
-														c-2.964-16.493,7.997-32.28,24.493-35.241c74.244-13.39,153.995-51.237,237.246-112.033l-35.005-42.47L394.245,0.004
-														l-59.318,158.62l-34.084-41.343C208.143,185.574,121.195,226.74,35.725,242.139z M90.988,333.589H60.661
-														c-16.731,0-30.327,13.562-30.327,30.321v90.98c0,16.764,13.595,30.326,30.327,30.326h30.327c16.762,0,30.324-13.562,30.324-30.326
-														v-90.98C121.312,347.151,107.75,333.589,90.988,333.589z M333.592,212.286h-30.327c-16.759,0-30.321,13.562-30.321,30.324v212.28
-														c0,16.764,13.562,30.326,30.321,30.326h30.327c16.765,0,30.327-13.562,30.327-30.326V242.61
-														C363.919,225.849,350.356,212.286,333.592,212.286z M454.898,151.633h-30.331c-16.76,0-30.322,13.565-30.322,30.327v272.931
-														c0,16.764,13.562,30.326,30.322,30.326h30.331c16.76,0,30.322-13.562,30.322-30.326V181.959
-														C485.221,165.198,471.658,151.633,454.898,151.633z M212.29,272.935h-30.325c-16.731,0-30.327,13.567-30.327,30.327v151.629
-														c0,16.764,13.595,30.326,30.327,30.326h30.325c16.764,0,30.326-13.562,30.326-30.326V303.262
-														C242.616,286.502,229.054,272.935,212.29,272.935z"/>
-												</svg>
-												Поднять в поиске
-											</a>
-											<a href="#!" class = "lk-my-transport-correct-link">
-												<svg 
-														class = "pencil-icon-svg" version="1.1" x="0px" y="0px"
-														viewBox="0 0 268.725 268.725" style="enable-background:new 0 0 268.725 268.725;" xml:space="preserve">
-														<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M161.359,56.337c-7.041-7.049-18.458-7.049-25.498,0l-6.374,6.381
-														l-89.243,89.337l0.023,0.023l-2.812,2.82c0,0-8.968,9.032-29.216,74.399c-0.142,0.457-0.283,0.911-0.426,1.374
-														c-0.361,1.171-0.726,2.361-1.094,3.567c-0.326,1.066-0.656,2.154-0.987,3.249c-0.279,0.923-0.556,1.836-0.839,2.779
-														c-0.642,2.14-1.292,4.318-1.955,6.567c-1.455,4.937-5.009,16.07-0.99,20.1c3.87,3.882,15.12,0.467,20.043-0.993
-														c2.232-0.662,4.395-1.311,6.519-1.952c0.981-0.296,1.932-0.586,2.891-0.878c1.031-0.314,2.057-0.626,3.062-0.935
-														c1.269-0.39,2.52-0.775,3.75-1.157c0.367-0.114,0.727-0.227,1.091-0.34c62.192-19.365,73.357-28.453,74.285-29.284
-														c0.007-0.005,0.007-0.005,0.012-0.01c0.039-0.036,0.066-0.06,0.066-0.06l2.879-2.886l0.193,0.193l89.245-89.337l-0.001-0.001
-														l6.374-6.381c7.041-7.048,7.041-18.476,0-25.525L161.359,56.337z M103.399,219.782c-0.078,0.053-0.184,0.122-0.296,0.193
-														c-0.062,0.04-0.137,0.087-0.211,0.133c-0.075,0.047-0.157,0.098-0.244,0.151c-0.077,0.047-0.157,0.095-0.243,0.147
-														c-2.969,1.777-11.682,6.362-32.828,14.017c-2.471,0.894-5.162,1.842-7.981,2.819l-30.06-30.091c0.98-2.84,1.929-5.551,2.826-8.041
-														c7.638-21.235,12.219-29.974,13.986-32.939c0.043-0.071,0.082-0.136,0.121-0.2c0.062-0.102,0.12-0.197,0.174-0.284
-														c0.043-0.069,0.088-0.141,0.126-0.2c0.071-0.111,0.14-0.217,0.193-0.296l2.2-2.206l54.485,54.542L103.399,219.782z M263.351,56.337
-														l-50.997-51.05c-7.041-7.048-18.456-7.048-25.498,0l-12.748,12.763c-7.041,7.048-7.041,18.476,0,25.524l50.996,51.05
-														c7.04,7.048,18.457,7.048,25.498,0l12.749-12.762C270.392,74.813,270.392,63.385,263.351,56.337z"/>
-												</svg>
-												Редактировать
-											</a>
-											<a href="#!" class="lk-my-transport-delete-link">
-												<svg 
-														class="svg-icon-delete" version="1.1" x="0px" y="0px" viewBox="0 0 408.483 408.483" style="enable-background:new 0 0 408.483 408.483;" xml:space="preserve">
-														<path d="M87.748,388.784c0.461,11.01,9.521,19.699,20.539,19.699h191.911c11.018,0,20.078-8.689,20.539-19.699l13.705-289.316    H74.043L87.748,388.784z M247.655,171.329c0-4.61,3.738-8.349,8.35-8.349h13.355c4.609,0,8.35,3.738,8.35,8.349v165.293    c0,4.611-3.738,8.349-8.35,8.349h-13.355c-4.61,0-8.35-3.736-8.35-8.349V171.329z M189.216,171.329    c0-4.61,3.738-8.349,8.349-8.349h13.355c4.609,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.737,8.349-8.349,8.349h-13.355    c-4.61,0-8.349-3.736-8.349-8.349V171.329L189.216,171.329z M130.775,171.329c0-4.61,3.738-8.349,8.349-8.349h13.356    c4.61,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.738,8.349-8.349,8.349h-13.356c-4.61,0-8.349-3.736-8.349-8.349V171.329z" class="active-path"/>
-														<path d="M343.567,21.043h-88.535V4.305c0-2.377-1.927-4.305-4.305-4.305h-92.971c-2.377,0-4.304,1.928-4.304,4.305v16.737H64.916    c-7.125,0-12.9,5.776-12.9,12.901V74.47h304.451V33.944C356.467,26.819,350.692,21.043,343.567,21.043z"  class="active-path"/>
-												</svg>
-												Удалить
-											</a>
+								<div class="lk-head-search-form">
+									<div class="lk-head-search-form-wrap">
+										<div class="lk-head-search-form-item">
+											<p class="form-select-text lk-search">Выберите страну</p>
+											<select class = "head-lk-search-select select-country">
+												<option value="">Любая страна</option>
+												<option value="">страна</option>
+												<option value="">страна</option>
+												<option value="">страна</option>
+											</select>	
+										</div>
+										<div class="lk-head-search-form-item">
+											<p class="form-select-text lk-search-local">Выберите регион</p>
+											<select class = "head-lk-search-select select-local">
+												<option value="">Восточно-Казахстанская область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+												<option value="">область</option>
+											</select>	
+										</div>
+										<div class="lk-head-search-form-item">
+											<p class="form-select-text lk-search-transport">Вид транспорта</p>
+											<select class = "head-lk-search-select select-transport">
+												<option value="">Легковой</option>
+												<option value="">транспорт</option>
+												<option value="">транспорт</option>
+												<option value="">транспорт</option>
+											</select>
+										</div>
+										<div class="head-search-form-item">
+											<p class="form-select-text lk-search-brand">Марка авто</p>
+											<select class = "head-lk-search-select select-brand-auto">
+												<option value="">Aston Martin</option>
+												<option value="">авто</option>
+												<option value="">авто</option>
+												<option value="">авто</option>
+											</select>
+										</div>
+										<div class="head-search-form-item">
+											<p class="form-select-text lk-search-model">Модель</p>
+											<select class = "head-lk-search-select select-model">
+												<option value="">Cygnet</option>
+												<option value="">Модель</option>
+												<option value="">Модель</option>
+												<option value="">Модель</option>
+											</select>
 										</div>
 									</div>
 								</div>
-								<div class="lk-my-transport-block-item-right">
-									<div class="block-checkbox">
-										<input class = "checkbox-input" type="checkbox" id = "checkbox-6" checked="checked">
-										<label class = "checkbox-label" for = "checkbox-6"></label>
-									</div>	
-								</div>
-							</div>
-							<div class="lk-my-transport-block-item">
-								<div class="lk-my-transport-block-item-left">
-									<div class="lk-my-transport-item-block-img">
-										<img class = "lk-my-transport-img-car-block" src="img/car-bascet-2.jpeg" alt="car-bascket-1">
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="lk-search-section-title-form">Основные сведения об автомобиле</h3>
 									</div>
-									<div class="lk-my-transport-item-discription">
-										<p class="lk-my-transport-title-offer">хочу доплату</p>
-										<p class="lk-my-transport-discription-title">Toyota Avensis III</p>
-										<div class="wrap-lk-my-transport-change-item">
-											<a href="#!" class = "lk-my-transport-up-change-link">
-												<svg 
-													class = advert-link-svg-up version="1.1" x="0px" y="0px"
-													viewBox="0 0 485.221 485.221" style="enable-background:new 0 0 485.221 485.221;"
-													xml:space="preserve">
-													<path d="M35.725,242.139c-1.836,0.325-3.643,0.471-5.418,0.471c-14.394,0-27.158-10.307-29.823-24.934
-													c-2.964-16.493,7.997-32.28,24.493-35.241c74.244-13.39,153.995-51.237,237.246-112.033l-35.005-42.47L394.245,0.004
-													l-59.318,158.62l-34.084-41.343C208.143,185.574,121.195,226.74,35.725,242.139z M90.988,333.589H60.661
-													c-16.731,0-30.327,13.562-30.327,30.321v90.98c0,16.764,13.595,30.326,30.327,30.326h30.327c16.762,0,30.324-13.562,30.324-30.326
-													v-90.98C121.312,347.151,107.75,333.589,90.988,333.589z M333.592,212.286h-30.327c-16.759,0-30.321,13.562-30.321,30.324v212.28
-													c0,16.764,13.562,30.326,30.321,30.326h30.327c16.765,0,30.327-13.562,30.327-30.326V242.61
-													C363.919,225.849,350.356,212.286,333.592,212.286z M454.898,151.633h-30.331c-16.76,0-30.322,13.565-30.322,30.327v272.931
-													c0,16.764,13.562,30.326,30.322,30.326h30.331c16.76,0,30.322-13.562,30.322-30.326V181.959
-													C485.221,165.198,471.658,151.633,454.898,151.633z M212.29,272.935h-30.325c-16.731,0-30.327,13.567-30.327,30.327v151.629
-													c0,16.764,13.595,30.326,30.327,30.326h30.325c16.764,0,30.326-13.562,30.326-30.326V303.262
-													C242.616,286.502,229.054,272.935,212.29,272.935z"/>
-												</svg>
-												Поднять в поиске
-											</a>
-											<a href="#!" class = "lk-my-transport-correct-link">
-												<svg 
-													class = "pencil-icon-svg" version="1.1" x="0px" y="0px"
-													viewBox="0 0 268.725 268.725" style="enable-background:new 0 0 268.725 268.725;" xml:space="preserve">
-													<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M161.359,56.337c-7.041-7.049-18.458-7.049-25.498,0l-6.374,6.381
-													l-89.243,89.337l0.023,0.023l-2.812,2.82c0,0-8.968,9.032-29.216,74.399c-0.142,0.457-0.283,0.911-0.426,1.374
-													c-0.361,1.171-0.726,2.361-1.094,3.567c-0.326,1.066-0.656,2.154-0.987,3.249c-0.279,0.923-0.556,1.836-0.839,2.779
-													c-0.642,2.14-1.292,4.318-1.955,6.567c-1.455,4.937-5.009,16.07-0.99,20.1c3.87,3.882,15.12,0.467,20.043-0.993
-													c2.232-0.662,4.395-1.311,6.519-1.952c0.981-0.296,1.932-0.586,2.891-0.878c1.031-0.314,2.057-0.626,3.062-0.935
-													c1.269-0.39,2.52-0.775,3.75-1.157c0.367-0.114,0.727-0.227,1.091-0.34c62.192-19.365,73.357-28.453,74.285-29.284
-													c0.007-0.005,0.007-0.005,0.012-0.01c0.039-0.036,0.066-0.06,0.066-0.06l2.879-2.886l0.193,0.193l89.245-89.337l-0.001-0.001
-													l6.374-6.381c7.041-7.048,7.041-18.476,0-25.525L161.359,56.337z M103.399,219.782c-0.078,0.053-0.184,0.122-0.296,0.193
-													c-0.062,0.04-0.137,0.087-0.211,0.133c-0.075,0.047-0.157,0.098-0.244,0.151c-0.077,0.047-0.157,0.095-0.243,0.147
-													c-2.969,1.777-11.682,6.362-32.828,14.017c-2.471,0.894-5.162,1.842-7.981,2.819l-30.06-30.091c0.98-2.84,1.929-5.551,2.826-8.041
-													c7.638-21.235,12.219-29.974,13.986-32.939c0.043-0.071,0.082-0.136,0.121-0.2c0.062-0.102,0.12-0.197,0.174-0.284
-													c0.043-0.069,0.088-0.141,0.126-0.2c0.071-0.111,0.14-0.217,0.193-0.296l2.2-2.206l54.485,54.542L103.399,219.782z M263.351,56.337
-													l-50.997-51.05c-7.041-7.048-18.456-7.048-25.498,0l-12.748,12.763c-7.041,7.048-7.041,18.476,0,25.524l50.996,51.05
-													c7.04,7.048,18.457,7.048,25.498,0l12.749-12.762C270.392,74.813,270.392,63.385,263.351,56.337z"/>
-												</svg>
-												Редактировать
-											</a>
-											<a href="#!" class="lk-my-transport-delete-link">
-												<svg 
-													class="svg-icon-delete" version="1.1" x="0px" y="0px"viewBox="0 0 408.483 408.483" style="enable-background:new 0 0 408.483 408.483;" xml:space="preserve">
-													<path d="M87.748,388.784c0.461,11.01,9.521,19.699,20.539,19.699h191.911c11.018,0,20.078-8.689,20.539-19.699l13.705-289.316    H74.043L87.748,388.784z M247.655,171.329c0-4.61,3.738-8.349,8.35-8.349h13.355c4.609,0,8.35,3.738,8.35,8.349v165.293    c0,4.611-3.738,8.349-8.35,8.349h-13.355c-4.61,0-8.35-3.736-8.35-8.349V171.329z M189.216,171.329    c0-4.61,3.738-8.349,8.349-8.349h13.355c4.609,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.737,8.349-8.349,8.349h-13.355    c-4.61,0-8.349-3.736-8.349-8.349V171.329L189.216,171.329z M130.775,171.329c0-4.61,3.738-8.349,8.349-8.349h13.356    c4.61,0,8.349,3.738,8.349,8.349v165.293c0,4.611-3.738,8.349-8.349,8.349h-13.356c-4.61,0-8.349-3.736-8.349-8.349V171.329z" class="active-path"/>
-													<path d="M343.567,21.043h-88.535V4.305c0-2.377-1.927-4.305-4.305-4.305h-92.971c-2.377,0-4.304,1.928-4.304,4.305v16.737H64.916    c-7.125,0-12.9,5.776-12.9,12.901V74.47h304.451V33.944C356.467,26.819,350.692,21.043,343.567,21.043z"  class="active-path"/>
-												</svg>
-												Удалить
-											</a>
+									<div class="section-body form-section-body info-car lk-search add-transport">
+										<div class="add-transport-wrap-label">
+											<div class="add-transport-item">
+												<p class="form-select-text add-transport">Год выпуска</p>
+												<select class = "head-lk-search-select select-model add">
+													<option value="">Выберите из списка</option>
+													<option value="">2003</option>
+													<option value="">2002</option>
+													<option value="">2001</option>
+												</select>
+											</div>
+
+											<div class="add-transport-item">
+												<p class="form-select-text lk-search-model">Мощность автомобиля</p>
+												<select class = "head-lk-search-select select-model add-2">
+													<option value="">Выберите из списка</option>
+													<option value="">500</option>
+													<option value="">300</option>
+													<option value="">200</option>
+												</select>
+											</div>
+
+											<div class="add-transport-item">
+												<label class="radio">
+													<input type="radio" name = "info" checked="checked" />
+													<div class="radio-text add">л.с</div>
+												</label>
+												<label class="radio">
+													<input type="radio" name = "info"/>
+													<div class="radio-text">кВт</div>
+												</label>
+											</div>
+										</div>
+										<div class="add-transport-wrap-label">
+											<div class="add-transport-item">
+												<p class="form-select-text add-transport-km">Пробег (км)</p>
+												<input type="text" class = "input-left-add-transport" placeholder="Например, 180 000">
+											</div>
+											<div class="add-transport-item">
+												<p class="form-select-text lk-search-model">Объем двигателя (cm<sup>3</sup>)</p>
+												<input type="text" class = "input-right-add-transport" placeholder="Например, 1 500">
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="lk-my-transport-block-item-right">
-									<div class="block-checkbox">
-										<input class = "checkbox-input" type="checkbox" id = "checkbox-7">
-										<label class = "checkbox-label" for = "checkbox-7"></label>
-									</div>	
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="section-title-form">Состояние, собственник и цвет</h3>
+									</div>
+									<div class="section-body form-section-body lk-search-2">
+										<div class="wrap-radio-condition">
+											<div class="checkbox-condition-items-block lk-search">
+												<label class="radio">
+													<input type="radio" name = "condition" checked="checked" />
+													<div class="radio-text condition lk-search">Новые</div>
+												</label>
+												<label class="radio">
+													<input type="radio" name = "condition"/>
+													<div class="radio-text condition lk-search-2">Подержанные</div>
+												</label>
+											</div>
+											<div class="checkbox-condition-items-block lk-search-2">
+												<p class="form-select-text text-owner lk-search">Собственник</p>
+												<select class = "condition-select select-owner">
+													<option value="">Частный собственник</option>
+													<option value="">Другой собственник</option>
+													<option value="">Другой собственник</option>
+													<option value="">Другой собственник</option>
+												</select>	
+											</div>
+											<div class="checkbox-condition-items-block lk-search-3">
+												<p class="form-select-text text-color-auto lk-search">Цвет</p>
+												<select class = "condition-select select-color-auto lk-search">
+													<option value="">Серебристый</option>
+													<option value="">Черный</option>
+													<option value="">Синий</option>
+													<option value="">Белый</option>
+												</select>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="section-title-form">Типы транспортных средств</h3>
+									</div>
+									<div class="section-body form-section-body section-body-type-car lk-search">
+										<div class="wrap-radio-type-car">
+											<label class="radio">
+												<input type="radio" name = "type-car" checked="checked" />
+												<div class="radio-text type-car">Спортивный автомобиль/Купе</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "type-car"/>
+												<div class="radio-text type-car">Малолитражный автомобиль</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "type-car"/>
+												<div class="radio-text type-car">Минивэн/Микроавтобус</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "type-car"/>
+												<div class="radio-text type-car">Седан</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "type-car"/>
+												<div class="radio-text type-car">Универсал</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "type-car"/>
+												<div class="radio-text type-car">Внедорожник/Пикап</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "type-car"/>
+												<div class="radio-text type-car">Хэтчбек</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "type-car"/>
+												<div class="radio-text type-car">Кабриолет/Родстер</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "type-car"/>
+												<div class="radio-text type-car">Другое</div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="section-title-form">Вид топлива</h3>
+									</div>
+									<div class="section-body form-section-body section-body-fuel lk-search">
+										<div class="wrap-radio-fuel">
+											<label class="radio">
+												<input type="radio" name = "fuel" checked="checked" />
+												<div class="radio-text fuel">Бензин</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "fuel"/>
+												<div class="radio-text fuel">Дизель</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "fuel"/>
+												<div class="radio-text fuel">Электрический</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "fuel"/>
+												<div class="radio-text fuel">Гибрид (бензин/электро)</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "fuel"/>
+												<div class="radio-text fuel">Гибрид (дизель/электро)</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "fuel"/>
+												<div class="radio-text fuel">Сжиженный нефтяной газ</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "fuel"/>
+												<div class="radio-text fuel">Сжатый природный газ</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "fuel"/>
+												<div class="radio-text fuel">Другое</div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="section-title-form">Коробка передач</h3>
+									</div>
+									<div class="section-body form-section-body lk-search">
+										<div class="wrap-radio-transmition">
+											<label class="radio">
+												<input type="radio" name = "transmition" checked="checked" />
+												<div class="radio-text transmition">Механическая КП</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "transmition"/>
+												<div class="radio-text transmition">Полуавтоматическая КП</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name = "transmition"/>
+												<div class="radio-text transmition">Автоматическая КП</div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="section-title-form">Безопасность</h3>
+									</div>
+									<div class="section-body form-section-body comfort-block lk-search">
+										<div class="wrap-checkbox-comfort">
+											<div class="checkbox-comfort-items-block">
+												<label class="checkbox-wrap">
+													<input type="checkbox" checked="checked" />
+													<div class="checkbox-text comfort">Антиблокировочная тормозная система (ABS)</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Антипробуксовочная система (TCS, ASR, TRC)</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Боковые подушки безопасности</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Всесезонные шины</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Датчик дождя</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Датчик парковки</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Датчик света</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort margin-bottom">Шторки безопасности</div>
+												</label>
+											</div>
+											<div class="checkbox-comfort-items-block">
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Зимние шины</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Ксеноновые фары</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Легкосплавные колесные диски</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Летние шины</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Многофункциональный рул</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Омыватель фар</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort margin-bottom">Подушка безопасности водителя</div>
+												</label>
+											</div>
+											<div class="checkbox-comfort-items-block">
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Подушка безопасности пассажира</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Противотуманные фары</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Усилитель руля</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Противоугонная сигнализация</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Противоугонное устройство</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Система стабилизации (ESP, DSC, VDC, ESC)</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort margin-bottom">Стальные колесные диски</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="section-title-form">Комфорт</h3>
+									</div>
+									<div class="section-body form-section-body comfort-block lk-search">
+										<div class="wrap-checkbox-comfort">
+											<div class="checkbox-comfort-items-block">
+												<label class="checkbox-wrap">
+													<input type="checkbox" checked="checked" />
+													<div class="checkbox-text comfort">Регулируемая по вылету рулевая колонка</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Электрорегулировка боковых зеркал</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Навигационная система/tvd/dvd система</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort margin-bottom">Климат-контроль</div>
+												</label>
+											</div>
+											<div class="checkbox-comfort-items-block">
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Электрорегулировка пассажирского сиденья</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Аудио-система</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Обивка салона ткань</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort margin-bottom">Кожаный салон</div>
+												</label>
+											</div>
+											<div class="checkbox-comfort-items-block">
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Электрорегулировка водительского сиденья</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Велюровый салон</div>
+												</label>
+												<label class="checkbox-wrap">
+													<input type="checkbox"/>
+													<div class="checkbox-text comfort">Усилитель руля</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="section-title-form">Другие параметры</h3>
+									</div>
+									<div class="section-body form-section-body lk-search-3">
+										<div class="wrap-checkbox-other-parameters">
+											<div class="other-parameters-select-wrap">
+												<p class="other-parameters-select-text">Условия обмена</p>
+												<select class = "other-parameters-select-box lk-search-select">
+													<option value="">Готов доплатить</option>
+													<option value="">Готов доплатить</option>
+													<option value="">Готов доплатить</option>
+													<option value="">Готов доплатить</option>
+												</select>
+											</div>
+											<label class="checkbox-wrap lk-search">
+												<input type="checkbox"/>
+												<div class="checkbox-text other-parameters">Транспорт с повреждениями</div>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-section"  data-form-section = "open">
+									<div class="form-section-head lk-search">
+										<h3 class="section-title-form">Добавьте фотографии автомобиля</h3>
+									</div>
+									<div class="section-body form-section-body add-photo">
+										<div class="block-add-photo-car">
+											<a href="#" class="button-add-photo">+</a>
+											<div class="block-text-add-photo">
+												<p class="add-photo-text-top">Загрузить фото</p>
+												<p class="add-photo-text-bottom">Максимум 6 штук</p>
+											</div>
+											<div class="add-photo-item"></div>
+											<div class="add-photo-item"></div>
+											<div class="add-photo-item"></div>
+											<div class="add-photo-item"></div>
+											<div class="add-photo-item"></div>
+											<div class="add-photo-item"></div>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="search-form-footer lk-search add-transport">
+									<a href="#!" class="search-form-footer-reset">сбросить все параметры</a>
+									<button class = "lk-search-form-button" type = "submit">добавить транспорт</button>
+								</div>
+							</form>
 						</div>
+
+						
+
+						<!-- ADD-TRANSPORT END-->
 					</div>
 				</div>	
 			</div>
-			
+
+
 		</div>
 		<!-- FOOTER -->
 		<footer class="footer">

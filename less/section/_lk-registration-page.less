@@ -4,57 +4,100 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 55px;
+	padding-bottom: 15px;
+
+	@media (min-width: 700px) {
+  		padding-bottom: 55px;
+  	}
 }
 
 .registration-block-title{
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
-	font-size: 30px;
-	line-height: 2.1;
+	font-size: 24px;
+	line-height: 1.4;
 	color: @main-text;
 	text-align: center;
 	margin-bottom: 7px;
+
+	@media (min-width: 700px) {
+  		font-size: 30px;
+		line-height: 2.1;
+  	}
 }
 
 .registration-form-block{
-	width: 720px;
+	width: 100%;
 	border-radius: 5px;
 	background-color: #fff;
 	box-shadow: @main-shadow;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 50px;
+	padding-top: 15px;
+
+	@media (min-width: 700px) {
+  		width: 60%;
+  	}
+
+  	@media (min-width: 1410px) {
+  		width: 720px;
+  		padding-top: 50px;
+  	}
 }
 
 .registration-form-block-form{
-	width: 490px;
+	width: 95%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	border-bottom: 1px solid @light-gray;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
+
+  	@media (min-width: 1410px) {
+  		width: 490px;
+  		padding-bottom: 30px;
+  	}
 }
 
 .registration-form-text{
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 600;
 	font-size: 15px;
-	line-height: 2.1;
+	line-height: 1.4;
 	color: @main-text;
 	text-align: center;
-	margin-bottom: 17px;
+	margin-bottom: 15px;
+
+	@media (min-width: 700px) {
+  		line-height: 2.1;
+  		margin-bottom: 17px;
+  	}
 }
 
 .registration-form-block-input{
 	width: 100%;
-	height: 60px;
+	height: 40px;
 	border-radius: 5px;
 	border: 1px solid @light-gray;
 	outline: none;
-	padding-left: 20px;
-	margin-bottom: 15px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+
+	@media (min-width: 700px) {
+  		height: 60px;
+  		padding-left: 20px;
+  		margin-bottom: 15px;
+  	}
+}
+
+.car-bg-left.registration,
+.car-bg-rigth.registration{
+	display: none;
+
+	@media (min-width: 700px) {
+  		display: block;
+  	}
 }
 
 .registration-form-block-input::-webkit-input-placeholder {
@@ -84,52 +127,92 @@
 }
 
 .wrap-phone-number.phone-number-select{
-	width: 185px;
-	height: 60px;
+	width: 34%;
+	height: 40px;
 	border-radius: 5px;
 	outline: none;
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 12px;
 	line-height: 1.2;
 	color: #BAC2CA;
-	padding-top: 20px;
-	padding-left: 40px;
+	padding-top: 12px;
+	padding-left: 7px;
+
+	@media (min-width: 700px) {
+		height: 60px;
+		font-size: 15px;
+		padding-top: 20px;
+		padding-left: 10px;
+  	}
+
+  	@media (min-width: 1410px) {
+  		width: 185px;
+		padding-left: 40px;
+  	}
 }
 
 .phone-number-input-short{
-	width: 85px;
-	height: 60px;
+	width: 22%;
+	height: 40px;
 	border-radius: 5px;
 	border: 1px solid @light-gray;
 	outline: none;
 	padding-left: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+
+	@media (min-width: 700px) {
+  		width: 22%;
+		height: 60px;
+		margin-bottom: 15px;
+  	}
+
+  	@media (min-width: 1410px) {
+  		width: 85px;
+  	}
 }
 
 .phone-number-input-long{
-	width: 190px;
-	height: 60px;
+	width: 37%;
+	height: 40px;
 	border-radius: 5px;
 	border: 1px solid @light-gray;
 	outline: none;
 	padding-left: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+
+	@media (min-width: 700px) {
+  		width: 37%;
+		height: 60px;
+		margin-bottom: 15px;
+  	}
+
+  	@media (min-width: 1410px) {
+  		width: 190px;
+  	}
 }
 
 .checkbox-wrap.checkbox-rules{
 	width: 100%;
 	display: flex;
 	padding-top: 10px;
-	margin-bottom: 31px;
+	margin-bottom: 15px;
+
+	@media (min-width: 700px) {
+  		margin-bottom: 31px;
+  	}
 }
 
 .rules-system-text{
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 13px;
 	line-height: 1.2;
 	color: @main-text;
+
+	@media (min-width: 700px) {
+  		font-size: 15px;
+  	}
 }
 
 .rules-system-link{
@@ -138,7 +221,7 @@
 
 .registration-block-bottom-button{
 	width: 100%;
-	height: 65px;
+	height: 45px;
 	text-decoration: none;
 	display: inline-block;
 	background-color: @main-green;
@@ -149,20 +232,29 @@
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
 	font-size: 12px;
-	line-height: 5;
+	line-height: 4;
 	color: #fff;
 	text-align: center;
 	cursor: pointer;
 	margin-bottom: 20px;
+
+	@media (min-width: 700px) {
+  		height: 65px;
+  		line-height: 5;
+  	}
 }
 
 .registration-form-bottom-text{
 	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 13px;
 	line-height: 1.33;
 	color: @main-text;
 	text-align: left;
 	margin-bottom: 10px;
+
+	@media (min-width: 700px) {
+  		font-size: 15px;
+  	}
 }
 

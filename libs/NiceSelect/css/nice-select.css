@@ -68,11 +68,33 @@
   }
 
 .phone-number-select.nice-select:after{
-  top: 19px;
+  top: 16px;
+  right: 8px;
+}
+
+@media (min-width: 700px) {
+    .phone-number-select.nice-select:after{
+      top: 15px;
+    }
 }
 
 .lk-user-phone-select.nice-select:after{
-  top: 19px;
+  top: 18px;
+  right: 7px;
+}
+
+@media (min-width: 700px) {
+    .lk-user-phone-select.nice-select:after{
+      top: 20px;
+      right: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .lk-user-phone-select.nice-select:after{
+      top: 27px;
+      right: 15px;
+    }
 }
 
 .transport-sidebar-select.nice-select:after{
@@ -189,6 +211,25 @@
 
 .phone-number-select.nice-select .option{
   text-align: center;
+}
+
+@media (max-width: 700px) {
+    .phone-number-select.nice-select .option{
+      font-size: 13px;
+      text-align: center;
+      padding-left: 10px;
+    }
+}
+
+.lk-user-phone-select.nice-select .option{
+  padding-left: 7px;
+}
+
+@media (max-width: 700px) {
+    .lk-user-phone-select.nice-select .option{
+      font-size: 13px;
+      text-align: center;
+    }
 }
 
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {

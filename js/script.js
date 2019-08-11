@@ -231,5 +231,6 @@ SidebarSection();
 	$('.model-select-car').niceSelect();
 	$('.phone-number-select').niceSelect();
 	$('.lk-search-select').niceSelect();
+	$('.lk-user-phone-select').niceSelect();
 
 })
