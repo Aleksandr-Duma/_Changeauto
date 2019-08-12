@@ -6,27 +6,52 @@
 
 .lk-my-transport-inner-head{
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	flex-direction: column;
+	align-items: center;
 	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+  	}
 }
 
 .lk-my-transport-inner-head-item-title{
-	width: 32%;
+	width: 100%;
+	padding-bottom: 10px;
+
+	@media (min-width: 1200px) {
+		width: 32%;
+		padding-bottom: 0;
+  	}
 }
 
 .lk-my-transport-title{
-	font-family: 'Proxima_Nova';
+	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1;
 	color: @main-text;
-	text-align: left;
+	text-align: center;
+
+	@media (min-width: 1200px) {
+		font-size: 24px;
+		text-align: left;
+  	}
 }
 
 .lk-my-transport-inner-head-item-button{
-	width: 38%;
-	padding-left: 5px;
+	width: 100%;
+	padding-bottom: 10px;
+	text-align: center;
+
+	@media (min-width: 1200px) {
+		width: 38%;
+		text-align: left;
+		padding-bottom: 0;
+		padding-left: 5px;
+  	}
 }
 
 .lk-my-transport-add-car-button{
@@ -39,7 +64,7 @@
 	border: none;
 	outline: none;
 	text-transform: uppercase;
-	font-family: 'Proxima_Nova';
+	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 2.8;
@@ -49,11 +74,16 @@
 }
 
 .lk-my-transport-inner-head-item-link{
-	width: 35%;
+	width: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	padding-top: 5px;
+
+	@media (min-width: 1200px) {
+		width: 35%;
+		justify-content: flex-end;
+  	}
 }
 
 .advert-link-svg{
@@ -65,9 +95,9 @@
 
 .lk-my-transport-advert-link{
 	text-decoration: none;
-	font-family: 'Proxima_Nova';
+	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1;
 	color: #8B98A6;
 	margin-right: 10px;
@@ -75,6 +105,10 @@
 	&:hover{
 		color: @main-green;
 	}
+
+	@media (min-width: 1200px) {
+		font-size: 14px;
+  	}
 }
 
 .lk-my-transport-advert-link:hover .advert-link-svg{
@@ -133,28 +167,53 @@
 
 .lk-my-transport-block-item{
 	width: 100%;
-	height: 240px;
 	border-radius: 5px;
 	background-color: @gray-bg;
 	margin-bottom: 15px;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		height: 240px;
+		flex-direction: row;
+		padding-bottom: 0;
+  	}
 }
 
 .lk-my-transport-block-item-left{
-	width: 70%;
+	width: 100%;
 	display: flex;
-	justify-content: flex-start;
-	padding-top: 30px;
-	padding-left: 30px;
-	padding-bottom: 30px;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 10px 30px 10px;
+
+	@media (min-width: 540px) {
+		width: 70%;
+  	}
+
+	@media (min-width: 1200px) {
+		width: 70%;
+		flex-direction: row;
+		justify-content: flex-start;
+		padding-top: 30px;
+		padding-right: 0;
+		padding-left: 30px;
+  	}
 }
 
 .lk-my-transport-item-block-img{
-	width: 285px;
-	height: 180px;
+	width: 100%;
 	border-radius: 5px;
-	margin-right: 30px;
+	margin-right: 0;
 	overflow: hidden;
+
+	@media (min-width: 1200px) {
+		width: 285px;
+		height: 180px;
+		margin-right: 30px;
+  	}
 }
 
 .lk-my-transport-img-car-block{
@@ -163,32 +222,51 @@
 }
 
 .lk-my-transport-item-discription{
-	width: 450px;
-	padding-top: 40px;
+	width: 100%;
+	padding-top: 10px;
+
+	@media (min-width: 1200px) {
+		width: 450px;
+		padding-top: 40px;
+  	}
 }
 
 .lk-my-transport-title-offer{
 	text-transform: uppercase;
-	font-family: 'Proxima_Nova';
+	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 1.4;
 	color: @main-green;
 	margin-bottom: 5px;
+
+	@media (min-width: 1200px) {
+		font-size: 12px;
+  	}
 }
 
 .lk-my-transport-discription-title{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 1.6;
+	font-size: 16px;
+	line-height: 1.4;
 	color: @main-text;
 	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		font-size: 20px;
+		line-height: 1.6;
+  	}
 }
 
 .wrap-lk-my-transport-change-item{
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 1200px) {
+		flex-direction: row;
+  	}
 }
 
 .advert-link-svg-up{
@@ -200,16 +278,21 @@
 
 .lk-my-transport-up-change-link{
 	text-decoration: none;
-	font-family: 'Proxima_Nova';
+	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 1;
 	color: #8B98A6;
 	margin-right: 30px;
+	margin-bottom: 10px;
 
 	&:hover{
 		color: @main-green;
 	}
+
+	@media (min-width: 1200px) {
+		margin-bottom: 0;
+  	}
 }
 
 .lk-my-transport-up-change-link:hover .advert-link-svg-up{
@@ -224,16 +307,21 @@
 
 .lk-my-transport-correct-link{
 	text-decoration: none;
-	font-family: 'Proxima_Nova';
+	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 1;
 	color: #8B98A6;
 	margin-right: 30px;
+	margin-bottom: 10px;
 
 	&:hover{
 		color: @main-green;
 	}
+
+	@media (min-width: 1200px) {
+		margin-bottom: 0;
+  	}
 }
 
 .lk-my-transport-correct-link:hover .pencil-icon-svg{
@@ -249,7 +337,7 @@
 
 .lk-my-transport-delete-link{
 	text-decoration: none;
-	font-family: 'Proxima_Nova';
+	font-family: 'Proxima_Nova', sans-serif;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 1;
@@ -265,9 +353,15 @@
 }
 
 .lk-my-transport-block-item-right{
-	width: 30%;
+	width: 100%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
-	padding-right: 50px;
+	padding-right: 0;
+
+	@media (min-width: 1200px) {
+		width: 30%;
+		justify-content: flex-end;
+		padding-right: 50px;
+  	}
 }

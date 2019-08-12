@@ -2,37 +2,65 @@
 
 .lk-my-transport-no-car-block{
 	width: 100%;
+	padding-top: 20px;
+
+	@media (min-width: 1200px) {
+		padding-top: 0px;
+  	}
 }
 
 .lk-my-transport-no-car-title{
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.4;
 	color: @main-text;
-	text-align: left;
-	margin-bottom: 90px;
+	text-align: center;
+	margin-bottom: 20px;
+
+	@media (min-width: 1200px) {
+		font-size: 24px;
+		margin-bottom: 40px;
+  	}
+
+  	@media (min-width: 1410px) {
+		margin-bottom: 90px;
+  	}
 }
 
 .lk-my-transport-no-car-content{
 	text-align: center;
-	padding-left: 250px;
-	padding-right: 250px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	@media (min-width: 1200px) {
+		padding-left: 150px;
+		padding-right: 150px;
+  	}
+
+  	@media (min-width: 1410px) {
+		padding-left: 250px;
+		padding-right: 250px;
+  	}
 }
 
 .lk-my-transport-no-car-disription{
 	font-family: 'Proxima_Nova';
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 1.5;
 	color: #8B98A6;
 	text-align: center;
 	margin-bottom: 21px;
+
+	@media (min-width: 1200px) {
+		font-size: 24px;
+  	}
 }
 
 .lk-my-transport-no-car-button{
 	width: 200px;
-	height: 58px;
+	height: 45px;
 	text-decoration: none;
 	display: inline-block;
 	background-color: @main-green;
@@ -43,10 +71,15 @@
 	font-family: 'Proxima_Nova';
 	font-weight: 700;
 	font-size: 12px;
-	line-height: 5;
+	line-height: 4;
 	color: #fff;
 	text-align: center;
 	cursor: pointer;
 	margin-top: 7px;
+
+	@media (min-width: 1200px) {
+		height: 58px;
+		line-height: 5;
+  	}
 }
 

@@ -47,13 +47,15 @@
 						</ul>
 					</div>
 					<div class="contact-block">
-						<a class = "link-block_item-link link-search" href="search.html">
-							<svg 
-								class = "search-svg" enable-background="new 0 0 56.966 56.966" 
-								viewBox="0 0 56.966 56.966"><path d="m55.146 51.887-13.558-14.101c3.486-4.144 5.396-9.358 5.396-14.786 0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837 1.192-1.147 1.23-3.049.083-4.242zm-31.162-45.887c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"/>
-							</svg>
-							<p class="text-none">Поиск</p>
-						</a>
+						<div class="contact-search-block">
+							<a class = "link-block_item-link link-search" href="search.html">
+								<svg 
+									class = "search-svg" enable-background="new 0 0 56.966 56.966" 
+									viewBox="0 0 56.966 56.966"><path d="m55.146 51.887-13.558-14.101c3.486-4.144 5.396-9.358 5.396-14.786 0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837 1.192-1.147 1.23-3.049.083-4.242zm-31.162-45.887c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"/>
+								</svg>
+								<p class="text-none">Поиск</p>
+							</a>
+						</div>
 						<div class="dropdown-wrap">
 							<div class="dropdown" data-dropdown = "open">
 								<div class="dropdown-head">
@@ -113,9 +115,9 @@
 							</div>
 						</div>
 						<div class="user-block">
-							<a href="lk-user-auth.html" class="user-link user-link--active">
+							<a href="lk-user-auth.html" class="user-link">
 								<svg 
-									class = "user-svg user-svg--active" version="1.1" x="0px" y="0px"
+									class = "user-svg" version="1.1" x="0px" y="0px"
 	 								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path d="M437.02,330.98c-27.883-27.882-61.071-48.523-97.281-61.018C378.521,243.251,404,198.548,404,148
 									C404,66.393,337.607,0,256,0S108,66.393,108,148c0,50.548,25.479,95.251,64.262,121.962
@@ -145,11 +147,20 @@
 								<p class="text-none">Корзина</p>
 							</a>
 						</div>
+						<div class="burger-menu-button">
+							<svg 
+								class = "burger-svg" version="1.1" x="0px" y="0px"
+								viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+								<rect y="2" width="50" height="4"/>
+								<rect y="16" width="50" height="4"/>
+								<rect y="30" width="50" height="4"/>
+								<rect y="44" width="50" height="4"/>
+							</svg>
+						</div>
 					</div>
 				</div>
 			</div>
 			<!-- INNER-PAGE-WRAP -->
-
 			<div class="wrap-inner-page container">
 				<div class="inner-home-link-wrap lk-user">
 					<a class = "inner-home-link" href="index.html">
@@ -171,8 +182,7 @@
 					</a>
 					<a href="#!" class="link-name-section">Личный кабинет</a>
 				</div>
-
-				<div class="lk-user-content my-transport">
+				<div class="lk-user-content my-transport add-transport">
 					<div class="lk-user-content-wrap">
 						<div class="lk-user-content-top-header">
 							<a href="lk-user.html" class="lk-user-content-nav">персональные данные</a>
@@ -230,7 +240,6 @@
 								</div>
 							</div>
 						</div>
-
 						<!-- ADD-TRANSPORT -->
 						<div class="lk-search-content-block">
 							<form class="lk-search-form">
@@ -304,7 +313,6 @@
 													<option value="">2001</option>
 												</select>
 											</div>
-
 											<div class="add-transport-item">
 												<p class="form-select-text lk-search-model">Мощность автомобиля</p>
 												<select class = "head-lk-search-select select-model add-2">
@@ -314,7 +322,6 @@
 													<option value="">200</option>
 												</select>
 											</div>
-
 											<div class="add-transport-item">
 												<label class="radio">
 													<input type="radio" name = "info" checked="checked" />
@@ -644,8 +651,6 @@
 										</div>
 									</div>
 								</div>
-
-
 								<div class="form-section"  data-form-section = "open">
 									<div class="form-section-head lk-search">
 										<h3 class="section-title-form">Другие параметры</h3>
@@ -668,7 +673,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="form-section"  data-form-section = "open">
 									<div class="form-section-head lk-search">
 										<h3 class="section-title-form">Добавьте фотографии автомобиля</h3>
@@ -689,24 +693,16 @@
 										</div>
 									</div>
 								</div>
-
-
-
 								<div class="search-form-footer lk-search add-transport">
 									<a href="#!" class="search-form-footer-reset">сбросить все параметры</a>
 									<button class = "lk-search-form-button" type = "submit">добавить транспорт</button>
 								</div>
 							</form>
 						</div>
-
-						
-
 						<!-- ADD-TRANSPORT END-->
 					</div>
 				</div>	
 			</div>
-
-
 		</div>
 		<!-- FOOTER -->
 		<footer class="footer">
