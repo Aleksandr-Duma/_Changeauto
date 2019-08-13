@@ -170,6 +170,16 @@ SidebarSection();
    		]
   });
 
+	$('.car-slider').slick({
+		infinite: true,
+    	slidesToShow: 1,
+    	// draggable: false,
+    	responsiveClass: true,
+    	arrows: true,
+  });
+
+	
+
 
 	$( ".slider-control-year" ).slider({
 		min: 1900,
