@@ -29,6 +29,12 @@
   width: auto; 
 }
 
+@media (max-width: 1200px) {
+    .nice-select{
+      padding-left: 10px;
+    }
+}
+
 .nice-select:hover {
   border-color: #eef1f4; 
 }
@@ -207,6 +213,13 @@
   text-align: left;
   -webkit-transition: all 0.2s;
   transition: all 0.2s; 
+}
+
+@media (max-width: 1200px) {
+    .nice-select .option{
+      font-size: 13px;
+      padding-left: 10px;
+    }
 }
 
 .phone-number-select.nice-select .option{

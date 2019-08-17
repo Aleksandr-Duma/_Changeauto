@@ -7,7 +7,7 @@
 	<meta name = "keywords" content = "">
 	<!-- Adaptive -->
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
 	<!-- Styles -->
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Fonts -->
@@ -61,7 +61,7 @@
 								<div class="dropdown-head">
 									<p class = "dropdown-text">
 										<svg 
-											class = "russian-svg" version="1.1"x="0px" y="0px"
+											class = "russian-svg" version="1.1" x="0px" y="0px"
 											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 											<circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
 											<path style="fill:#0052B4;" d="M496.077,345.043C506.368,317.31,512,287.314,512,256s-5.632-61.31-15.923-89.043H15.923
@@ -322,16 +322,19 @@
 													<option value="">200</option>
 												</select>
 											</div>
+
 											<div class="add-transport-item">
-												<label class="radio">
-													<input type="radio" name = "info" checked="checked" />
-													<div class="radio-text add">л.с</div>
-												</label>
-												<label class="radio">
-													<input type="radio" name = "info"/>
-													<div class="radio-text">кВт</div>
-												</label>
-											</div>
+												<div class="lk-add-transport-radio">
+													<input class = "lk-add-input" type="radio" name = "info" id = "radio-about-car" checked="checked">
+													<label class = "lk-add-label" for = "radio-about-car">л.с</label>
+												</div>
+												<div class="lk-add-transport-radio">
+													<input class = "lk-add-input" type="radio" name = "info" id = "radio-about-car-2">
+													<label class = "lk-add-label" for = "radio-about-car-2">кВт</label>
+												</div>
+											</div> 
+
+
 										</div>
 										<div class="add-transport-wrap-label">
 											<div class="add-transport-item">
@@ -351,27 +354,28 @@
 									</div>
 									<div class="section-body form-section-body add-transport">
 										<div class="wrap-radio-condition add-transport">
-											<div class="checkbox-condition-items-block add-transport">
-												<label class="radio">
-													<input type="radio" name = "condition" checked="checked" />
-													<div class="radio-text condition lk-search">Новые</div>
-												</label>
-												<label class="radio">
-													<input type="radio" name = "condition"/>
-													<div class="radio-text condition lk-search-2">Подержанные</div>
-												</label>
-											</div>
-											<div class="checkbox-condition-items-block add-transport">
-												<p class="form-select-text text-owner">Собственник</p>
+
+											<div class="add-transport-item-condition">
+												<div class="lk-add-transport-radio">
+													<input class = "lk-add-input" type="radio" name = "condition" id = "radio-about-car-3" checked="checked">
+													<label class = "lk-add-label" for = "radio-about-car-3">Новые</label>
+												</div>
+												<div class="lk-add-transport-radio">
+													<input class = "lk-add-input" type="radio" name = "condition" id = "radio-about-car-4">
+													<label class = "lk-add-label" for = "radio-about-car-4">Подержанные</label>
+												</div>
+											</div> 
+											<div class="add-transport-item-condition">
+												<p class="form-select-text add-transport-owner">Собственник</p>
 												<select class = "condition-select select-owner add-transport">
 													<option value="">Частный собственник</option>
 													<option value="">Другой собственник</option>
 													<option value="">Другой собственник</option>
 													<option value="">Другой собственник</option>
-												</select>	
+												</select>
 											</div>
 											<div class="checkbox-condition-items-block add-transport">
-												<p class="form-select-text text-color-auto lk-search">Цвет</p>
+												<p class="form-select-text add-color-auto">Цвет</p>
 												<select class = "condition-select select-color-auto add-transport">
 													<option value="">Серебристый</option>
 													<option value="">Черный</option>
@@ -386,44 +390,44 @@
 									<div class="form-section-head lk-search">
 										<h3 class="section-title-form">Типы транспортных средств</h3>
 									</div>
-									<div class="section-body form-section-body section-body-type-car lk-search">
+									<div class="section-body form-section-body add-transport-type">
 										<div class="wrap-radio-type-car">
-											<label class="radio">
-												<input type="radio" name = "type-car" checked="checked" />
-												<div class="radio-text type-car">Спортивный автомобиль/Купе</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "type-car"/>
-												<div class="radio-text type-car">Малолитражный автомобиль</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "type-car"/>
-												<div class="radio-text type-car">Минивэн/Микроавтобус</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "type-car"/>
-												<div class="radio-text type-car">Седан</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "type-car"/>
-												<div class="radio-text type-car">Универсал</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "type-car"/>
-												<div class="radio-text type-car">Внедорожник/Пикап</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "type-car"/>
-												<div class="radio-text type-car">Хэтчбек</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "type-car"/>
-												<div class="radio-text type-car">Кабриолет/Родстер</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "type-car"/>
-												<div class="radio-text type-car">Другое</div>
-											</label>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-5" checked="checked">
+												<label class = "lk-add-label" for = "radio-about-car-5">Спортивный автомобиль/Купе</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-6">
+												<label class = "lk-add-label" for = "radio-about-car-6">Малолитражный автомобиль</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-7">
+												<label class = "lk-add-label" for = "radio-about-car-7">Минивэн/Микроавтобус</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-8">
+												<label class = "lk-add-label" for = "radio-about-car-8">Седан</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-9">
+												<label class = "lk-add-label" for = "radio-about-car-9">Универсал</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-10">
+												<label class = "lk-add-label" for = "radio-about-car-10">Внедорожник/Пикап</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-11">
+												<label class = "lk-add-label" for = "radio-about-car-11">Хэтчбек</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-12">
+												<label class = "lk-add-label" for = "radio-about-car-12">Кабриолет/Родстер</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "type-car" id = "radio-about-car-13">
+												<label class = "lk-add-label" for = "radio-about-car-13">Другое</label>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -431,40 +435,40 @@
 									<div class="form-section-head lk-search">
 										<h3 class="section-title-form">Вид топлива</h3>
 									</div>
-									<div class="section-body form-section-body section-body-fuel lk-search">
-										<div class="wrap-radio-fuel">
-											<label class="radio">
-												<input type="radio" name = "fuel" checked="checked" />
-												<div class="radio-text fuel">Бензин</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "fuel"/>
-												<div class="radio-text fuel">Дизель</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "fuel"/>
-												<div class="radio-text fuel">Электрический</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "fuel"/>
-												<div class="radio-text fuel">Гибрид (бензин/электро)</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "fuel"/>
-												<div class="radio-text fuel">Гибрид (дизель/электро)</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "fuel"/>
-												<div class="radio-text fuel">Сжиженный нефтяной газ</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "fuel"/>
-												<div class="radio-text fuel">Сжатый природный газ</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "fuel"/>
-												<div class="radio-text fuel">Другое</div>
-											</label>
+									<div class="section-body form-section-body add-transport-fuel">
+										<div class="wrap-radio-fuel add">
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "fuel" id = "radio-about-car-14" checked = "checked">
+												<label class = "lk-add-label" for = "radio-about-car-14">Бензин</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "fuel" id = "radio-about-car-15">
+												<label class = "lk-add-label" for = "radio-about-car-15">Дизель</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "fuel" id = "radio-about-car-16">
+												<label class = "lk-add-label" for = "radio-about-car-16">Электрический</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "fuel" id = "radio-about-car-17">
+												<label class = "lk-add-label" for = "radio-about-car-17">Гибрид (бензин/электро)</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "fuel" id = "radio-about-car-18">
+												<label class = "lk-add-label" for = "radio-about-car-18">Гибрид (дизель/электро)</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "fuel" id = "radio-about-car-19">
+												<label class = "lk-add-label" for = "radio-about-car-19">Сжиженный нефтяной газ</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "fuel" id = "radio-about-car-20">
+												<label class = "lk-add-label" for = "radio-about-car-20">Сжатый природный газ</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "fuel" id = "radio-about-car-21">
+												<label class = "lk-add-label" for = "radio-about-car-21">Другое</label>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -472,20 +476,20 @@
 									<div class="form-section-head lk-search">
 										<h3 class="section-title-form">Коробка передач</h3>
 									</div>
-									<div class="section-body form-section-body lk-search">
+									<div class="section-body form-section-body add-transport-transmition">
 										<div class="wrap-radio-transmition">
-											<label class="radio">
-												<input type="radio" name = "transmition" checked="checked" />
-												<div class="radio-text transmition">Механическая КП</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "transmition"/>
-												<div class="radio-text transmition">Полуавтоматическая КП</div>
-											</label>
-											<label class="radio">
-												<input type="radio" name = "transmition"/>
-												<div class="radio-text transmition">Автоматическая КП</div>
-											</label>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "transmition" id = "radio-about-car-22" checked="checked">
+												<label class = "lk-add-label" for = "radio-about-car-22">Механическая КП</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "transmition" id = "radio-about-car-23">
+												<label class = "lk-add-label" for = "radio-about-car-23">Полуавтоматическая КП</label>
+											</div>
+											<div class="lk-add-transport-radio type-car">
+												<input class = "lk-add-input" type="radio" name = "transmition" id = "radio-about-car-24">
+												<label class = "lk-add-label" for = "radio-about-car-24">Автоматическая КП</label>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -493,101 +497,101 @@
 									<div class="form-section-head lk-search">
 										<h3 class="section-title-form">Безопасность</h3>
 									</div>
-									<div class="section-body form-section-body comfort-block lk-search">
-										<div class="wrap-checkbox-comfort">
+									<div class="section-body form-section-body add-transport-option">
+										<div class="wrap-checkbox-comfort option">
 											<div class="checkbox-comfort-items-block">
-												<label class="checkbox-wrap">
-													<input type="checkbox" checked="checked" />
-													<div class="checkbox-text comfort">Антиблокировочная тормозная система (ABS)</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Антипробуксовочная система (TCS, ASR, TRC)</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Боковые подушки безопасности</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Всесезонные шины</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Датчик дождя</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Датчик парковки</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Датчик света</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort margin-bottom">Шторки безопасности</div>
-												</label>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add" checked="checked">
+													<label class = "lk-add-label" for = "checkbox-option-add">Антиблокировочная тормозная система (ABS)</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-2">
+													<label class = "lk-add-label" for = "checkbox-option-add-2">Антипробуксовочная система (TCS, ASR, TRC)</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-3">
+													<label class = "lk-add-label" for = "checkbox-option-add-3">Боковые подушки безопасности</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-4">
+													<label class = "lk-add-label" for = "checkbox-option-add-4">Всесезонные шины</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-5">
+													<label class = "lk-add-label" for = "checkbox-option-add-5">Датчик дождя</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-6">
+													<label class = "lk-add-label" for = "checkbox-option-add-6">Датчик парковки</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-7">
+													<label class = "lk-add-label" for = "checkbox-option-add-7">Датчик света</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-8">
+													<label class = "lk-add-label" for = "checkbox-option-add-8">Шторки безопасности</label>
+												</div>
 											</div>
 											<div class="checkbox-comfort-items-block">
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Зимние шины</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Ксеноновые фары</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Легкосплавные колесные диски</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Летние шины</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Многофункциональный рул</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Омыватель фар</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort margin-bottom">Подушка безопасности водителя</div>
-												</label>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-9">
+													<label class = "lk-add-label" for = "checkbox-option-add-9">Зимние шины</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-10">
+													<label class = "lk-add-label" for = "checkbox-option-add-10">Ксеноновые фары</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-11">
+													<label class = "lk-add-label" for = "checkbox-option-add-11">Легкосплавные колесные диски</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-12">
+													<label class = "lk-add-label" for = "checkbox-option-add-12">Летние шины</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-13">
+													<label class = "lk-add-label" for = "checkbox-option-add-13">Многофункциональный руль</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-14">
+													<label class = "lk-add-label" for = "checkbox-option-add-14">Омыватель фар</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-15">
+													<label class = "lk-add-label" for = "checkbox-option-add-15">Подушка безопасности водителя</label>
+												</div>
 											</div>
 											<div class="checkbox-comfort-items-block">
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Подушка безопасности пассажира</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Противотуманные фары</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Усилитель руля</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Противоугонная сигнализация</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Противоугонное устройство</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Система стабилизации (ESP, DSC, VDC, ESC)</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort margin-bottom">Стальные колесные диски</div>
-												</label>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-16">
+													<label class = "lk-add-label" for = "checkbox-option-add-16">Подушка безопасности пассажира</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-17">
+													<label class = "lk-add-label" for = "checkbox-option-add-17">Противотуманные фары</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-18">
+													<label class = "lk-add-label" for = "checkbox-option-add-18">Усилитель руля</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-19">
+													<label class = "lk-add-label" for = "checkbox-option-add-19">Противоугонная сигнализация</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-20">
+													<label class = "lk-add-label" for = "checkbox-option-add-20">Противоугонное устройство</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-21">
+													<label class = "lk-add-label" for = "checkbox-option-add-21">Система стабилизации (ESP, DSC, VDC, ESC)</label>
+												</div>
+												<div class="lk-add-transport-radio option">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-option-add-22">
+													<label class = "lk-add-label" for = "checkbox-option-add-22">Стальные колесные диски</label>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -596,57 +600,57 @@
 									<div class="form-section-head lk-search">
 										<h3 class="section-title-form">Комфорт</h3>
 									</div>
-									<div class="section-body form-section-body comfort-block lk-search">
+									<div class="section-body form-section-body add-transport-comfort">
 										<div class="wrap-checkbox-comfort">
 											<div class="checkbox-comfort-items-block">
-												<label class="checkbox-wrap">
-													<input type="checkbox" checked="checked" />
-													<div class="checkbox-text comfort">Регулируемая по вылету рулевая колонка</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Электрорегулировка боковых зеркал</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Навигационная система/tvd/dvd система</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort margin-bottom">Климат-контроль</div>
-												</label>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-1" checked="checked">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-1">Регулируемая по вылету рулевая колонка</label>
+												</div>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-2">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-2">Электрорегулировка боковых зеркал</label>
+												</div>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-3">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-3">Навигационная система/tvd/dvd система</label>
+												</div>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-4">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-4">Климат-контроль</label>
+												</div>
 											</div>
 											<div class="checkbox-comfort-items-block">
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Электрорегулировка пассажирского сиденья</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Аудио-система</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Обивка салона ткань</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort margin-bottom">Кожаный салон</div>
-												</label>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-5">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-5">Электрорегулировка пассажирского сиденья</label>
+												</div>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-6">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-6">Аудио-система</label>
+												</div>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-7">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-7">Обивка салона ткань</label>
+												</div>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-8">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-8">Кожаный салон</label>
+												</div>
 											</div>
 											<div class="checkbox-comfort-items-block">
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Электрорегулировка водительского сиденья</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Велюровый салон</div>
-												</label>
-												<label class="checkbox-wrap">
-													<input type="checkbox"/>
-													<div class="checkbox-text comfort">Усилитель руля</div>
-												</label>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-9">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-9">Электрорегулировка водительского сиденья</label>
+												</div>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-10">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-10">Велюровый салон</label>
+												</div>
+												<div class="lk-add-transport-radio comfort">
+													<input type="checkbox" class = "lk-add-input" id = "checkbox-comfort-add-11">
+													<label class = "lk-add-label" for = "checkbox-comfort-add-11">Усилитель руля</label>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -666,10 +670,10 @@
 													<option value="">Готов доплатить</option>
 												</select>
 											</div>
-											<label class="checkbox-wrap lk-search">
-												<input type="checkbox"/>
-												<div class="checkbox-text other-parameters add-transport">Транспорт с повреждениями</div>
-											</label>
+											<div class="lk-add-transport-radio other-parameters">
+												<input type="checkbox" class = "lk-add-input" id = "checkbox-other-parameters">
+												<label class = "lk-add-label other-parameters" for = "checkbox-other-parameters">Транспорт с повреждениями</label>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -730,7 +734,7 @@
 								<div class="dropdown-head">
 									<p class = "dropdown-text">
 										<svg 
-											class = "russian-svg" version="1.1"x="0px" y="0px"
+											class = "russian-svg" version="1.1" x="0px" y="0px"
 											viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 											<circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
 											<path style="fill:#0052B4;" d="M496.077,345.043C506.368,317.31,512,287.314,512,256s-5.632-61.31-15.923-89.043H15.923

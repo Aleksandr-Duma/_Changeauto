@@ -113,9 +113,32 @@ var SidebarSection = function(){
 
 SidebarSection();
 
+var carDropdownSection = function(){
+		var data = $(".car-block-dropdown-block").attr("data-car-dropdown-section");
+
+		$(".car-block-dropdown-head").on("click", function(){
+			if(data === "close"){
+				$(".car-block-dropdown-body").slideUp();
+				if($(this).hasClass("active")){
+					$(this).toggleClass("active");
+				}
+				else{
+					$(".car-block-dropdown-head").removeClass("active");
+					$(this).toggleClass("active");
+				}
+			}
+			else{
+				$(this).toggleClass("active");
+			}
+			$(this).next(".car-block-dropdown-body").not(".animated").slideToggle();
+		});
+	}
+
+carDropdownSection();
+
 /*...................Owl-Carousel................*/
 
-	$(".owl-carousel").owlCarousel({
+	$(".slider-container").owlCarousel({
 		items: 4,
 		dots: true,
 		loop: true,
@@ -141,6 +164,32 @@ SidebarSection();
 
         1295:{
             items: 4,
+            dots: true
+        }
+    }
+	});
+
+	$(".car-slider-wrap").owlCarousel({
+		items: 3,
+		dots: true,
+		loop: true,
+		margin: 5,
+		nav: true,
+		responsive:{
+        0:{
+            items: 1,
+            nav: false,
+            touchDrag: false
+        },
+
+        620:{
+            items: 2,
+            dots: true,
+            nav: false,
+        },
+
+        1410:{
+            items: 3,
             dots: true
         }
     }
@@ -177,8 +226,6 @@ SidebarSection();
     	responsiveClass: true,
     	arrows: true,
   });
-
-	
 
 
 	$( ".slider-control-year" ).slider({
@@ -242,5 +289,12 @@ SidebarSection();
 	$('.phone-number-select').niceSelect();
 	$('.lk-search-select').niceSelect();
 	$('.lk-user-phone-select').niceSelect();
+
+
+	$(".package-page-card").click(function(e) {
+		e.preventDefault();
+	$(".package-page-card").removeClass('active');
+		$(this).addClass('active');
+	})
 
 })

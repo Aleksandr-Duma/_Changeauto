@@ -3,7 +3,6 @@
 .lk-user-content.my-transport.add-transport{
 	padding-bottom: 30px;
 	margin-bottom: 50px;
-	
 }
 
 .section-body.form-section-body.add-transport{
@@ -40,7 +39,6 @@
 
 	@media (min-width: 1410px) {
 		width: 268px;
-		height: 50px;
   	}
 }
 
@@ -109,9 +107,211 @@
   	}
 }
 
+.lk-add-transport-radio{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 8px;
+	margin-left: 8px;
+	margin-top: 8px;
+
+	@media (min-width: 1200px) {
+		margin-top: 0;
+  	}
+}
+
+.lk-add-input{
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+}
+
+.lk-add-label{
+	font-family: 'Proxima_Nova', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 1;
+	color: @main-text;
+  	cursor: pointer;	
+	-moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    padding-left: 30px;
+
+	@media (min-width: 1200px) {
+		font-size: 15px;
+  	}
+}
+
+.lk-add-label:before{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	box-shadow: @dark-shadow;
+}
+
+.lk-add-label:after{
+	content: " ";
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: @main-green;
+	opacity: 0;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	z-index: 2
+}
+
+.lk-add-input:checked + .lk-add-label:after{
+	opacity: 1;
+}
+
+.add-transport-item-condition{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 5px;
+
+	@media (min-width: 1200px) {
+		width: auto;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 0;
+  	}
+}
+
+.form-select-text.add-transport-owner{
+	margin-left: 0;
+	margin-right: 20px;
+
+	@media (min-width: 1200px) {
+		margin-left: 20px;
+  	}
+
+  	@media (min-width: 1410px) {
+		margin-left: 60px;
+  	}
+}
+
+.form-select-text.add-color-auto{
+	margin-left: 0;
+	margin-right: 20px;
+
+	@media (min-width: 1200px) {
+		margin-left: 15px;
+  	}
+}
+
 .form-select-text.add-transport{
 	margin-right: 32px;
 	white-space: nowrap;
+}
+
+.lk-add-transport-radio.type-car{
+
+	@media (min-width: 1200px) {
+		margin-right: 10px;
+		margin-bottom: 20px;
+  	}
+}
+
+.section-body.form-section-body.add-transport-type{
+	padding: 5px 0px 10px 0px;
+
+	@media (min-width: 1200px) {
+		padding-top: 25px;
+		padding-bottom: 20px;
+  	}
+}
+
+.section-body.form-section-body.add-transport-fuel{
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+
+	@media (min-width: 1200px) {
+		padding-top: 25px;
+		padding-bottom: 20px;
+		padding-left: 5px;
+  	}
+}
+
+.wrap-radio-fuel.add{
+	padding-top: 0;
+}
+
+.section-body.form-section-body.add-transport-transmition{
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+
+	@media (min-width: 1200px) {
+		padding-top: 25px;
+		padding-bottom: 20px;
+		padding-left: 5px;
+  	}
+}
+
+.lk-add-transport-radio.option{
+	margin-bottom: 5px;
+
+	@media (min-width: 1200px) {
+		margin-right: 0;
+		margin-bottom: 24px;
+  	}
+}
+
+.section-body.form-section-body.add-transport-option{
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+
+	@media (min-width: 1200px) {
+		padding-top: 25px;
+		padding-bottom: 0;
+		padding-left: 5px;
+  	}
+}
+
+.wrap-checkbox-comfort.option{
+	padding-bottom: 0;
+}
+
+.section-body.form-section-body.add-transport-comfort{
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+
+	@media (min-width: 1200px) {
+		padding-top: 25px;
+		padding-bottom: 20px;
+		padding-left: 5px;
+  	}
+}
+
+.lk-add-transport-radio.comfort{
+	margin-bottom: 5px;
+
+	@media (min-width: 1200px) {
+		margin-right: 0;
+		margin-bottom: 30px;
+  	}
 }
 
 .head-lk-search-select.select-model.add{
@@ -214,6 +414,20 @@
   	}
 }
 
+.lk-add-transport-radio.other-parameters{
+	margin-bottom: 5px;
+
+	@media (min-width: 1200px) {
+		margin-top: 10px;
+		margin-right: 0;
+		margin-bottom: 0;
+  	}
+}
+
+.lk-add-label.other-parameters{
+	white-space: nowrap;
+}
+
 .section-body.form-section-body.add-photo{
 	padding-left: 0;
 	padding-right: 0;
@@ -228,10 +442,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 20px;
-	padding-right: 0;
-	padding-bottom: 20px;
-	padding-left: 0;
+	padding: 20px 0px 20px 0px;
 
 	@media (min-width: 700px) {
 		flex-direction: row;
@@ -307,8 +518,5 @@
   	}
 }
 
-.checkbox-text.other-parameters.add-transport{
-	white-space: nowrap;
-}
 
 
