@@ -227,7 +227,6 @@ carDropdownSection();
     	arrows: true,
   });
 
-
 	$( ".slider-control-year" ).slider({
 		min: 1900,
     	max: 2019,
