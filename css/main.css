@@ -1083,6 +1083,7 @@ img {
   }
 }
 .card-model-title {
+  text-decoration: none;
   font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -5064,12 +5065,16 @@ img {
   }
 }
 .car-discription-title-main {
+  text-decoration: none;
   font-family: 'Proxima_Nova', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.4;
   color: #0f0f0f;
   margin-bottom: 5px;
+}
+.car-discription-title-main:hover {
+  color: #90d339;
 }
 @media (min-width: 1200px) {
   .car-discription-title-main {
@@ -6698,12 +6703,16 @@ img {
   }
 }
 .lk-my-transport-discription-title {
+  text-decoration: none;
   font-family: 'Proxima_Nova';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.4;
   color: #0f0f0f;
   margin-bottom: 20px;
+}
+.lk-my-transport-discription-title:hover {
+  color: #90d339;
 }
 @media (min-width: 1200px) {
   .lk-my-transport-discription-title {
